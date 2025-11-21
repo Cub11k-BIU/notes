@@ -1,0 +1,33 @@
+---
+{"publish":true,"created":"18/11/25, 17:48","modified":"2025-11-21T21:10:14.169+02:00","tags":["Academia","Lecture","Infi-1"],"cssclasses":""}
+---
+
+- [[Lectures/Infi-1/Exam 2022B (A)\|Exam 2022B (A)]]
+- [[Lectures/Infi-1/Exam 2022B (B)\|Exam 2022B (B)]]
+- [[Lectures/Infi-1/Exam 2023B (A)\|Exam 2023B (A)]]
+- [[Lectures/Infi-1/Exam 2023B (B)\|Exam 2023B (B)]]
+- [[Lectures/Infi-1/Exam 2024 (A)\|Exam 2024 (A)]]
+- [[Lectures/Infi-1/Exam 2024 (B)\|Exam 2024 (B)]]
+- [[Lectures/Infi-1/Exam 2025 (A)\|Exam 2025 (A)]]
+- [[Lectures/Infi-1/Infi-1 05\|Infi-1 05]]
+- [[Lectures/Infi-1/Infi-1 06\|Infi-1 06]]
+- [[Lectures/Infi-1/Infi-1 07\|Infi-1 07]]
+- [[Lectures/Infi-1/Infi-1 09\|Infi-1 09]]
+- [[Lectures/Infi-1/Infi-1 10\|Infi-1 10]]
+- [[Lectures/Infi-1/Infi-1 12\|Infi-1 12]]
+- [[Lectures/Infi-1/Infi-1 13\|Infi-1 13]]
+- [[Lectures/Infi-1/Infi-1 14\|Infi-1 14]]
+- [[Lectures/Infi-1/Infi-1 15\|Infi-1 15]]
+- [[Lectures/Infi-1/Infi-1 16\|Infi-1 16]]
+- [[Lectures/Infi-1/Infi-1 17\|Infi-1 17]]
+- [[Lectures/Infi-1/Infi-1 19\|Infi-1 19]]
+- [[Lectures/Infi-1/Infi-1 20\|Infi-1 20]]
+- [[Lectures/Infi-1/Infi-1 21\|Infi-1 21]]
+- [[Lectures/Infi-1/Infi-1 22\|Infi-1 22]]
+- [[Lectures/Infi-1/Infi-1 23\|Infi-1 23]]
+- [[Lectures/Infi-1/Infi-1 24\|Infi-1 24]]
+- [[Lectures/Infi-1/Infi-1 25\|Infi-1 25]]
+- [[Lectures/Infi-1/Infi-1 26\|Infi-1 26]]
+- [[Lectures/Infi-1/Midterm\|Midterm]]
+- [[Lectures/Infi-1/Theorems and proofs\|Theorems and proofs]]
+
