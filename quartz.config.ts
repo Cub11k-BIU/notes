@@ -88,6 +88,7 @@ const config: QuartzConfig = {
               'tagformat',      // Tag formatting
               'braket',
               'centernot',
+              'cancel',
             ],
             macros: {
               qset: ["{^{\\displaystyle #1}}\\Big/{_{\\displaystyle #2}}", 2],
@@ -101,13 +102,13 @@ const config: QuartzConfig = {
               floor: ["\\left\\lfloor #1 \\right\\rfloor", 1],
               lrp: ["\\left( #1 \\right)", 1],
               lrs: ["\\left[ #1 \\right]", 1],
-              lrc: ["\\left\\{ #1 \\right\\}", 1]
+              lrc: ["\\left\\{ #1 \\right\\}", 1],
             },
             environments: {
               aeqsys: ["\\left\\{\\begin{align}", "\\end{align}\\right."],
               eqsys: ["\\left\\{\\begin{array}{}", "\\end{array}\\right."],
               eqany: ["\\left[\\begin{array}{}", "\\end{array}\\right."],
-              eqmat: ["\\left(\\begin{array}{#1}", "\\end{array}\\right)", 1]
+              eqmat: ["\\left(\\begin{array}{#1}", "\\end{array}\\right)", 1],
             }
           }
         }
