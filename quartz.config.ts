@@ -86,6 +86,8 @@ const config: QuartzConfig = {
               'require',        // Allows manual \require{} like Obsidian
               'textmacros',     // Math inside \text{}
               'tagformat',      // Tag formatting
+              'braket',
+              'centernot',
             ],
             macros: {
               qset: ["{^{\\displaystyle #1}}\\Big/{_{\\displaystyle #2}}", 2],
