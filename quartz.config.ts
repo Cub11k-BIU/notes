@@ -8,7 +8,7 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Quartz 4",
+    pageTitle: "Cub11k's BIU Notes",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
@@ -16,7 +16,7 @@ const config: QuartzConfig = {
       provider: "plausible",
     },
     locale: "en-US",
-    baseUrl: "quartz.jzhao.xyz",
+    baseUrl: "cub11k-biu.github.io/notes",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
@@ -71,7 +71,45 @@ const config: QuartzConfig = {
       Plugin.TableOfContents(),
       Plugin.CrawlLinks({ markdownLinkResolution: "shortest" }),
       Plugin.Description(),
-      Plugin.Latex({ renderEngine: "katex" }),
+      Plugin.Latex({
+        renderEngine: "mathjax",
+        mathJaxOptions: {
+          tex: {
+            inlineMath: {'[+]': [['$', '$']]},
+            packages: [
+              'base',           // Required
+              'ams',            // Standard math (align, gather, etc.)
+              'newcommand',     // Support for \newcommand
+              'configmacros',   // Support for macro configuration
+              'noundefined',    // Visual error messages instead of crash
+              'autoload',       // <--- THE MAGIC: Loads ext. only when used
+              'require',        // Allows manual \require{} like Obsidian
+              'textmacros',     // Math inside \text{}
+              'tagformat',      // Tag formatting
+            ],
+            macros: {
+              qset: ["{^{\\displaystyle #1}}\\Big/{_{\\displaystyle #2}}", 2],
+              vrt: ["\\overset{ | }{ \\underset{ | }{ #1 }", 1],
+              sbs: ["\\left\\{\\begin{array}{} #1 \\end{array}\\right\\}", 1],
+              inp: ["\\left\\langle #1, #2 \\right\\rangle", 2],
+              avg: ["\\left\\langle #1 \\right\\rangle", 1],
+              abs: ["\\left\\lvert #1 \\right\\rvert", 1],
+              norm: ["\\left\\lVert #1 \\right\\rVert", 1],
+              ceil: ["\\left\\lceil #1 \\right\\rceil", 1],
+              floor: ["\\left\\lfloor #1 \\right\\rfloor", 1],
+              lrp: ["\\left( #1 \\right)", 1],
+              lrs: ["\\left[ #1 \\right]", 1],
+              lrc: ["\\left\\{ #1 \\right\\}", 1]
+            },
+            environments: {
+              aeqsys: ["\\left\\{\\begin{align}", "\\end{align}\\right."],
+              eqsys: ["\\left\\{\\begin{array}{}", "\\end{array}\\right."],
+              eqany: ["\\left[\\begin{array}{}", "\\end{array}\\right."],
+              eqmat: ["\\left(\\begin{array}{#1}", "\\end{array}\\right)", 1]
+            }
+          }
+        }
+      }),
     ],
     filters: [Plugin.RemoveDrafts()],
     emitters: [
