@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"18/11/25, 17:48","modified":"2025-11-21T21:10:14.108+02:00","tags":["Academia","Lecture","Discrete-math"],"cssclasses":""}
+{"publish":true,"title":"BIU Lectures - Discrete-math","created":"18/11/25, 17:48","modified":"2025-11-21T21:23:24.984+02:00","tags":["Academia","Lecture","Discrete-math"],"cssclasses":""}
 ---
 
 - [[Lectures/Discrete-math/Discrete-math 03\|Discrete-math 03]]

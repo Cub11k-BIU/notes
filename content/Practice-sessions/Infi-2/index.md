@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"18/11/25, 17:50","modified":"2025-11-21T21:10:24.829+02:00","tags":["Academia","Practice","Infi-2"],"cssclasses":""}
+{"publish":true,"title":"BIU Practice sessions - Infi-2","created":"18/11/25, 17:50","modified":"2025-11-21T21:27:16.501+02:00","tags":["Academia","Practice","Infi-2"],"cssclasses":""}
 ---
 
 - [[Practice-sessions/Infi-2/Infi-2 01\|Infi-2 01]]

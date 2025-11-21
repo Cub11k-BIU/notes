@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"18/11/25, 17:48","modified":"2025-11-21T21:10:14.487+02:00","tags":["Academia","Lecture","Linear-2"],"cssclasses":""}
+{"publish":true,"title":"BIU Lectures - Linear-2","created":"18/11/25, 17:48","modified":"2025-11-21T21:24:14.192+02:00","tags":["Academia","Lecture","Linear-2"],"cssclasses":""}
 ---
 
 - [[Lectures/Linear-2/Exam 2022 (A)\|Exam 2022 (A)]]

@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"18/11/25, 17:48","modified":"2025-11-21T21:10:14.277+02:00","tags":["Academia","Lecture","Linear-1"],"cssclasses":""}
+{"publish":true,"title":"BIU Lectures - Linear-1","created":"18/11/25, 17:48","modified":"2025-11-21T21:24:03.406+02:00","tags":["Academia","Lecture","Linear-1"],"cssclasses":""}
 ---
 
 - [[Lectures/Linear-1/Exam 2023 (B)\|Exam 2023 (B)]]

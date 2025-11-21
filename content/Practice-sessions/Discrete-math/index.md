@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"18/11/25, 17:50","modified":"2025-11-21T21:10:24.751+02:00","tags":["Academia","Practice","Discrete-math"],"cssclasses":""}
+{"publish":true,"title":"BIU Practice sessions - Discrete-math","created":"18/11/25, 17:50","modified":"2025-11-21T21:26:49.446+02:00","tags":["Academia","Practice","Discrete-math"],"cssclasses":""}
 ---
 
 - [[Practice-sessions/Discrete-math/Discrete-math 01\|Discrete-math 01]]

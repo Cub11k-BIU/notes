@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"18/11/25, 17:47","modified":"2025-11-21T20:58:09.406+02:00","tags":["Academia","Lecture"],"cssclasses":""}
+{"publish":true,"title":"BIU Lectures","created":"18/11/25, 17:47","modified":"2025-11-21T21:22:17.701+02:00","tags":["Academia","Lecture"],"cssclasses":""}
 ---
 
 - [[Lectures/Algorithms-1/index\|Algorithms-1]]

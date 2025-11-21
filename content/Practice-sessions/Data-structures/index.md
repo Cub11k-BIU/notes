@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"18/11/25, 17:49","modified":"2025-11-21T21:10:24.587+02:00","tags":["Academia","Practice","Data-structures"],"cssclasses":""}
+{"publish":true,"title":"BIU Practice sessions - Data-structures","created":"18/11/25, 17:49","modified":"2025-11-21T21:25:24.429+02:00","tags":["Academia","Practice","Data-structures"],"cssclasses":""}
 ---
 
 - [[Practice-sessions/Data-structures/Data-structures 01\|Data-structures 01]]

@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"18/11/25, 17:49","modified":"2025-11-21T21:10:24.460+02:00","tags":["Academia","Practice","Algorithms-1"],"cssclasses":""}
+{"publish":true,"title":"BIU Practice sessions - Algorithms-1","created":"18/11/25, 17:49","modified":"2025-11-21T21:24:57.753+02:00","tags":["Academia","Practice","Algorithms-1"],"cssclasses":""}
 ---
 
 - [[Practice-sessions/Algorithms-1/Algorithms-1 01\|Algorithms-1 01]]

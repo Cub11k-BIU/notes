@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"18/11/25, 17:50","modified":"2025-11-21T21:10:24.818+02:00","tags":["Academia","Practice"],"cssclasses":""}
+{"publish":true,"title":"BIU Practice sessions","created":"18/11/25, 17:50","modified":"2025-11-21T21:24:41.502+02:00","tags":["Academia","Practice"],"cssclasses":""}
 ---
 
 - [[Practice-sessions/Algorithms-1/index\|Algorithms-1]]
