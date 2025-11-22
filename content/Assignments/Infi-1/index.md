@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"BIU Assignments - Infi-1","created":"18/11/25, 12:10","modified":"2025-11-21T21:19:09.142+02:00","tags":["Academia","Assignment","Infi-1"],"cssclasses":""}
+{"publish":true,"title":"Infi-1","created":"18/11/25, 12:10","modified":"2025-11-22T21:59:51.045+02:00","tags":["Academia","Assignment","Infi-1"],"cssclasses":""}
 ---
 
 - [[Assignments/Infi-1/Infi-1 02\|Infi-1 02]]

@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"BIU Lectures - Databases","created":"18/11/25, 17:48","modified":"2025-11-21T21:23:07.953+02:00","tags":["Academia","Lecture","Databases"],"cssclasses":""}
+{"publish":true,"title":"Databases","created":"18/11/25, 17:48","modified":"2025-11-22T22:01:01.309+02:00","tags":["Academia","Lecture","Databases"],"cssclasses":""}
 ---
 
 - [[Lectures/Databases/Databases 01\|Databases 01]]

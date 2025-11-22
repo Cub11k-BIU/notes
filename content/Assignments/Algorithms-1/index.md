@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"BIU Assignments - Algorithms-1","created":"18/11/25, 12:08","modified":"2025-11-21T21:18:11.488+02:00","tags":["Academia","Assignment","Algorithms-1"],"cssclasses":""}
+{"publish":true,"title":"Algorithms-1","created":"18/11/25, 12:08","modified":"2025-11-22T21:59:22.067+02:00","tags":["Academia","Assignment","Algorithms-1"],"cssclasses":""}
 ---
 
 - [[Assignments/Algorithms-1/Algorithms-1 01\|Algorithms-1 01]]

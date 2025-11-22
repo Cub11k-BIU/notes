@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"BIU Lectures - Infi-2","created":"18/11/25, 17:48","modified":"2025-11-21T21:23:53.268+02:00","tags":["Academia","Lecture","Infi-2"],"cssclasses":""}
+{"publish":true,"title":"Infi-2","created":"18/11/25, 17:48","modified":"2025-11-22T22:01:24.647+02:00","tags":["Academia","Lecture","Infi-2"],"cssclasses":""}
 ---
 
 - [[Lectures/Infi-2/Exam 2022 (A)\|Exam 2022 (A)]]

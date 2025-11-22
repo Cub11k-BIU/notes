@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"BIU Assignments - Linear-2","created":"18/11/25, 12:10","modified":"2025-11-21T21:19:32.729+02:00","tags":["Academia","Assignment","Linear-2"],"cssclasses":""}
+{"publish":true,"title":"Linear-2","created":"18/11/25, 12:10","modified":"2025-11-22T22:00:15.291+02:00","tags":["Academia","Assignment","Linear-2"],"cssclasses":""}
 ---
 
 - [[Assignments/Linear-2/Linear-2 01\|Linear-2 01]]

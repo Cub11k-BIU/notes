@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"BIU Assignments - Discrete-math","created":"18/11/25, 12:10","modified":"2025-11-21T21:18:47.669+02:00","tags":["Academia","Assignment","Discrete-math"],"cssclasses":""}
+{"publish":true,"title":"Discrete-math","created":"18/11/25, 12:10","modified":"2025-11-22T21:59:39.836+02:00","tags":["Academia","Assignment","Discrete-math"],"cssclasses":""}
 ---
 
 - [[Assignments/Discrete-math/Discrete-math 01\|Discrete-math 01]]

@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"BIU Practice sessions - Automata","created":"18/11/25, 17:49","modified":"2025-11-21T21:25:09.967+02:00","tags":["Academia","Practice","Automata"],"cssclasses":""}
+{"publish":true,"title":"Automata","created":"18/11/25, 17:49","modified":"2025-11-22T22:01:56.235+02:00","tags":["Academia","Practice","Automata"],"cssclasses":""}
 ---
 
 - [[Practice-sessions/Automata/Automata 01\|Automata 01]]

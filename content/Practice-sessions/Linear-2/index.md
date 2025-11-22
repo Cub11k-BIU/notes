@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"BIU Practice sessions - Linear-2","created":"18/11/25, 17:50","modified":"2025-11-21T21:27:32.285+02:00","tags":["Academia","Practice","Linear-2"],"cssclasses":""}
+{"publish":true,"title":"Linear-2","created":"18/11/25, 17:50","modified":"2025-11-22T22:02:42.809+02:00","tags":["Academia","Practice","Linear-2"],"cssclasses":""}
 ---
 
 - [[Practice-sessions/Linear-2/Linear-2 01\|Linear-2 01]]
