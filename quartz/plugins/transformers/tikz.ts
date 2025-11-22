@@ -1,10 +1,13 @@
 import { QuartzTransformerPlugin } from "../types"
 import { visit } from "unist-util-visit"
-import tex2svg, { TeXOptions } from "node-tikzjax"
+import tikzPkg, { TeXOptions } from "node-tikzjax"
 import { fromHtml } from "hast-util-from-html"
 import fs from "fs"
 import path from "path"
 import crypto from "crypto"
+
+// @ts-ignore
+const tex2svg = tikzPkg.default || tikzPkg
 
 // Helper to create a hash from the tikz code
 function getHash(content: string) {
