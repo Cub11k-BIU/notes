@@ -113,6 +113,7 @@ const config: QuartzConfig = {
           }
         }
       }),
+      Plugin.Tikz(),
     ],
     filters: [Plugin.RemoveDrafts()],
     emitters: [
