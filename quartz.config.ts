@@ -59,6 +59,7 @@ const config: QuartzConfig = {
       Plugin.CreatedModifiedDate({
         priority: ["frontmatter", "git", "filesystem"],
       }),
+      Plugin.Tikz(),
       Plugin.SyntaxHighlighting({
         theme: {
           light: "github-light",
@@ -113,7 +114,6 @@ const config: QuartzConfig = {
           }
         }
       }),
-      Plugin.Tikz(),
     ],
     filters: [Plugin.RemoveDrafts()],
     emitters: [
