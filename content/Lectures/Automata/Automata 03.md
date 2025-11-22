@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"02/11/25, 10:11","modified":"2025-11-21T21:10:13.921+02:00","tags":["Academia","Lecture","Automata"],"cssclasses":""}
+{"publish":true,"created":"02/11/25, 10:11","modified":"2025-11-22T13:06:13.677+02:00","tags":["Academia","Lecture","Automata"],"cssclasses":""}
 ---
 
 # Deterministic finite automata #definition 
@@ -13,6 +13,7 @@ q_{0} - \text{starting state} \\
 F - \text{a finite set of accepting states} \\
 }
 $$
+An example of a deterministic finite automata would be a vending machine, that releases a product when use pays 3 or more ILS, no change is given.
 ```tikz
 \usepackage{amsmath,amssymb}
 \usetikzlibrary{automata, positioning, arrows}
