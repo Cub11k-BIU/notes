@@ -61,7 +61,7 @@ export const Tikz: QuartzTransformerPlugin<Partial<Options>> = (opts) => {
                         svgString = await tex2svg(tikzCode, {
                             ...opts?.tikzOptions,
                             // Ensure we don't log every single compilation to console
-                            showConsole: false 
+                            showConsole: true
                         })
                         
                         // Save to cache
