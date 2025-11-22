@@ -1,3 +1,7 @@
 @use "./base.scss";
 
 // put your custom CSS here!
+mjx-container svg line, 
+mjx-container svg .mjx-solid {
+  stroke-width: 70px !important; /* 70 units in MathJax coordinates ≈ standard line thickness */
+}
