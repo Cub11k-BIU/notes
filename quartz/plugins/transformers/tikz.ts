@@ -78,6 +78,15 @@ export const Tikz: QuartzTransformerPlugin = (opts) => {
 
                         // 3. Read Result
                         const rawSvg = fs.readFileSync(svgFile, "utf-8")
+                          .replace(/rgb\(0\%,0\%,0\%\)/g, "currentColor")
+                          .replace(/#000000/g, "currentColor")
+                          // Sometimes it uses CSS blocks, strip explicit black stroke/fill
+                          .replace(/stroke:black/g, "stroke:currentColor")
+                          .replace(/fill:black/g, "fill:currentColor")
+                          .replace(/rgb\(100\%,100\%,100\%\)/g, "var(--light)")
+                          .replace(/#ffffff/gi, "var(--light)") // Case insensitive for hex
+                          .replace(/stroke:white/g, "stroke:var(--light)")
+                          .replace(/fill:white/g, "fill:var(--light)")
 
                         const result = optimize(rawSvg, {
                           path: svgFile, // Helps svgo generate unique IDs based on filename/hash
