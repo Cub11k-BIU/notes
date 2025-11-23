@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"02/11/25, 13:11","modified":"2025-11-23T08:51:33.406+02:00","tags":["Academia","Practice","Automata"],"cssclasses":""}
+{"publish":true,"created":"02/11/25, 13:11","modified":"2025-11-23T09:36:40.557+02:00","tags":["Academia","Practice","Automata"],"cssclasses":""}
 ---
 
 ## Deterministic finite automata
@@ -24,7 +24,7 @@ $$
 }
 
 \begin{document}
-\begin{tikzpicture}
+\begin{tikzpicture}[scale=2]
 \node[state, initial, accepting] (q0) {start};
 \node[state, accepting, right of=q0] (q1) {$q_a$};
 \node[state, accepting, below of=q0] (q2) {$q_b$};
@@ -66,7 +66,7 @@ $$
 }
 
 \begin{document}
-\begin{tikzpicture}
+\begin{tikzpicture}[scale=1.5]
 \node[state, initial] (q0) {$q_0$};
 \node[state, accepting, right of=q0] (q1) {$q_1$};
 \draw
@@ -78,7 +78,7 @@ $$
 \end{tikzpicture}
 \\
 \\
-\begin{tikzpicture}
+\begin{tikzpicture}[scale=1.5]
 \node[state, initial, accepting] (p0) {$p_0$};
 \node[state, right of=p0] (p1) {$p_1$};
 \draw
@@ -98,7 +98,7 @@ $$
 }
 
 \begin{document}
-\begin{tikzpicture}
+\begin{tikzpicture}[scale=2]
 \node[state, initial, accepting] (q0p0) {$q_0,p_0$};
 \node[state, right of=q0p0] (q0p1) {$q_0,p_1$};
 \node[state, accepting, below of=q0p0] (q1p0) {$q_1,p_0$};

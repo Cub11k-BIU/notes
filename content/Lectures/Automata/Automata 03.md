@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"02/11/25, 10:11","modified":"2025-11-23T08:52:04.612+02:00","tags":["Academia","Lecture","Automata"],"cssclasses":""}
+{"publish":true,"created":"02/11/25, 10:11","modified":"2025-11-23T09:35:55.636+02:00","tags":["Academia","Lecture","Automata"],"cssclasses":""}
 ---
 
 # Deterministic finite automata #definition 
@@ -23,7 +23,7 @@ An example of a deterministic finite automata would be a vending machine, that r
 }
 
 \begin{document}
-\begin{tikzpicture}
+\begin{tikzpicture}[scale=1.2]
 \node[state, initial] (q0) {0 ILS};
 \node[state, right of=q0] (q1) {1 ILS};
 \node[state, right of=q1] (q2) {2 ILS};
@@ -54,7 +54,7 @@ $$
 }
 
 \begin{document}
-\begin{tikzpicture}
+\begin{tikzpicture}[scale=2]
 \node[state, accepting, initial] (q0) {Start};
 \node[state, accepting, above right of=q0] (q1) {Hebrew};
 \node[state, accepting, below right of=q0] (q2) {English};
