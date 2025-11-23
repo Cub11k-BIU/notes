@@ -1,24 +1,30 @@
 import { QuartzTransformerPlugin } from "../types"
 import { visit } from "unist-util-visit"
-import tikzPkg, { TeXOptions } from "node-tikzjax"
 import { fromHtml } from "hast-util-from-html"
+import { exec } from "child_process"
 import fs from "fs"
 import path from "path"
 import crypto from "crypto"
+import util from "util"
+import { optimize } from "svgo"
 
-// @ts-ignore
-const tex2svg = tikzPkg.default || tikzPkg
+const execAsync = util.promisify(exec)
 
 // Helper to create a hash from the tikz code
 function getHash(content: string) {
   return crypto.createHash("md5").update(content).digest("hex")
 }
 
-interface Options {
-  tikzOptions?: TeXOptions
+function getTemplate(code: string): string {
+  code = code.trim()
+  if (code.includes("\\documentclass")) return code  
+  // Prepend documentclass
+  return `\\documentclass[margin=10pt]{standalone}
+${code}
+`
 }
 
-export const Tikz: QuartzTransformerPlugin<Partial<Options>> = (opts) => {
+export const Tikz: QuartzTransformerPlugin = (opts) => {
   return {
     name: "Tikz",
     htmlPlugins() {
@@ -46,32 +52,57 @@ export const Tikz: QuartzTransformerPlugin<Partial<Options>> = (opts) => {
                   
                   const tikzCode = textNode.value.trim()
                   const hash = getHash(tikzCode)
-                  const cacheFile = path.join(cacheDir, `${hash}.svg`)
+                  const svgFile = path.join(cacheDir, `${hash}.svg`)
 
                   const promise = async () => {
                     try {
-                      let svgString = ""
-
-                      // 3. CACHE CHECK
-                      if (fs.existsSync(cacheFile)) {
-                        svgString = fs.readFileSync(cacheFile, "utf-8")
+                      let svgContent = ""
+                      if (fs.existsSync(svgFile)) {
+                        svgContent = fs.readFileSync(svgFile, "utf-8")
                       } else {
-                        // 4. Render if not cached
-                        // We wrap in a promise because tex2svg might throw or take time
-                        svgString = await tex2svg(tikzCode, {
-                            ...opts?.tikzOptions,
-                            // Ensure we don't log every single compilation to console
-                            showConsole: true
-                        })
+                        // 1. Write Temp Tex File
+                        const texFile = path.join(cacheDir, `${hash}.tex`)
+                        const pdfFile = path.join(cacheDir, `${hash}.pdf`)
+                        fs.writeFileSync(texFile, getTemplate(tikzCode))
+
+                        // 2. Run System Commands
+                        // pdflatex -> generates PDF
+                        await execAsync(`pdflatex -output-directory=${cacheDir} -interaction=nonstopmode ${texFile}`)
                         
-                        // Save to cache
-                        fs.writeFileSync(cacheFile, svgString)
+                        // pdftocairo -> converts PDF to SVG (Requires poppler-utils)
+                        await execAsync(`pdftocairo -svg ${pdfFile} ${svgFile}`)
+
+                        // Cleanup artifacts (optional)
+                        fs.unlinkSync(texFile)
+                        fs.unlinkSync(pdfFile)
+
+                        // 3. Read Result
+                        const rawSvg = fs.readFileSync(svgFile, "utf-8")
+
+                        const result = optimize(rawSvg, {
+                          path: svgFile, // Helps svgo generate unique IDs based on filename/hash
+                          multipass: true, // Run multiple times for better compression
+                          plugins: [
+                            "preset-default", // Standard optimizations
+                            {
+                              name: "prefixIds", // CRITICAL: Prevents ID collisions between diagrams
+                              params: {
+                                prefix: hash, // Use the file hash as the prefix
+                                delim: "_",
+                              },
+                            },
+                          ],
+                        })
+
+                        svgContent = result.data
+                        
+                        // Save the OPTIMIZED version to cache (saves space and processing next time)
+                        fs.writeFileSync(svgFile, svgContent)
                       }
+                      // 4. Convert SVG string to HTML Tree
+                      const svgHast = fromHtml(svgContent, { fragment: true })
 
-                      // 5. Convert SVG string to HTML Tree
-                      const svgHast = fromHtml(svgString, { fragment: true })
-
-                      // 6. Replace the original <pre> block with the SVG
+                      // 5. Replace the original <pre> block with the SVG
                       if (parent && index !== undefined) {
                         parent.children[index] = {
                           type: "element",
@@ -85,7 +116,7 @@ export const Tikz: QuartzTransformerPlugin<Partial<Options>> = (opts) => {
                         }
                       }
                     } catch (err) {
-                      console.error(`\n[TikZ] Error in ${file.path}: \n${err}`)
+                      console.error(`[Tikz] System Tex Failed:`, err)
                     }
                   }
 
