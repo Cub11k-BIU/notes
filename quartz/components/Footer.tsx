@@ -18,8 +18,8 @@ export default ((opts?: Options) => {
           <a href="https://quartz.jzhao.xyz/">Quartz v{version}</a> © {year}
         </p>
         <p>
-          {"Created by Konstantin aka Cub11k Ostashenko"}{" "}
-          <a href="https://github.com/Cub11k/">Cub11k</a> © {year}
+          {"Created by"}{" "}
+          <a href="https://github.com/Cub11k/">Konstantin, aka Cub11k, Ostashenko</a> © {year}
         </p>
         <ul>
           {Object.entries(links).map(([text, link]) => (
