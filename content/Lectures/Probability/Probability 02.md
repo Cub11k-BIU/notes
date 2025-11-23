@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"05/11/25, 13:11","modified":"2025-11-21T21:10:14.592+02:00","tags":["Academia","Lecture","Probability"],"cssclasses":""}
+{"publish":true,"created":"05/11/25, 13:11","modified":"2025-11-23T08:53:03.277+02:00","tags":["Academia","Lecture","Probability"],"cssclasses":""}
 ---
 
 ## Variable #definition 
@@ -100,6 +100,8 @@ $IQR$-based "fences" are robust - they depend on medians, not on extreme values
 ### Visualizing data
 #### Histograms and box plots to visually represent the data
 ```tikz
+\usepackage{tikz}
+
 \begin{document}
 \begin{tikzpicture}[scale=0.8]
 
@@ -165,6 +167,7 @@ Common choices for bin width (and consequently the number of bins)
 - Scott: $h = 3.5 \ s \ n^{-1/3}$
 - Freedman-Diaconis: $h = 2 \cdot IQR \ n^{-1/3}$
 ```tikz
+\usepackage{tikz}
 \begin{document}
 \begin{tikzpicture}[scale=1,
     whisker/.style={thick},
@@ -222,6 +225,7 @@ Common choices for bin width (and consequently the number of bins)
 ```
 
 ```tikz
+\usepackage{tikz}
 \begin{document}
 \begin{tikzpicture}[scale=0.8,
     whisker/.style={thick},
@@ -308,6 +312,7 @@ $$
 - $\hat{F}_{n}(\infty) = 1$
 - Each ordered observation $x_{i}$ increases $\hat{F}_{n}$ by $\frac{1}{n}$
 ```tikz
+\usepackage{tikz}
 \begin{document}
 \begin{tikzpicture}[scale=1.3, % Increased scaling for better readability
     point/.style={fill=blue!70!black, circle, inner sep=1.5pt} % Restoring original point size
@@ -397,6 +402,7 @@ To show these relations visually, we can use the Scatterplot
 - The overall pattern reveals direction, form, and strength of the relationship
 An example of a positive relationship on a scatterplot:
 ```tikz
+\usepackage{tikz}
 \begin{document}
 \begin{tikzpicture}[scale=0.6]
 

@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"02/11/25, 13:11","modified":"2025-11-21T21:10:24.494+02:00","tags":["Academia","Practice","Automata"],"cssclasses":""}
+{"publish":true,"created":"02/11/25, 13:11","modified":"2025-11-23T08:51:33.406+02:00","tags":["Academia","Practice","Automata"],"cssclasses":""}
 ---
 
 ## Deterministic finite automata
@@ -15,6 +15,7 @@ F - \text{a finite set of accepting states} \\
 $$
 
 ```tikz
+\usepackage{tikz}
 \usetikzlibrary{automata, positioning, arrows}
 
 \tikzset{
@@ -56,6 +57,7 @@ $$
 ---
 ### Example of combining (multiplying) two automata
 ```tikz
+\usepackage{tikz}
 \usetikzlibrary{automata, positioning, arrows}
 
 \tikzset{
@@ -87,6 +89,7 @@ $$
 \end{document}
 ```
 ```tikz
+\usepackage{tikz}
 \usetikzlibrary{automata, positioning, arrows}
 
 \tikzset{
