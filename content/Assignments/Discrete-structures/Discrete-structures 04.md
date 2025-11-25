@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"24/11/25, 16:43","modified":"2025-11-25T12:46:10.669+02:00","tags":["Academia","Assignment","Discrete-structures"],"cssclasses":""}
+{"publish":true,"created":"24/11/25, 16:43","modified":"2025-11-25T12:50:54.754+02:00","tags":["Academia","Assignment","Discrete-structures"],"cssclasses":""}
 ---
 
 ## 1
@@ -145,7 +145,10 @@ F = \Set{ f \in \mathbb{R}^{\mathbb{R}} | \forall q \in \mathbb{Q}: f(q) = 0 } \
 1 & f_{n}(x) \neq 1 \\
 0 & x \in \mathbb{Q} \\
 \end{eqsys} \\
-g \in F, \forall n \in \mathbb{N}: f_{n}(x) = 1 \implies g(x) = 2 \implies g \neq f_{n} \\
+g \in F, \forall n \in \mathbb{N}: \begin{eqsys}
+f_{n}(x) = 1 \implies g(x) = 2 \implies g \neq f_{n} \\
+f_{n}(x) \neq 1 \implies g(x) = 1 \implies g \neq f_{n} \\
+\end{eqsys} \\
 \implies g \not\in f[\mathbb{N}] \implies f \text{ is nor surjective} \\
 \implies \mathbb{N} \precneqq F \\
 }
