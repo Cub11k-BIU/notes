@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"11/11/25, 16:11","modified":"2025-11-21T21:10:14.125+02:00","tags":["Academia","Lecture","Discrete-structures"],"cssclasses":""}
+{"publish":true,"created":"11/11/25, 16:11","modified":"2025-11-25T12:12:18.413+02:00","tags":["Academia","Lecture","Discrete-structures"],"cssclasses":""}
 ---
 
 ## Cantor's theorem #theorem 
@@ -29,7 +29,7 @@ $$
 By Zermelo-Frankel set theory, no set can contain itself as it would contradict the Axiom of Regularity
 
 ---
-### $\mathcal{P}(\mathbb{N}) \sim \mathbb{R}$
+### $\mathcal{P}(\mathbb{N}) \sim \mathbb{R}$ #theorem 
 $$
 \displaylines{
 \mathcal{P}(\mathbb{N}) \sim \mathbb{R} \\
@@ -170,7 +170,7 @@ P \text{ is a cycle} \implies P \text{ is an Euler cycle} \implies \forall i \in
 \boxed{ \impliedby } \text{ Let } G \text{ has } 0 \text{ or } 2 \text{ vertices of odd degree} \\
 0 \text{ vertices of odd degree} \implies G \text{ has an Euler cycle and we're done} \\
 2 \text{ vertices of odd degree } u, v \implies G' = (V \cup \Set{ z }, E \cup \Set{ \Set{ v, z }, \Set{ u, z } }) \\
-G' \text{ has an Euer cycle} \implies G \text{ has an Euler tour from } v \text{ to } u \\
+G' \text{ has an Euler cycle} \implies G \text{ has an Euler tour from } v \text{ to } u \\
 }
 $$
 ---
@@ -182,4 +182,4 @@ $$
 }
 $$
 Determining whether a graph contains a Hamiltonian cycle/path is an **NP-hard** problem
-FIndind the minimal Hamiltonian cycle/path in the weighted graph is also an **NP-hard** problem
+Finding the minimal Hamiltonian cycle/path in the weighted graph is also an **NP-hard** problem

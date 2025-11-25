@@ -1,8 +1,8 @@
 ---
-{"publish":true,"created":"02/11/25, 10:11","modified":"2025-11-23T09:35:55.636+02:00","tags":["Academia","Lecture","Automata"],"cssclasses":""}
+{"publish":true,"created":"02/11/25, 10:11","modified":"2025-11-23T11:43:40.583+02:00","tags":["Academia","Lecture","Automata"],"cssclasses":""}
 ---
 
-# Deterministic finite automata #definition 
+# Deterministic finite automata (DFA) #definition 
 $$
 \displaylines{
 A = (Q, \Sigma, \delta, q_{0}, F) \\

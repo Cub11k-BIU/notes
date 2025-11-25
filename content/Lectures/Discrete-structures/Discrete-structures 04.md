@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"18/11/25, 16:21","modified":"2025-11-21T21:10:14.130+02:00","tags":["Academia","Lecture","Discrete-structures"],"cssclasses":""}
+{"publish":true,"created":"18/11/25, 16:21","modified":"2025-11-25T12:12:59.335+02:00","tags":["Academia","Lecture","Discrete-structures"],"cssclasses":""}
 ---
 
 $$
@@ -105,7 +105,7 @@ $$
 $$
 \displaylines{
 \forall A, B \in \mathcal{P}: A^{B} \sim \begin{cases}
-A & B \preccurlyeq A \\
+A & B \precneqq A \\
 \Set{ 0, 1 }^{B} & A \preccurlyeq B \\
 \end{cases} \\
 \\
@@ -122,7 +122,7 @@ $$
 ## Ore's theorem #theorem 
 $$
 \displaylines{
-\text{Let } G = (V, E) \text{ be a simple graph with } n = \abs{V} \geq 3 \\
+\text{Let } G = (V, E) \text{ be a simple graph with } \abs{V} = n \geq 3 \\
 \text{Let } \forall u, v \in V: \Set{ u, v } \not\in E: deg(u) + deg(v) \geq n \\
 \text{Then } G \text{ contains a Hamilton cycle} \\
 \\

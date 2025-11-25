@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"05/11/25, 13:11","modified":"2025-11-23T09:35:12.741+02:00","tags":["Academia","Lecture","Probability"],"cssclasses":""}
+{"publish":true,"created":"05/11/25, 13:11","modified":"2025-11-23T09:42:00.158+02:00","tags":["Academia","Lecture","Probability"],"cssclasses":""}
 ---
 
 ## Variable #definition 
@@ -103,7 +103,7 @@ $IQR$-based "fences" are robust - they depend on medians, not on extreme values
 \usepackage{tikz}
 
 \begin{document}
-\begin{tikzpicture}[scale=1]
+\begin{tikzpicture}[scale=0.8]
 
 % --- 1. Define Coordinates and Scaling ---
 % x-start, y-start, x-end, y-end
@@ -169,7 +169,7 @@ Common choices for bin width (and consequently the number of bins)
 ```tikz
 \usepackage{tikz}
 \begin{document}
-\begin{tikzpicture}[scale=1.2,
+\begin{tikzpicture}[scale=1,
     whisker/.style={thick},
     box/.style={fill=blue!30, draw=blue!70!black, very thick}
 ]
@@ -227,7 +227,7 @@ Common choices for bin width (and consequently the number of bins)
 ```tikz
 \usepackage{tikz}
 \begin{document}
-\begin{tikzpicture}[scale=1,
+\begin{tikzpicture}[scale=0.8,
     whisker/.style={thick},
     boxA/.style={fill=blue!30, draw=blue!70!black, very thick},
     boxB/.style={fill=green!30, draw=green!70!black, very thick}
@@ -314,7 +314,7 @@ $$
 ```tikz
 \usepackage{tikz}
 \begin{document}
-\begin{tikzpicture}[scale=1.6, % Increased scaling for better readability
+\begin{tikzpicture}[scale=1.4, % Increased scaling for better readability
     point/.style={fill=blue!70!black, circle, inner sep=1.5pt} % Restoring original point size
 ]
 
@@ -404,7 +404,7 @@ An example of a positive relationship on a scatterplot:
 ```tikz
 \usepackage{tikz}
 \begin{document}
-\begin{tikzpicture}[scale=1]
+\begin{tikzpicture}[scale=0.9]
 
 % --- 1. Define Point Style ---
 \tikzset{

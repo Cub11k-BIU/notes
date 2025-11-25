@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"04/11/25, 16:11","modified":"2025-11-21T21:10:14.121+02:00","tags":["Academia","Lecture","Discrete-structures"],"cssclasses":""}
+{"publish":true,"created":"04/11/25, 16:11","modified":"2025-11-25T12:21:34.692+02:00","tags":["Academia","Lecture","Discrete-structures"],"cssclasses":""}
 ---
 
 ## Proof that $\aleph_{0} < \aleph$
@@ -179,7 +179,7 @@ v_{i} \in R \implies v_{i+1} \in L \\
 \text{Let } L = \Set{ u \in V | \text{shortest path from } u \text{ to } v \text{ has even length} } \\
 R = \Set{ u \in V | \text{shortest path from } u \text{ to } v \text{ has odd length} } \\
 L \sqcup R = V \\
-\text{Let by contradiction } \Set{ u, v } \in E: u, v \in L & WLOG \\
+\text{Let by contradiction } e = \Set{ u, v } \in E: u, v \in L & WLOG \\
 \text{Let } P_{x}, P_{y} \text{ be the shortest path from } v \text{ to } x, y \\
 P_{x}, P_{y} \text{ have even length} \\
 \implies P_{x} + e + P_{y} = (v, \dots, v) \text{ has odd length} - \text{Contradiction!} \\
@@ -198,8 +198,8 @@ C \text{ is not a simple cycle} \implies \exists v \in C \text{ that is visited 
 C = (x_{0}x_{1}\dots x_{i}=v,x_{i+1}\dots x_{k}=v,x_{k+1}\dots x_{q}=x_{0}) \\
 \text{Let } C_{1} = (x_{0}x_{1}\dots x_{i}x_{k+1}x_{k+2}\dots x_{q}=x_{0}) \\
 \text{Let } C_{2} = (x_{i}x_{i+1}\dots x_{k}) \\
-C_{1}, C_{2} \text{ are cyclic walks of length } (i+(q-k)) \text{ and (k-i)} \\
-(i+(q-k)) \text{ and (k-i)} \text{ is odd} \\
+C_{1}, C_{2} \text{ are cyclic walks of length } (i+(q-k)) \text{ and } (k-i) \\
+(i+(q-k)) + (k-i) \text{ is odd} \\
 \implies \text{Exactly one of } C_{1}, C_{2} \text{ is a cyclic walk of odd length} - \text{Contradiction!} \\
 }
 $$

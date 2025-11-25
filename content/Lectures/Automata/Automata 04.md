@@ -1,8 +1,8 @@
 ---
-{"publish":true,"created":"09/11/25, 12:11","modified":"2025-11-21T21:10:13.947+02:00","tags":["Academia","Lecture","Automata"],"cssclasses":""}
+{"publish":true,"created":"09/11/25, 12:11","modified":"2025-11-23T11:43:22.302+02:00","tags":["Academia","Lecture","Automata"],"cssclasses":""}
 ---
 
-# Non-deterministic finite automata #definition 
+# Non-deterministic finite automata (NFA) #definition 
 Non-deterministic automata is different from a deterministic one in that it can contain multiple transitions of the same letter from one state to other(s)
 
 The second difference is that states can have no transitions with some letters. The absence of such a transfer means that the automata can be "stopped" by sending input that arrives to such a state and tries to continue to a non-existing transfer
