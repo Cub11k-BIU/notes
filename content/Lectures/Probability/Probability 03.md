@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"12/11/25, 12:11","modified":"2025-11-21T21:10:14.603+02:00","tags":["Academia","Lecture","Probability"],"cssclasses":""}
+{"publish":true,"created":"12/11/25, 12:11","modified":"2025-11-26T13:18:14.439+02:00","tags":["Academia","Lecture","Probability"],"cssclasses":""}
 ---
 
 ## Matching problem
@@ -117,8 +117,8 @@ $$
 ## Event independence #definition 
 $$
 \displaylines{
-\text{Events } E_{1}, E_{2}, \dots, E_{n} \text{ are called independant} \\
-\text{iff } P\left( \bigcap_{i=1}^{n} E_{i} \right) = \prod_{i=1}^{n} P(E_{i}) \\
+\text{Events } E_{1}, E_{2} \text{ are called independant} \\
+\text{iff } P(E \cap F) = P(E)P(F) \\
 }
 $$
 ### Hat-check problem
