@@ -1,0 +1,428 @@
+---
+{"publish":true,"created":"30/11/25, 13:38","modified":"2025-12-01T19:51:21.954+02:00","tags":["Academia","Lecture","Automata"],"cssclasses":""}
+---
+
+## Context-free grammars (CFG)
+#### Example
+$$
+\displaylines{
+\text{Let } T \text{ be the language of all possible times (12-hour, not 24) on a digital clock} \\
+\begin{align}
+T & \to H : M \\
+M & \to LD \\
+D & \to 0|1|2|3|4|5|6|7|8|9 \\
+L & \to 0|1|2|3|4|5 \\
+H & \to D|10|11|12 \\
+\end{align} \\
+}
+$$
+#### Example
+$$
+\displaylines{
+\text{Let us represent all possible balanced parentheses strings} \\
+\begin{align}
+P & \to ( \ ) \\
+P & \to P P \\
+P & \to (P) \\
+\end{align} \\
+}
+$$
+#### Example
+$$
+\displaylines{
+L = \Set{ a^{n}b^{n} | n \in \mathbb{N} } \\
+\begin{align}
+P & \to \varepsilon \\
+P & \to aPb \\
+\end{align} \\
+}
+$$
+#### Example
+$$
+\displaylines{
+L = \Set{ a^{n}b^{m} | n, m \in \mathbb{N} } \\
+\begin{align}
+S & \to XY \\
+X & \to \varepsilon \\
+X & \to aX \\
+Y & \to \varepsilon \\
+Y & \to bY \\
+\end{align} \\
+}
+$$
+### Context-free grammar #definition 
+$$
+\displaylines{
+\text{A context-free grammar } G = (V, \Sigma, R, S) \\
+V - \text{ a set of non-terminal symbols, or variables} \\
+\Sigma - \text{an alphabet of terminal characters} \\
+\text{It is important, that } V \cap \Sigma = \emptyset \\
+R - \text{a collection of production rules } A \to z \text{ where } A \in V, z \in (V \cup Z)^{*} \\
+S - \text{a start/sentence symbol, the root} \\
+}
+$$
+#### CFG rule application
+$$
+\displaylines{
+\text{Let } G \text{ be a CFG} \\
+\text{Let } (A \to z) \in R \\
+\forall u, v \in (V \cup \Sigma)^{*}: u A v \underset{ G }{ \implies } uzv \\
+\forall u, v \in (V \cup \Sigma)^{*}: \lrs{\cfg{G}{u}{v}} \iff \text{It is possible to arrive from } u \text{ to } v \\
+\text{with 0 or more rule applications} \\
+}
+$$
+#### CFG language #definition 
+$$
+\displaylines{
+L(G) = \Set{ w \in \Sigma^{*} | \cfg{G}{S}{w} } \\
+\text{A language is called context-free if it can be produced by a CFG} \\
+}
+$$
+#### Example
+$$
+\displaylines{
+\Sigma = \Set{ a, b } \\
+L = \Set{ a^{x}b^{y}a^{z}b^{x+y+z} | x, y, z \in \mathbb{N} } \\
+\\
+L = \Set{ a^{x}b^{y}a^{z}b^{z}b^{y}b^{x} | x, y, z \in \mathbb{N} } \\
+\begin{align}
+S & \to aSb \mid A \\
+A & \to bAb \mid B \\
+B & \to aBb \mid \varepsilon \\
+\end{align} \\
+}
+$$
+#### Example
+$$
+\displaylines{
+\Sigma = \Set{ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 } \\
+L = \Set{ \text{legal positive number representations with comma separators} } \\
+\\
+\begin{align}
+S & \to D_{1} \mid D_{1}D \mid D_{1}DD \mid S,DDD \\
+D_{1} & \to 1 \mid 2 \mid 3 \mid 4 \mid 5 \mid 6 \mid 7 \mid 8 \mid 9 \\
+D & \to 0 \mid D_{1} \\
+\end{align} \\
+}
+$$
+#### Example
+$$
+\displaylines{
+\Sigma = \Set{ a, b } \\
+L = \Set{ a^{n}b^{m} | n \neq m \in \mathbb{N} } \\
+\\
+L = \Set{ a^{n}b^{n+k} | k > 0, n \in \mathbb{N} } \cup \Set{ a^{m+k}b^{m} | k > 0, n \in \mathbb{N} } \\
+\begin{align}
+S & \to aSb \mid aA \mid bB \\
+A & \to aA \mid \varepsilon \\
+B & \to bB \mid \varepsilon \\
+\end{align} \\
+}
+$$
+#### Example
+$$
+\displaylines{
+\Sigma = \Set{ a, b } \\
+L = \Set{ w | w \neq w^{r} } = \Sigma^{*} \setminus \Set{ w | w = w^{r} } \\
+\\
+\begin{align}
+S & \to aSa \mid bSb \mid aAb \mid bAa \\
+A & \to aA \mid bA \mid \varepsilon \\
+\end{align} \\
+}
+$$
+#### Example
+$$
+\displaylines{
+\Sigma = \Set{ a, b } \\
+L = \Set{ w | abba \in w } \\
+\\
+\begin{align}
+S & \to AabbaA \\
+A & \to aA \mid bA \mid \varepsilon \\
+\end{align} \\
+}
+$$
+#### Example
+$$
+\displaylines{
+\Sigma = \Set{ a, b } \\
+L = \Set{ w | \#a_{w} = 2 } \\
+\\
+\begin{align}
+S & \to BaBaB \\
+B & \to bB \mid \varepsilon \\ 
+\end{align} \\
+}
+$$
+#### Example
+$$
+\displaylines{
+\Sigma = \Set{ a, b } \\
+L = \Set{ w | \#a_{w} \leq 2 } \\
+\\
+\begin{align}
+S & \to B \mid BaB \mid BaBaB \\
+B & \to bB \mid \varepsilon \\ 
+\end{align} \\
+}
+$$
+#### Example
+$$
+\displaylines{
+\Sigma = \Set{ a, b } \\
+L = \Set{ w | \#a_{w} > \#b_{w} } \\
+\\
+\begin{align}
+S & \to SS \mid aSb \mid bSa \mid aB \mid Ba \\
+B & \to aBb \mid bBa \mid BB \mid \varepsilon \\
+\end{align} \\
+\text{Maybe?} \\
+}
+$$
+#### Pumping lemma for context-free languages #lemma 
+$$
+\displaylines{
+\text{Let } L \text{ be a context-free language} \\
+\text{Then } \exists N \in \mathbb{N}: \forall w \in L, \abs{w} \geq N: \exists t, u, x, y, z \in \Sigma^{*}: \begin{eqsys}
+\abs{uy} > 0 \\
+\abs{uxy} \leq N \\
+\forall i \in \mathbb{N}: tu^{i}xy^{i}z \in L \\
+\end{eqsys} \\
+\\
+\text{Proof:} \\
+\text{Let } G \text{ be a CFG} \\
+\text{Let } b = \max_{B \in V}\{\abs{u} \mid B \to u \in R \} \\
+\text{In a derivation tree of height } h \text{ there are at most } b^{h} \text{ leaves} \\
+\text{Let } N = b^{\abs{V}+1} \\
+\text{Let } w \in L: \abs{w} \geq N \implies h_{w} \geq \abs{V} + 1 > \abs{V} \\
+\text{Let } P \text{ be a path from the root to a leaf} \\
+\abs{P} > \abs{V} \implies \exists i \neq j \in [1, \abs{P}+1]: P_{i} = P_{j} = A \\
+\text{Let } t, u, x, y, z \text{ be substrings of } w \text{ generated by derivation trees from } P_{i} \text{ and } P_{j} \\
+}
+$$
+```tikz
+\usepackage{tikz}
+\usetikzlibrary{calc, backgrounds, decorations.pathmorphing, arrows.meta}
+
+\begin{document}
+
+\definecolor{bgGrayTop}{HTML}{505050}
+\definecolor{bgGrayBottom}{HTML}{D0D0D0}
+\definecolor{treeOrange}{HTML}{D95F02}
+\definecolor{treeTan}{HTML}{C2A879}
+\definecolor{treeTeal}{HTML}{1B9E77}
+\definecolor{treeTealFill}{HTML}{A8BDB5}
+\definecolor{treeBlack}{HTML}{000000}
+\definecolor{treeGray}{HTML}{B0B0B0}
+
+\begin{tikzpicture}[font=\sffamily, >=stealth, scale=0.8]
+
+    % --- Coordinates ---
+    % The Apex
+    \coordinate (Top) at (0, 8.5);
+    
+    % The Baseline points (segmenting the string t, u, x, y, z)
+    % x-coords: -4.5 (start), -2.8 (t|u), -1.0 (u|x), 1.0 (x|y), 2.8 (y|z), 4.5 (end)
+    \coordinate (BaseStart) at (-4.5, 0);
+    \coordinate (BaseTU)    at (-2.8, 0);
+    \coordinate (BaseUX)    at (-1.0, 0);
+    \coordinate (BaseXY)    at ( 1.0, 0);
+    \coordinate (BaseYZ)    at ( 2.8, 0);
+    \coordinate (BaseEnd)   at ( 4.5, 0);
+
+    % The Node positions on the spine
+    \coordinate (NodeA_Top) at (-0.3, 5.0); % Upper A
+    \coordinate (NodeA_Bot) at (-0.1, 2.2); % Lower A
+    \coordinate (SpineEnd)  at (0, 0);       % Where the spine hits the string x
+
+    % --- Draw Triangles (Back to Front) ---
+
+    % 1. Large Orange Triangle (The whole tree)
+    % Covers t...z
+    \fill[treeTan] (BaseStart) -- (Top) -- (BaseEnd) -- cycle;
+    \draw[treeOrange, line width=1.5pt] (BaseStart) -- (Top) -- (BaseEnd) -- cycle;
+
+    % 2. Middle Teal Triangle (Subtree rooted at upper A)
+    % Covers u, x, y
+    \fill[treeTealFill] (BaseTU) -- (NodeA_Top) -- (BaseYZ) -- cycle;
+    \draw[treeTeal, line width=1.5pt] (BaseTU) -- (NodeA_Top) -- (BaseYZ) -- cycle;
+
+    % 3. Inner Black Triangle (Subtree rooted at lower A)
+    % Covers x
+    \fill[treeGray] (BaseUX) -- (NodeA_Bot) -- (BaseXY) -- cycle;
+    \draw[treeBlack, line width=1.5pt] (BaseUX) -- (NodeA_Bot) -- (BaseXY) -- cycle;
+
+
+    % --- The Wavy Spine ---
+    \draw[treeOrange, line width=1.5pt] plot [smooth, tension=0.7] coordinates {
+        (Top)
+        ($(Top)!0.3!(NodeA_Top) + (0.1, 0)$)
+        (NodeA_Top)
+        ($(NodeA_Top)!0.5!(NodeA_Bot) + (-0.15, 0)$)
+        (NodeA_Bot)
+        ($(NodeA_Bot)!0.5!(SpineEnd) + (0.05, 0)$)
+        (SpineEnd)
+    };
+
+    % --- Nodes (Dots) ---
+    \fill[black] (NodeA_Top) circle (3pt) node[left=3pt, scale=1.2] {A};
+    \fill[black] (NodeA_Bot) circle (3pt) node[left=3pt, scale=1.2] {A};
+
+    % --- String Labels (t, u, x, y, z) ---
+    % Curved underlines for style matching
+    \begin{scope}[line width=1.5pt, line cap=round]
+        % t (cyan)
+        \node[text=cyan!80!black, scale=1.4, below=5pt] at ($(BaseStart)!0.5!(BaseTU)$) {t};
+        \draw[cyan!80!black, out=-20, in=200] (BaseStart) to (BaseTU);
+        
+        % u (cyan)
+        \node[text=cyan!80!black, scale=1.4, below=5pt] at ($(BaseTU)!0.5!(BaseUX)$) {u};
+        \draw[cyan!80!black, out=-20, in=200] (BaseTU) to (BaseUX);
+        
+        % x (teal/black)
+        \node[text=cyan!80!black, scale=1.4, below=5pt] at ($(BaseUX)!0.5!(BaseXY)$) {x};
+        \draw[cyan!80!black, out=-20, in=200] (BaseUX) to (BaseXY);
+        
+        % y (cyan)
+        \node[text=cyan!80!black, scale=1.4, below=5pt] at ($(BaseXY)!0.5!(BaseYZ)$) {y};
+        \draw[cyan!80!black, out=-20, in=200] (BaseXY) to (BaseYZ);
+        
+        % z (cyan)
+        \node[text=cyan!80!black, scale=1.4, below=5pt] at ($(BaseYZ)!0.5!(BaseEnd)$) {z};
+        \draw[cyan!80!black, out=-20, in=200] (BaseYZ) to (BaseEnd);
+    \end{scope}
+
+    % --- Annotations on the Right ---
+    \coordinate (RightGuide) at (5.2, 0);
+    
+\end{tikzpicture}
+\end{document}
+```
+$$
+\displaylines{
+\abs{uxy} \leq b^{\abs{V}+1} = N \\
+\text{Let us choose the smallest of all derivation trees of } w \\
+\text{Let } \abs{uy} = 0 \implies w = txz \implies w \text{ can be produced by a smaller tree with } P_{i} \leftarrow P_{j} \\
+\text{Contradiction!} \implies \abs{uy} > 0 \\
+\text{Clearly, repeating the "teal" subtree gives us all possible words } \forall i \in \mathbb{N}: tu^{i}xy^{i}z \\
+}
+$$
+#### Example
+$$
+\displaylines{
+\Sigma = \Set{ a, b, c } \\
+L = \Set{ a^{k}b^{k}c^{k} | k \in \mathbb{N} } \\
+\\
+\text{Let } L \text{ be context free} \\
+\text{Let } N \in \mathbb{N} \\
+\text{Let } w = a^{N}b^{N}c^{N} \in L \\
+\text{Let } t, u, x, y, z \in \Sigma^{*}: w = tuxyz \\
+\abs{uxy} \leq N \implies \text{One of three letters is definitely not in } uxy \\
+\implies tu^{2}xy^{2}z \in L - \text{Contradiction, as we did not increase the count of one letter} \\
+\implies L \text{ is not context-free} \\
+}
+$$
+#### Example
+$$
+\displaylines{
+\Sigma = \Set{ a, b, c } \\
+L = \Set{ a^{i}b^{j}c^{k} | i > j > k } \\
+\\
+\text{Let } L \text{ be context free} \\
+\text{Let } N \in \mathbb{N} \\
+\text{Let } w = a^{N+2}b^{N+1}c^{N} \in L \\
+\text{Let } t, u, x, y, z \in \Sigma^{*}: w = tuxyz \\
+\abs{uy} > 0, \abs{uxy} \leq N \\
+\text{One of the following is possible: } \begin{cases}
+uy = a^{j} & j > 0 \\
+uy = b^{j} & j > 0 \\
+uy = c^{j} & j > 0 \\
+uy = a^{j}b^{k} & j+k > 0 \\
+uy = b^{j}c^{k} & j+k > 0 \\
+\end{cases} \\
+uy = a^{j} \implies txz = a^{N+2-j}b^{N+1}c^{N} \in L - \text{Contradiction! } N+2-j \leq N+1 \\
+uy = b^{j} \implies tu^{2}xy^{2}z = a^{N+2}b^{N+1+j}c^{N} \in L - \text{Contradiction! } N+1+j \geq N+2 \\
+uy = c^{j} \implies tu^{3}xy^{3}z = a^{N+2}b^{N+1}c^{N+2j} \in L - \text{Contradiction! } N+2j \geq N+2 \\
+uy = a^{j}b^{k} \implies \begin{cases}
+txz = a^{N+2-j}b^{N+1-k}c^{N} \in L & j > k \\
+tu^{2}xy^{2}z = a^{N+2+j}b^{N+1+k}c^{N} \in L & k > j \\
+\end{cases} - \text{Contradiction!} \\
+uy = b^{j}c^{k} \implies \begin{cases}
+txz = a^{N+2}b^{N+1-j}c^{N-k} \in L & j > k \\
+tu^{2}xy^{2}z = a^{N+2}b^{N+1+j}c^{N+k} \in L & k > j \\
+\end{cases} - \text{Contradiction!} \\
+\implies L \text{ is not context-free} \\
+}
+$$
+#### Example
+$$
+\displaylines{
+\Sigma = \Set{ a, b, c } \\
+L = \Set{ hh | h \in \Sigma^{*} } \\
+\\
+\text{Let } L \text{ be context-free} \\
+\text{Let } N \in \mathbb{N} \\
+\text{Let } w = a^{N}b^{N}ca^{N}b^{N}c \in L \\
+\text{Let } t, u, x, y, z \in \Sigma^{*}: w = tuxyz \\
+\abs{uy} > 0, \abs{uxy} \leq N \\
+c \in uy \implies txz = a^{N}b^{N-j}a^{N-k}b^{N}c \in L - \text{Contradiction!} \\
+uy \text{ is before the first } c \implies tu^{2}xy^{2}z = a^{N+j}b^{N+k}ca^{N}b^{N}c \in L - \text{Contradiction!} \\
+uy \text{ is after the first } c \implies tu^{2}xy^{2}z = a^{N}b^{N}ca^{N+j}b^{N+k}c \in L - \text{Contradiction!} \\
+u \text{ is before the first } c \text{ and } y \text{ is after the first } c \implies u = b^{j}, y = a^{k} \\
+\implies tu^{2}xy^{2}z = a^{N}b^{N+j}ca^{N+k}b^{N}c \in L - \text{Contradiction!} \\
+\implies L \text{ is not context-free} \\
+}
+$$
+#### Closure of CFGs
+##### Closure under union
+$$
+\displaylines{
+\text{Let } G_{1}, G_{2}: L(G_{1}) = L_{1}, L(G_{2}) = L_{2} \\
+\text{Let } G_{U} = (V_{U}, \Sigma_{U}, S_{U}, R_{U}) \\
+\text{Let } V_{1} \cap V_{2} = \emptyset \text{ and } S_{U} \not\in V_{1} \cup V_{2} & WLOG \\
+V_{U} = V_{1} \cup V_{2} \cup \Set{ S_{U} } \\
+\Sigma_{U} = \Sigma_{1} \cup \Sigma_{2} \\
+R_{U} = R_{1} \cup R_{2} \cup \Set{ S_{U} \to S_{1} \mid S_{2} } \\
+\implies L(G_{U}) = L_{1} \cup L_{2} \\
+}
+$$
+##### Closure under concatenation
+$$
+\displaylines{
+\text{Let } G_{1}, G_{2}: L(G_{1}) = L_{1}, L(G_{2}) = L_{2} \\
+\text{Let } G_{C} = (V_{C}, \Sigma_{C}, S_{C}, R_{C}) \\
+\text{Let } V_{1} \cap V_{2} = \emptyset \text{ and } S_{C} \not\in V_{1} \cup V_{2} & WLOG \\
+V_{C} = V_{1} \cup V_{2} \cup \Set{ S_{C} } \\
+\Sigma_{C} = \Sigma_{1} \cup \Sigma_{2} \\
+R_{C} = R_{1} \cup R_{2} \cup \Set{ S_{C} \to S_{1}S_{2} } \\
+\implies L(G_{C}) = L_{1}L_{2} \\
+}
+$$
+##### Closure under Kleene closure
+$$
+\displaylines{
+\text{Let } G: L(G) = L \\
+\text{Let } G_{*} = (V_{*}, \Sigma_{*}, S_{*}, R_{*}) \\
+\text{Let } S_{*} \not\in V & WLOG \\
+V_{*} = V \cup \Set{ S_{*} } \\
+\Sigma_{*} = \Sigma \\
+R_{*} = R \cup \Set{ S_{*} \to SS_{*} \mid \varepsilon } \\
+\implies L(G_{*}) = L^{*} \\
+}
+$$
+##### Closure under intersection
+$$
+\displaylines{
+L_{1} = \Set{ a^{n}b^{n} \mid n \in \mathbb{N} } \circ \Set{ c }^{*} \\
+L_{2} = \Set{ a }^{*} \circ \Set{ b^{n}c^{n} | n  \in \mathbb{N} } \\
+L_{1} \cap L_{2} = \Set{ a^{n}b^{n}c^{n} | n \in \mathbb{N} } \text{ is not context-free} \\
+}
+$$
+##### Closure under complement
+$$
+\displaylines{
+\overline{(\overline{L_{1}} \cup \overline{L_{2}})} = L_{1} \cap L_{2} \\
+\implies \overline{L} \text{ is not context-free} \\
+}
+$$
