@@ -104,7 +104,7 @@ const config: QuartzConfig = {
               lrp: ["\\left( #1 \\right)", 1],
               lrs: ["\\left[ #1 \\right]", 1],
               lrc: ["\\left\\{ #1 \\right\\}", 1],
-              cfg: ["#2 \\\\overset{ * }{ \\\\underset{ #1 }{ \\\\implies } } #3", 3],
+              cfg: ["#2 \\overset{ * }{ \\underset{ #1 }{ \\implies } } #3", 3],
             },
             environments: {
               aeqsys: ["\\left\\{\\begin{align}", "\\end{align}\\right."],
