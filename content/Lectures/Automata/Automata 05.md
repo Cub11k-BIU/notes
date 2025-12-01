@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"23/11/25, 10:21","modified":"2025-11-23T13:07:16.947+02:00","tags":["Academia","Lecture","Automata"],"cssclasses":""}
+{"publish":true,"created":"23/11/25, 10:21","modified":"2025-11-30T13:36:54.109+02:00","tags":["Academia","Lecture","Automata"],"cssclasses":""}
 ---
 
 # Regular languages
@@ -222,4 +222,172 @@ r \text{ is a regular expression } \iff L(r) \text{ is a regular language} \\
 \text{Repeating this process for all nodes except } s, f \text{ results in a GNFA we need} \\
 }
 $$
-### NOT FINISHED!!!!
+---
+## Pumping lemma #lemma 
+$$
+\displaylines{
+\text{Let } L \text{ be a regular language} \\
+\text{Then, } \exists N \in \mathbb{N}: \forall w \in L: \abs{w} \geq N \implies \exists x, y, z \in \Sigma^{*} : \begin{eqsys}
+w = xyz \\
+\abs{y} > 0 \\
+\abs{xy} \leq N \\
+\forall i \in \mathbb{N}: xy^{i}z \in L \\
+\end{eqsys} \\
+\text{Meaning that strating from some length, we can always choose a substring of } w \\
+\text{and "pump" it zero or more times into the word, indefinitely} \\
+\\
+\text{For finite languages the lemma holds vacuously, given } N = \max_{w \in L}\{\abs{w}\} + 1 \\
+\\
+\text{Proof:} \\
+\text{Let } L \text{ be regular} \\
+\implies \exists A \text{ a determinstic finite automata, } L(A) = L \\
+\text{Let } N = \abs{Q_{A}} \\
+\text{Let } w = \sigma_{1}\sigma_{2}\dots\sigma_{k} \in L, k \geq N \\
+\text{Let } s_{0} \to s_{1} \to \dots \to s_{N} \to \dots \to s_{k-1} \to s_{k} \\
+\text{Represent the sequence of states to be visited when reading word } w \\
+\text{There are } N \text{ states} \implies \exists j \neq l \in [0, N] : s_{j} = s_{l} \\
+\text{Let } \begin{eqsys}{}
+x = \sigma_{0}\dots\sigma_{j-1} \\
+y = \sigma_{j}\dots\sigma_{l} \\
+z = \sigma_{l+1}\dots\sigma_{k} \\
+\end{eqsys} \\
+w = xyz, \abs{y} > 0 \\
+\forall i \in \mathbb{N}: xy^{i}z \in L \\
+}
+$$
+#### Example
+$$
+\displaylines{
+\Sigma = \Set{ a, b } \\
+L = \Set{ w | \#a_{w} = \#b_{w} } \\
+\\
+\text{Let } L \text{ be regular} \\
+\text{Let } N \in \mathbb{N} \\
+\text{Let } w = a^{N}b^{N} \\
+w \in L \\
+\abs{w} = 2N \implies \text{By Pumping lemma } \exists x, y, z \in \Sigma^{*}: w = xyz \\
+\abs{xy} \leq N \implies xy = a^{k}, k \leq N \\
+\implies x = a^{i}, y = a^{j}, z = a^{N-i-j}b^{N} \\
+\implies xz = a^{N-j}b^{N} \in L, j > 0 - \text{Contradiction!} \\
+\implies L \text{ is not regular} \\
+}
+$$
+#### Example
+$$
+\displaylines{
+\Sigma = \Set{ a, b } \\
+L = \Set{ uu | u \in \Sigma^{*} } \\
+\\
+\text{Let } L \text{ be regular} \\
+\text{Let } N \in \mathbb{N} \\
+\text{Let } w = a^{N}ba^{N}b, \abs{w} > N \\
+\text{By Pumping lemma } \exists x, y, z \in \Sigma^{*}: w = xyz \\
+\abs{xy} \leq N \implies xy = a^{k}, k \leq N \\
+\implies x = a^{i}, y = a^{j}, z = a^{N-i-j}ba^{N}b \\
+\implies xz = a^{N-j}ba^{N}b \in L, j > 0 - \text{Contradiction!} \\
+\implies L \text{ is not regular} \\
+}
+$$
+#### Example
+$$
+\displaylines{
+\Sigma = \Set{ a, b } \\
+L = \Set{ w | w \text{ is a palindrome} } \\
+\\
+\text{Let } L \text{ be regular} \\
+\text{Let } N \in \mathbb{N} \\
+\text{Let } w = a^{N}ba^{N} \in L, \abs{w} > N \\
+\exists x, y, z \in \Sigma^{*}: w = xyz \\
+\abs{xy} \leq N \implies xy = a^{k}, k \leq N \\
+\implies x = a^{i}, y = a^{j}, z = a^{N-i-j}ba^{N} \\
+\implies xz = a^{N-j}ba^{N} \in L, j > 0 - \text{Contradiction!} \\
+\implies L \text{ is not regular} \\
+}
+$$
+#### Example
+$$
+\displaylines{
+\Sigma = \Set{ a } \\
+L = \Set{ a^{p} | p \text{ is prime} } \\
+\\
+\text{Let } L \text{ be regular} \\
+\text{Let } N \in \mathbb{N} \\
+\text{Let } w = a^{p} \in L, p \geq N \\
+\exists x, y, z \in \Sigma^{*}: w = xyz \\
+x = a^{j}, y = a^{k}, z = a^{p-j-k}, k > 0 \\
+\text{Let } i = p + 1 \\
+xy^{i}z = a^{j+k(p+1)+p-j-k} = a^{p(k+1)} \in L - \text{Contradiction!} \\
+\implies L \text{ is not regular} \\
+}
+$$
+#### Example
+$$
+\displaylines{
+\Sigma = \Set{ a, b, c } \\
+L = \Set{ a^{i}b^{j}c^{k} | i, j, k \in \mathbb{N}: j = \max\{i, k\} } \\
+\\
+\text{Let } L \text{ be regular} \\
+\text{Let } N \in \mathbb{N} \\
+\text{Let } w = a^{N+1}b^{N+1}c \in L \\
+\abs{w} > N \implies \exists x, y, z \in \Sigma^{*}: w = xyz \\
+\abs{xy} \leq N \implies x = a^{j}, y = a^{k}, z = a^{N+1-j-k}b^{N+1}c \\
+\implies xz = a^{N+1-k}b^{N+1}c \in L, k > 0 \\
+\abs{y} > 0 \implies N > 0 \implies \begin{eqsys}
+N+1 > 1 \\
+N+1 > N+1-k \\
+\end{eqsys} - \text{Contradiction!} \\
+\implies L \text{ is not regular} \\
+}
+$$
+#### Example
+$$
+\displaylines{
+\Sigma = \Set{ a } \\
+L = \Set{ a^{2^{j}} | j \in \mathbb{N} } \\
+\dots \\
+}
+$$
+#### Example
+$$
+\displaylines{
+\Sigma = \Set{ a, \# } \\
+L = \Set{ w | w = x_{1}\#x_{2}\#\dots\#x_{k}, k \in \mathbb{N}, \forall i \leq k: x_{i} \in a^{*}, \forall i \neq j \in [1, k]: x_{i} \neq x_{j} } \\
+\dots \\
+}
+$$
+---
+## Using closure properties to determine regularity
+#### Example
+$$
+\displaylines{
+L = \Set{ w | \#a_{w} \neq \#b_{w} } \\
+\overline{L} = \Set{ w | \#a_{w} = \#b_{w} } \text{ is not regular} \\
+\implies L \text{ is not regular} \\
+}
+$$
+#### Example
+$$
+\displaylines{
+\text{Let } L \text{ be regular} \\
+perm(L) = \Set{ w | \exists y \in L : y \text{ is a permutation of } w } \\
+\text{Is } perm(L) \text{ regular?} \\
+\\
+\text{Solution:} \\
+\text{Let } \Sigma = \Set{ a, b } \\
+\text{Let } L = (ab)^{*} \\
+perm(L) = \Set{ w | \#a_{w} = \#b_{w} } \text{ is not regular} \\
+\implies \text{Regularity is not closed under permutation} \\
+}
+$$
+#### Example
+$$
+\displaylines{
+\Sigma = \Set{ a, b } \\
+L = \Set{ a^{i}b^{j} | i \neq j \in \mathbb{N} } \\
+\\
+\text{Let } L \text{ be regular} \\
+\text{By closure under subtraction:} \\
+a^{*}b^{*} \setminus L = \Set{ a^{n}b^{n} | n \in \mathbb{N} } \text{ is regular} - \text{Contradiction!} \\
+\implies L \text{ is not regular} \\
+}
+$$

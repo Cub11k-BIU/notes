@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"26/11/25, 12:57","modified":"2025-11-26T15:33:11.424+02:00","tags":["Academia","Lecture","Probability"],"cssclasses":""}
+{"publish":true,"created":"26/11/25, 12:57","modified":"2025-11-26T16:31:49.314+02:00","tags":["Academia","Lecture","Probability"],"cssclasses":""}
 ---
 
 ## Independence of many events
@@ -75,6 +75,7 @@ P(1) = p, P(0) = q = 1-p \\
 \end{aeqsys} \\
 }
 $$
+
 $$
 \displaylines{
 \text{Solution:} \\
@@ -111,6 +112,7 @@ P(E_{n}) = \frac{4}{36} \cdot \left( \frac{13}{18} \right)^{n-1} \\
 \implies P(5 \text{ appears before } 7) = \sum_{i=1}^{\infty} P(E_{i}) = \frac{1}{9} \sum_{i=1}^{\infty} \left( \frac{13}{18} \right)^{i-1} = \frac{1}{9} \cdot \frac{1}{1-\frac{13}{18}} = \frac{2}{5} \\
 }
 $$
+
 $$
 \displaylines{
 \text{Another solution:} \\
@@ -167,6 +169,7 @@ Q\left( \bigcup_{i \in \kappa} E_{i} \right) = \frac{P\left( \left( \bigcup_{i \
 (1), (2) \text{ and } (3) \implies Q \text{ is a probability function} \\
 }
 $$
+
 $$
 \displaylines{
 \text{Given this, we can use any and all theorems about probability functions for } Q \\

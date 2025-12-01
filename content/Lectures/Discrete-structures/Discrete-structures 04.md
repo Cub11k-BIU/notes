@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"18/11/25, 16:21","modified":"2025-11-25T12:12:59.335+02:00","tags":["Academia","Lecture","Discrete-structures"],"cssclasses":""}
+{"publish":true,"created":"18/11/25, 16:21","modified":"2025-11-30T15:03:38.375+02:00","tags":["Academia","Lecture","Discrete-structures"],"cssclasses":""}
 ---
 
 $$
@@ -173,8 +173,8 @@ We can greedily add edges to $M$ until there are no edges with both ends being $
 How can we find a maximum matching?
 #### Alternating path #definition 
 A path $p = (e_{0}, e_{1}, \dots, e_{k-1})$ is called $M\text{-alternating}$ iff it alternates between edges in $M$ and not in $M$
-#### Expanding path #definition 
-Alternating path $p = (v_{0}, v_{1}, \dots, v_{k})$ with vertices $v_{0} \neq v_{k}$ both $M\text{-unsaturated}$ is called expanding
+#### Expanding/Augmenting path #definition 
+Alternating path $p = (v_{0}, v_{1}, \dots, v_{k})$ with vertices $v_{0} \neq v_{k}$ both $M\text{-unsaturated}$ is called expanding/augmenting
 ## Berge's theorem #theorem 
 $$
 \displaylines{
