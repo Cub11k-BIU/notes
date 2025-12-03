@@ -115,9 +115,9 @@ export const Tikz: QuartzTransformerPlugin = (opts) => {
                                 prefix: hash, // Use the file hash as the prefix
                                 delim: "_",
                               },
-                              {
-                                name: "removeDimensions",
-                              },
+                            },
+                            {
+                              name: "removeDimensions",
                             },
                           ],
                         })
