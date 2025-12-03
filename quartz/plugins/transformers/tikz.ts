@@ -91,7 +91,7 @@ export const Tikz: QuartzTransformerPlugin = (opts) => {
                           throw new Error(`Kroki API failed: ${response.statusText}`)
                         }
 
-                        const rawSvg = await response.text()
+                        const rawSvg = (await response.text())
                         // // 3. Read Result
                         // const rawSvg = fs.readFileSync(svgFile, "utf-8")
                           .replace(/rgb\(0\%,0\%,0\%\)/g, "currentColor")
