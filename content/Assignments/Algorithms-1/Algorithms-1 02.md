@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"10/11/25, 08:11","modified":"2025-11-21T21:10:01.880+02:00","tags":["Academia","Assignment","Algorithms-1"],"cssclasses":""}
+{"publish":true,"created":"10/11/25, 08:11","modified":"2025-12-03T16:48:07.995+02:00","tags":["Academia","Assignment","Algorithms-1"],"cssclasses":""}
 ---
 
 # 1
@@ -136,5 +136,43 @@ $$
 \implies p^{t}(x) \text{ can then be calculated in } O(z\log ^{2} z) \\
 \text{All we need after multiplying is to return } r_{z} \\
 \implies \text{All in all, algorithm runs in } O(z\log ^{2}z) \\
+}
+$$
+# 5
+$$
+\displaylines{
+\text{Let } a_{0}, \dots, a_{n-1} \\
+\text{Let } b_{0}, \dots, b_{n-1} \\
+\text{Let } A_{ij} = \begin{cases}
+a_{j-i} & i \leq j \\
+0 & \text{otherwise} \\
+\end{cases}, B_{ij} = \begin{cases}
+b_{j-i} & i \leq j \\
+0 & \text{otherwise} \\
+\end{cases} \\
+\text{Show an algorithm for calculating } C = AB \text{ in } O(n\log n) \\
+\\
+\text{Solution:} \\
+A,B \text{ are upper triangular} \implies C \text{ is also upper triangular} \\
+\text{Let } A(x), B(x) \text{ be polynomials based on given coefficients} \\
+\text{Then, } C(x) = A(x)B(x) = \sum_{i=0}^{2n-2} c_{d}x^{d} \\
+\text{Note that } C_{ij} = (AB)_{ij} = \begin{cases}
+c_{d} & j-i = d \geq 0 \\
+0 & \text{otherwise} \\
+\end{cases} \\
+\text{Correctness:} \\
+C_{ij} = C_{i,i+d} = \sum_{k=1}^{n} A_{ik}B_{k,i+d} = \sum_{k=i}^{i+d} a_{k-i}b_{i+d-k} \\
+C_{i+1,j+1} = C_{i+1,i+d+1} = \sum_{k=1}^{n} A_{i+1,k}B_{k,i+d+1} = \\
+= \sum_{k=i+1}^{i+d+1} a_{k-i+1}b_{i+d+1-k} = \sum_{k'=i}^{i+d} a_{k-i}b_{i+d-k} = C_{ij} \\
+\implies \text{All diagonals of } C \text{ are scalar} \\
+\text{In addition, } \forall d \in [0, n-1]: C_{0,d} = \sum_{k=0}^{d} a_{k}b_{d-k} = c_{d} \\
+\\
+\text{Multiplying two polynomials of degree } n \text{ is } O(n\log n) \\
+}
+$$
+# 6
+$$
+\displaylines{
+
 }
 $$
