@@ -60,24 +60,40 @@ export const Tikz: QuartzTransformerPlugin = (opts) => {
                       if (fs.existsSync(svgFile)) {
                         svgContent = fs.readFileSync(svgFile, "utf-8")
                       } else {
-                        // 1. Write Temp Tex File
-                        const texFile = path.join(cacheDir, `${hash}.tex`)
-                        const pdfFile = path.join(cacheDir, `${hash}.pdf`)
-                        fs.writeFileSync(texFile, getTemplate(tikzCode))
+                        // // 1. Write Temp Tex File
+                        // const texFile = path.join(cacheDir, `${hash}.tex`)
+                        // const pdfFile = path.join(cacheDir, `${hash}.pdf`)
+                        // fs.writeFileSync(texFile, getTemplate(tikzCode))
 
-                        // 2. Run System Commands
-                        // pdflatex -> generates PDF
-                        await execAsync(`pdflatex -output-directory=${cacheDir} -interaction=nonstopmode ${texFile}`)
+                        // // 2. Run System Commands
+                        // // pdflatex -> generates PDF
+                        // await execAsync(`pdflatex -output-directory=${cacheDir} -interaction=nonstopmode ${texFile}`)
                         
-                        // pdftocairo -> converts PDF to SVG (Requires poppler-utils)
-                        await execAsync(`pdftocairo -svg ${pdfFile} ${svgFile}`)
+                        // // pdftocairo -> converts PDF to SVG (Requires poppler-utils)
+                        // await execAsync(`pdftocairo -svg ${pdfFile} ${svgFile}`)
 
-                        // Cleanup artifacts (optional)
-                        fs.unlinkSync(texFile)
-                        fs.unlinkSync(pdfFile)
+                        // // Cleanup artifacts (optional)
+                        // fs.unlinkSync(texFile)
+                        // fs.unlinkSync(pdfFile)
+                        const response = await fetch("https://kroki.io/tikz/svg", {
+                          method: "POST",
+                          headers: {
+                            "Content-Type": "application/json",
+                          },
+                          body: JSON.stringify({
+                            diagram_source: getTemplate(tikzCode),
+                            diagram_type: "tikz",
+                            output_format: "svg",
+                          }),
+                        })
 
-                        // 3. Read Result
-                        const rawSvg = fs.readFileSync(svgFile, "utf-8")
+                        if (!response.ok) {
+                          throw new Error(`Kroki API failed: ${response.statusText}`)
+                        }
+
+                        const rawSvg = await response.text()
+                        // // 3. Read Result
+                        // const rawSvg = fs.readFileSync(svgFile, "utf-8")
                           .replace(/rgb\(0\%,0\%,0\%\)/g, "currentColor")
                           .replace(/#000000/g, "currentColor")
                           // Sometimes it uses CSS blocks, strip explicit black stroke/fill
@@ -98,6 +114,9 @@ export const Tikz: QuartzTransformerPlugin = (opts) => {
                               params: {
                                 prefix: hash, // Use the file hash as the prefix
                                 delim: "_",
+                              },
+                              {
+                                name: "removeDimensions",
                               },
                             },
                           ],
