@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"10/11/25, 08:11","modified":"2025-12-03T16:48:07.995+02:00","tags":["Academia","Assignment","Algorithms-1"],"cssclasses":""}
+{"publish":true,"created":"10/11/25, 08:11","modified":"2025-12-03T17:02:49.922+02:00","tags":["Academia","Assignment","Algorithms-1"],"cssclasses":""}
 ---
 
 # 1
@@ -173,6 +173,25 @@ $$
 # 6
 $$
 \displaylines{
-
+\text{Let } T \text{ be a string of length } n \\
+\text{Let } P \text{ be a string of length } m \\
+\text{Find all indices of strings such that } \forall i \in [0, n-m]: \forall j \in [i+1,i+m]: P[j] \geq T[j] \\
+\\
+\text{Solution:} \\
+\begin{array}{c|c}
+T[i] & P[i] & P[i] \geq T[i] \\
+0 & 0 & \text{True} \\
+0 & 1 & \text{True} \\
+1 & 0 & \text{False} \\
+1 & 1 & \text{True} \\
+\end{array} \implies \begin{array}{c|c}
+T[i] & \overline{P}[i] & P[i] \geq T[i] \\
+0 & 1 & \text{True} \\
+0 & 0 & \text{True} \\
+1 & 1 & \text{False} \\
+1 & 0 & \text{True} \\
+\end{array} \\
+\text{So what we can do is solve } HD \text{ for } T, \overline{P} \text{ and take all indices where } HD \text{ is zero} \\
+\text{Solving this is just } T \cdot \overline{P^{r}} \text{ using } FFT, O(n\log n) \\
 }
 $$

@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"11/11/25, 13:11","modified":"2025-11-21T21:10:13.905+02:00","tags":["Academia","Lecture","Algorithms-1"],"cssclasses":""}
+{"publish":true,"created":"11/11/25, 13:11","modified":"2025-12-03T22:37:01.117+02:00","tags":["Academia","Lecture","Algorithms-1"],"cssclasses":""}
 ---
 
 ## Breadth First Search
@@ -168,7 +168,7 @@ $$
 3. & \quad \quad c[v] \leftarrow white \\
 4. & \quad t \leftarrow 0 \\
 5. & \quad \text{for } u \in V: \\
-6. & \quad \quad \text{if } c[v] == white: \\
+6. & \quad \quad \text{if } c[u] == white: \\
 7. & \quad \quad \quad DFS-Visit(u) \\
 \end{align} \\
 }
