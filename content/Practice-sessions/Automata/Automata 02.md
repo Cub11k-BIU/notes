@@ -1,8 +1,8 @@
 ---
-{"publish":true,"created":"02/11/25, 13:11","modified":"2025-11-23T09:36:40.557+02:00","tags":["Academia","Practice","Automata"],"cssclasses":""}
+{"publish":true,"created":"02/11/25, 13:11","modified":"2025-12-07T09:18:57.446+02:00","tags":["Academia","Practice","Automata"],"cssclasses":""}
 ---
 
-## Deterministic finite automata
+## Deterministic finite automaton
 $$
 \displaylines{
 A = (Q, \Sigma, \delta, q_{0}, F) \\
@@ -48,7 +48,7 @@ $$
 \delta^{*} : Q \times \Sigma^{*} \to Q \\ \\
 }
 $$
-## Automata language
+## Automaton language
 $$
 \displaylines{
 L(A) = \Set{ w | \delta^{*}(q_{0}, w) \in F } \\
@@ -117,13 +117,13 @@ $$
 \end{document}
 ```
 ---
-## Building abstract automata
+## Building abstract automaton
 $$
 \displaylines{
 \text{Let } L \text{ be a language} \\
 \text{Let } L_{a} = \Set{ aw | w \in L } \\
-\text{Given an automata } A \text{ with language } L(A) = L, \\
-\text{we can build an automata } B \text{ with language } L(B) = L_{a} \\
+\text{Given an automaton } A \text{ with language } L(A) = L, \\
+\text{we can build an automaton } B \text{ with language } L(B) = L_{a} \\
 }
 $$
 $$
@@ -247,7 +247,7 @@ p_{3} & \text{otherwise} \\
 \end{cases} \\
 \implies L(B) = \Sigma^{*}_{>2} \\
 \\
-\text{Next we just use an intersection of automatas:} \\
+\text{Next we just use an intersection of automata:} \\
 C = (Q_{A} \times Q_{B}, \Sigma, \delta_{C}, (q_{0_{A}}, q_{0_{B}}), F_{A} \times F_{B}) \\
 \delta_{C}((q, p), \sigma) = (\delta_{A}(q, \sigma), \delta_{B}(p, \sigma)) \\
 }

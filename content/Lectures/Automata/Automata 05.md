@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"23/11/25, 10:21","modified":"2025-11-30T13:36:54.109+02:00","tags":["Academia","Lecture","Automata"],"cssclasses":""}
+{"publish":true,"created":"23/11/25, 10:21","modified":"2025-12-07T09:23:55.965+02:00","tags":["Academia","Lecture","Automata"],"cssclasses":""}
 ---
 
 # Regular languages
@@ -32,7 +32,7 @@ $$
 \displaylines{
 \text{Let } A, B \text{ be deterministic finite automata with languages } L(A), L(B) \\
 \text{Then, language } L = L(A) \circ L(B) \\
-\text{Is produced by a non-deterministic finite automata } C: \\
+\text{Is produced by a non-deterministic finite automaton } C: \\
 Q_{C} = Q_{A} \cup Q_{B} \\
 \Sigma = \Sigma_{A} \cup \Sigma_{B} \\
 Q_{0_{C}} = \Set{ q_{0_{A}} } \\
@@ -48,9 +48,9 @@ $$
 ### Closure under Kleene closure #lemma 
 $$
 \displaylines{
-\text{Let } A \text{ be a deterministic finite automata} \\
+\text{Let } A \text{ be a deterministic finite automaton} \\
 \text{Then, language } L = L(A)^{*} \\
-\text{Is produced by a non-deterministic finite automata } C: \\
+\text{Is produced by a non-deterministic finite automaton } C: \\
 Q_{C} = Q_{A} \cup \Set{ p_{0} } \\
 \Sigma_{C} = \Sigma_{A} \\
 Q_{0_{C}} = \Set{ p_{0}, q_{0_{A}} } \\
@@ -64,9 +64,9 @@ From this follows that any finite language is regular(!)
 ### Closure under reverse #lemma 
 $$
 \displaylines{
-\text{Let } A \text{ be a deterministic finite automata} \\
+\text{Let } A \text{ be a deterministic finite automaton} \\
 \text{Then, language } L = L(A)^{r} \\
-\text{Is produced by a non-deterministic finite automata } C: \\
+\text{Is produced by a non-deterministic finite automaton } C: \\
 Q_{C} = Q_{A} \\
 \Sigma_{C} = \Sigma_{A} \\
 F_{C} = \Set{ q_{0_{A}} } \\
@@ -77,9 +77,9 @@ $$
 ### Closure under prefix #lemma 
 $$
 \displaylines{
-\text{Let } A \text{ be a deterministic finite automata} \\
+\text{Let } A \text{ be a deterministic finite automaton} \\
 \text{Then, language } L = prefix(L(A)) \\
-\text{Is produced by a deterministic finite automata } C: \\
+\text{Is produced by a deterministic finite automaton } C: \\
 C = (Q_{A}, \Sigma_{A}, \delta_{A}, q_{0_{A}}, F_{C}) \\
 F_{C} = \Set{ q | \exists u \in \Sigma^{*}: \delta_{A}^{*}(q, u) \in F_{A} } \\
 }
@@ -160,8 +160,8 @@ L = \Set{ w | aa \in w, bb \in w } \\
 (a|b)^{*}aa(a|b)^{*}bb(a|b)^{*} \mid (a|b)^{*}bb(a|b)^{*}aa(a|b)^{*} \\
 }
 $$
-## Generalized non-deterministic finite automata (GFA or GNFA)
-A generalized non-deterministic finite automata is different from NFA in the following way:
+## Generalized non-deterministic finite automaton (GFA or GNFA)
+A generalized non-deterministic finite automaton is different from NFA in the following way:
 $$
 \displaylines{
 \Delta: Q \times R_{\Sigma} \to \mathcal{P}(Q) \\
@@ -175,7 +175,7 @@ $$
 ### Equivalence of GNFA and DFA #theorem 
 $$
 \displaylines{
-\text{Let } A \text{ be a deterministic finite automata} \\
+\text{Let } A \text{ be a deterministic finite automaton} \\
 \text{Let } G \text{ be a GNFA:} \\
 Q_{G} = Q_{A} \cup \Set{ s, f } \\
 \Sigma_{G} = R_{\Sigma_{A}} \\
@@ -211,11 +211,11 @@ r \text{ is a regular expression } \iff L(r) \text{ is a regular language} \\
 \text{Proof:} \\
 \boxed{ \implies } \text{ was proved earlier} \\
 \boxed{ \impliedby } \text{ Let } L \text{ be a regular language} \\
-\implies \exists A \text{ deterministic fintie automata: } L(A) = L \\
+\implies \exists A \text{ deterministic fintie automaton: } L(A) = L \\
 \implies \exists G \text{ GNFA: } L(G) = L(A) \\
 \text{There exists a deterministic algorithm for transforming a } GNFA \\
 \text{into an equivalent GNFA, with just two states } s, f \text{ and one transition,} \\
-\text{that would be exactly the regular expression equivalent to automata } A \\
+\text{that would be exactly the regular expression equivalent to automaton } A \\
 \\
 \text{The algorithm takes each node and add all possible paths through it} \\
 \text{as direct transitions, then proceeds to delete the now redundant node} \\
@@ -240,7 +240,7 @@ w = xyz \\
 \\
 \text{Proof:} \\
 \text{Let } L \text{ be regular} \\
-\implies \exists A \text{ a determinstic finite automata, } L(A) = L \\
+\implies \exists A \text{ a determinstic finite automaton, } L(A) = L \\
 \text{Let } N = \abs{Q_{A}} \\
 \text{Let } w = \sigma_{1}\sigma_{2}\dots\sigma_{k} \in L, k \geq N \\
 \text{Let } s_{0} \to s_{1} \to \dots \to s_{N} \to \dots \to s_{k-1} \to s_{k} \\

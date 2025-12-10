@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"02/12/25, 16:03","modified":"2025-12-02T18:26:34.884+02:00","tags":["Academia","Lecture","Discrete-structures"],"cssclasses":""}
+{"publish":true,"created":"02/12/25, 16:03","modified":"2025-12-09T16:05:49.823+02:00","tags":["Academia","Lecture","Discrete-structures"],"cssclasses":""}
 ---
 
 ## Corollaries of Hall's theorem
@@ -63,7 +63,7 @@ $$
 \text{All other edges in } H_{L} \text{ are incident to } S, \text{ hence also to } \Gamma_{H_{L}}(S) \text{ so they are covered} \\
 \text{All edges not in } H_{L} \cup H_{R} \text{ are between } L_{A} \text{ and } R_{A} \text{ and so are covered by } R_{A} \\
 \implies A' \text{ is a vertex cover in } G \\
-\abs{A'} = \abs{A} - \abs{S} + \abs{\Gamma_{H_{L}(S)}} < \abs{A} - \text{Contradiction!} \\
+\abs{A'} = \abs{A} - \abs{S} + \abs{\Gamma_{H_{L}}(S)} < \abs{A} - \text{Contradiction!} \\
 \implies H_{L} \text{ fulfills Hall's condition with relation to } L_{A} \\
 \implies \exists \text{ matching } M_{L} \text{ in } H_{L} \text{ saturating all vertices in } L_{A} \\
 \text{Symmetrically there is a matching } M_{R} \text{ in } H_{R} \\
@@ -664,17 +664,5 @@ $$
 \text{Interval graph } G = (V, E) \text{ is a graph where each vertex} \\
 v_{i} \in V \text{ corresponds to an interval } [l_{i}, r_{i}] \subset \mathbb{R} \\
 E = \Set{ \Set{ v_{i}, v_{j} } \mid [l_{i}, r_{i}] \cap [l_{j}, r_{j}] \neq \emptyset } \\
-}
-$$
-#### Interval graphs are perfect #lemma 
-$$
-\displaylines{
-G \text{ is an interval graph} \\
-\text{Then } \chi(G) = \omega(G) \\
-\\
-\text{In general, a graph is perfect} \iff \forall A \subseteq V: \chi(G[A]) = \omega(G[A]) \\
-\\
-\text{Proof:} \\
-
 }
 $$

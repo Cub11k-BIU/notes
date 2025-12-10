@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"20/11/25, 11:33","modified":"2025-11-21T21:10:01.914+02:00","tags":["Academia","Assignment","Automata"],"cssclasses":""}
+{"publish":true,"created":"20/11/25, 11:33","modified":"2025-12-07T09:17:59.632+02:00","tags":["Academia","Assignment","Automata"],"cssclasses":""}
 ---
 
 ## 1a
@@ -73,7 +73,7 @@ $$
 ## 4
 $$
 \displaylines{
-\text{Let } A \text{ be the deterministic finite automata} \\
+\text{Let } A \text{ be the deterministic finite automaton} \\
 \text{Let } L(A) \text{ be finite} \\
 \text{Then } Q \setminus F \neq \emptyset \\
 \\

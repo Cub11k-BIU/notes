@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"30/11/25, 13:38","modified":"2025-12-01T19:51:21.954+02:00","tags":["Academia","Lecture","Automata"],"cssclasses":""}
+{"publish":true,"created":"30/11/25, 13:38","modified":"2025-12-07T10:26:02.457+02:00","tags":["Academia","Lecture","Automata"],"cssclasses":""}
 ---
 
 ## Context-free grammars (CFG)

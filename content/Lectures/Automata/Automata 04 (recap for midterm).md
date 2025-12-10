@@ -1,10 +1,10 @@
 ---
-{"publish":true,"created":"16/11/25, 09:11","modified":"2025-11-21T21:10:13.939+02:00","tags":["Academia","Lecture","Automata"],"cssclasses":""}
+{"publish":true,"created":"16/11/25, 09:11","modified":"2025-12-07T09:22:30.890+02:00","tags":["Academia","Lecture","Automata"],"cssclasses":""}
 ---
 
 $$
 \displaylines{
-\text{Build a deterministic automata } A \\
+\text{Build a deterministic automaton } A \\
 \text{Such that } L(A) = \Set{ wb\sigma | w \in \Sigma^{*}, \sigma \in \Sigma } \\
 \\
 \text{Solution:} \\
@@ -23,7 +23,7 @@ q_{2} & q = q_{3}, \sigma = a \\
 q_{3} & q = q_{3}, \sigma = b \\
 \end{cases} \\
 \\
-\text{A non-deterministic automata for the same language is:} \\
+\text{A non-deterministic automaton for the same language is:} \\
 Q = \Set{ q_{0}, q_{1}, q_{2} } \\
 F = \Set{ q_{2} } \\
 q_{0} = q_{0} \\
@@ -39,7 +39,7 @@ $$
 $$
 \displaylines{
 \text{Let } A, B \text{ be deterministic automata over } \Sigma = \Set{ a, b } \\
-\text{Build a non-deterministic automata } N \text{ such that} \\
+\text{Build a non-deterministic automaton } N \text{ such that} \\
 L(N) = \Set{ w | w \in L(A) \text{ and } \exists u \in L(B) : \abs{u} = \abs{w} } \\
 \\
 \text{Solution:} \\
@@ -52,8 +52,8 @@ $$
 ---
 $$
 \displaylines{
-\text{Given a deterministic automata } A \\
-\text{Build a non-deterministic automata } N \\
+\text{Given a deterministic automaton } A \\
+\text{Build a non-deterministic automaton } N \\
 \text{Such that } L(N) = \Set{ u\sigma \pi v | u \pi \sigma v \in L(A), u, v \in \Sigma^{*}, \pi, \sigma \in \Sigma } \\
 \\
 \text{Solution:} \\

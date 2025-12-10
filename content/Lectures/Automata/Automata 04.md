@@ -1,19 +1,19 @@
 ---
-{"publish":true,"created":"09/11/25, 12:11","modified":"2025-11-23T11:43:22.302+02:00","tags":["Academia","Lecture","Automata"],"cssclasses":""}
+{"publish":true,"created":"09/11/25, 12:11","modified":"2025-12-07T09:21:59.470+02:00","tags":["Academia","Lecture","Automata"],"cssclasses":""}
 ---
 
-# Non-deterministic finite automata (NFA) #definition 
-Non-deterministic automata is different from a deterministic one in that it can contain multiple transitions of the same letter from one state to other(s)
+# Non-deterministic finite automaton (NFA) #definition 
+Non-deterministic automaton is different from a deterministic one in that it can contain multiple transitions of the same letter from one state to other(s)
 
-The second difference is that states can have no transitions with some letters. The absence of such a transfer means that the automata can be "stopped" by sending input that arrives to such a state and tries to continue to a non-existing transfer
+The second difference is that states can have no transitions with some letters. The absence of such a transfer means that the automaton can be "stopped" by sending input that arrives to such a state and tries to continue to a non-existing transfer
 
-The language of such an automata is defined as follows:
-Word is part of automata language if and only if there exists a sequence of transitions such that automata finishes in the accepting state
+The language of such an automaton is defined as follows:
+Word is part of automaton language if and only if there exists a sequence of transitions such that automaton finishes in the accepting state
 $$
 \displaylines{
-\text{A non-deterministic automata is then defined formally as:} \\
+\text{A non-deterministic automaton is then defined formally as:} \\
 N = (Q, \Sigma, \Delta, q_{0}, F) \\
-\text{Where } Q, \Sigma, q_{0} \text{ and } F \text{ are defined identically to a deterministic automata} \\
+\text{Where } Q, \Sigma, q_{0} \text{ and } F \text{ are defined identically to a deterministic automaton} \\
 \text{And } \Delta: Q \times \Sigma \to \mathcal{P}(Q) \text{ defines a set of all possible destinations from } q \\
 \Delta^{*} \text{ is then too defined as a set of all possible destinations } \\
 \text{Language is then defined as follows:} \\
@@ -128,14 +128,14 @@ $$
 $$
 \displaylines{
 \text{Let } N = (Q, \Sigma, \Delta, Q_{0}, F) \\
-\text{Where } Q_{0} \text{ is a set of all possible states where a non-deterministic automata can start} \\
+\text{Where } Q_{0} \text{ is a set of all possible states where a non-deterministic automaton can start} \\
 }
 $$
-## Equivalence of deterministic and non-deterministic automata #theorem 
+## Equivalence of DFA and NFA #theorem 
 $$
 \displaylines{
-\text{Let } N \text{ be a non-deterministic automata} \\
-\text{Then } L(N) \text{ is a regular language, in other words, exists a deterministic automata } A \\
+\text{Let } N \text{ be a non-deterministic automaton} \\
+\text{Then } L(N) \text{ is a regular language, in other words, exists a deterministic automaton } A \\
 \text{such that } L(A) = L(N) \\
 \\
 \text{Proof:} \\
@@ -187,24 +187,24 @@ Q & q = Q, \sigma = a \\
 }
 $$
 ---
-## Non-deterministic automata with $\varepsilon$ transitions #definition 
-This is a variation of a non-deterministic automata that allows changing the state without reading any input, it is denoted as a $\varepsilon$ transition.
+## NFA with $\varepsilon$ transitions #definition 
+This is a variation of a non-deterministic automaton that allows changing the state without reading any input, it is denoted as a $\varepsilon$ transition.
 This allows us to build complex automata much more easily!
-For example a union of automata can be built as a "sum" of automata and a new start state, that has $\varepsilon$ transitions to all start states of each automata
+For example a union of automata can be built as a "sum" of automata and a new start state, that has $\varepsilon$ transitions to all start states of each automaton
 ## $\varepsilon$ Closure #definition
 $$
 \displaylines{
 \text{Let } CL(q) = \Set{ p \in Q | p \text{ can be reached from } q \text{ without reading any input} } \\
 }
 $$
-## Equivalence of non-deterministic and non-deterministic with $\varepsilon$ transitions automata #theorem 
+## Equivalence of NFA and NFA with $\varepsilon$ transitions #theorem 
 $$
 \displaylines{
 \text{Let } N_{\varepsilon} = (Q_{\varepsilon}, \Sigma_{\varepsilon}, \Delta_{\varepsilon}, Q_{0_{\varepsilon}}, F_{\varepsilon}) \\
 \text{Then } L(N_{\varepsilon}) \text{ is regular} \\
 \\
 \text{Proof:} \\
-\text{It is enough to prove that there exists a non-deterministic automata} \\
+\text{It is enough to prove that there exists a non-deterministic automaton} \\
 \text{without } \varepsilon \text{ transitions} \\
 \text{Let } N = (Q_{\varepsilon}, \Sigma_{\varepsilon}, \Delta, Q_{0}, F_{\varepsilon}) \\
 \Delta(q, \sigma) = \bigcup_{p \in \Delta_{\varepsilon}(q, \sigma)} CL(p) \\

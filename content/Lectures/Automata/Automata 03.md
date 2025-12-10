@@ -1,8 +1,8 @@
 ---
-{"publish":true,"created":"02/11/25, 10:11","modified":"2025-11-23T11:43:40.583+02:00","tags":["Academia","Lecture","Automata"],"cssclasses":""}
+{"publish":true,"created":"02/11/25, 10:11","modified":"2025-12-07T09:19:31.437+02:00","tags":["Academia","Lecture","Automata"],"cssclasses":""}
 ---
 
-# Deterministic finite automata (DFA) #definition 
+# Deterministic finite automaton (DFA) #definition 
 $$
 \displaylines{
 A = (Q, \Sigma, \delta, q_{0}, F) \\
@@ -13,7 +13,7 @@ q_{0} - \text{starting state} \\
 F - \text{a finite set of accepting states} \\
 }
 $$
-An example of a deterministic finite automata would be a vending machine, that releases a product when use pays 3 or more ILS, no change is given.
+An example of a deterministic finite automaton would be a vending machine, that releases a product when use pays 3 or more ILS, no change is given.
 ```tikz
 \usepackage{tikz}
 \usetikzlibrary{automata, positioning, arrows}
@@ -83,7 +83,7 @@ $$
 \delta^{*} : Q \times \Sigma^{*} \to Q \\ \\
 }
 $$
-## Automata language #definition 
+## Automaton language #definition 
 $$
 \displaylines{
 L(A) = \Set{ w | \delta^{*}(q_{0}, w) \in F } \\
