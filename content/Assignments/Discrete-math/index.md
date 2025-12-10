@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Discrete-math","created":"18/11/25, 12:10","modified":"2025-11-22T21:59:39.836+02:00","tags":["Academia","Assignment","Discrete-math"],"cssclasses":""}
+{"publish":true,"title":"Discrete-math","created":"18/11/25, 12:10","modified":"2025-12-10T22:13:42.579+02:00","tags":["Academia","Assignment","Discrete-math"],"cssclasses":""}
 ---
 
 - [[Assignments/Discrete-math/Discrete-math 01\|Discrete-math 01]]

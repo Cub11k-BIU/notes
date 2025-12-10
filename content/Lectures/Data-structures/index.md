@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Data-structures","created":"18/11/25, 17:48","modified":"2025-11-22T22:00:52.231+02:00","tags":["Academia","Lecture","Data-structures"],"cssclasses":""}
+{"publish":true,"title":"Data-structures","created":"18/11/25, 17:48","modified":"2025-12-10T22:13:00.983+02:00","tags":["Academia","Lecture","Data-structures"],"cssclasses":""}
 ---
 
 - [[Lectures/Data-structures/Data-structures 01\|Data-structures 01]]

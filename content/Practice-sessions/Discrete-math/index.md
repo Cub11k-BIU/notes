@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Discrete-math","created":"18/11/25, 17:50","modified":"2025-11-22T22:02:16.370+02:00","tags":["Academia","Practice","Discrete-math"],"cssclasses":""}
+{"publish":true,"title":"Discrete-math","created":"18/11/25, 17:50","modified":"2025-12-10T22:12:20.916+02:00","tags":["Academia","Practice","Discrete-math"],"cssclasses":""}
 ---
 
 - [[Practice-sessions/Discrete-math/Discrete-math 01\|Discrete-math 01]]

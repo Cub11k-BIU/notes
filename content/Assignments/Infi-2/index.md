@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Infi-2","created":"18/11/25, 12:10","modified":"2025-11-22T21:59:59.610+02:00","tags":["Academia","Assignment","Infi-2"],"cssclasses":""}
+{"publish":true,"title":"Infi-2","created":"18/11/25, 12:10","modified":"2025-12-10T22:13:26.739+02:00","tags":["Academia","Assignment","Infi-2"],"cssclasses":""}
 ---
 
 - [[Assignments/Infi-2/Infi-2 01\|Infi-2 01]]

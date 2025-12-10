@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Discrete-math","created":"18/11/25, 17:48","modified":"2025-11-22T22:01:06.318+02:00","tags":["Academia","Lecture","Discrete-math"],"cssclasses":""}
+{"publish":true,"title":"Discrete-math","created":"18/11/25, 17:48","modified":"2025-12-10T22:12:56.288+02:00","tags":["Academia","Lecture","Discrete-math"],"cssclasses":""}
 ---
 
 - [[Lectures/Discrete-math/Discrete-math 03\|Discrete-math 03]]

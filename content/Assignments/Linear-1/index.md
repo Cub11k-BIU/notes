@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Linear-1","created":"18/11/25, 12:10","modified":"2025-11-22T22:00:08.390+02:00","tags":["Academia","Assignment","Linear-1"],"cssclasses":""}
+{"publish":true,"title":"Linear-1","created":"18/11/25, 12:10","modified":"2025-12-10T22:13:30.309+02:00","tags":["Academia","Assignment","Linear-1"],"cssclasses":""}
 ---
 
 - [[Assignments/Linear-1/Linear-1 01\|Linear-1 01]]
