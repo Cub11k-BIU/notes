@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"09/12/25, 11:02","modified":"2025-12-10T22:09:50.349+02:00","tags":["Academia","Assignment","Discrete-structures"],"cssclasses":""}
+{"publish":true,"created":"09/12/25, 11:02","modified":"2025-12-11T12:41:23.307+02:00","tags":["Academia","Assignment","Discrete-structures"],"cssclasses":""}
 ---
 
 ## 1
@@ -45,10 +45,8 @@ $$
 \text{Prove: } G' = (V, M_{1} \cup M_{2}) \text{ is bipartite} \\
 \\
 \text{Proof:} \\
-M_{1} = \emptyset \text{ or } M_{2} = \emptyset \implies G' \text{ has no cycles (all cycles are of length 0)} \\
-\implies G' \text{ is bipartite} \\
+G' \text{ has no cycles (all cycles are of length 0)} \implies G' \text{ is bipartite} \\
 \\
-\text{Let } M_{1} \cap M_{2} \neq \emptyset \\
 \text{Let } C \text{ be a cycle in } G' \\
 C = (v_{0}, v_{1}, \dots, v_{k+1} = v_{0}) \\
 \text{Let } i \in [0, k]: (v_{i}, v_{i+1}) \in M_{1} & WLOG \\
@@ -175,7 +173,7 @@ $$
 \text{Let } C_{G}, C_{H} \text{ be Hamilton cycles in } G, H \text{ respectively} \\
 C_{G} = (g_{0}, g_{1}, \dots, g_{n}) \\
 C_{H} = (h_{0}, h_{1}, \dots, h_{m}) \\
-\text{It is enough to prove } C_{G} \square C_{H} \text{ contains a Hamiltonian cycle} \\
+\text{It is enough to prove } C_{G} \square C_{H} \text{ contains a Hamilton cycle} \\
 \forall i \in [0, n-1]: \forall j \in [0, m-1]: \begin{eqsys}
 \Set{ (g_{i}, h_{j}), (g_{i}, h_{j+1}) } \in E \\
 \Set{ (g_{i}, h_{j}), (g_{i+1}, h_{j}) } \in E \\
@@ -223,6 +221,45 @@ $$
 \text{Prove: } Q_{n} \square Q_{m} = Q_{n+m} \text{ and conclude that } \forall n \geq 2: Q_{n} \text{ contains a Hamilton cycle} \\
 \\
 \text{Proof:} \\
-\dots \\
+\text{Let } G = Q_{n} \square Q_{m} = (V, E) \\
+\text{Let } \begin{eqsys}{}
+v = (v_{1}, \dots, v_{n}) \in V_{Q_{n}} \\
+u = (u_{1}, \dots, u_{m}) \in V_{Q_{m}} \\
+\end{eqsys} \\
+((v_{1}, \dots, v_{n}), (u_{1}, \dots, u_{m})) \in V \iff (v_{1}, \dots, v_{n}, u_{1}, \dots, u_{m}) \in V_{Q_{n+m}} \\
+\implies V = V_{Q_{n+m}} \\
+\\
+\text{Case 1. } v_{1} = v_{2} = v \\
+\Set{ (v_{1}, u_{1}), (v_{2}, u_{2}) } \in E \iff \Set{ u_{1}, u_{2} } \in E_{Q_{m}} \iff \exists! i \in [1, m]: u_{1_{i}} \neq u_{2_{i}} \\
+\iff \Set{ (v_{1}, \dots, v_{n}, u_{1_{1}}, \dots, u_{1_{m}}), (v_{1}, \dots, v_{n}, u_{2_{1}}, \dots, u_{2_{m}}) } \in E_{Q_{n+m}} \\
+\text{Case 2. } u_{1} = u_{2} = u \\
+\Set{ (v_{1}, u_{1}), (v_{2}, u_{2}) } \in E \iff \Set{ v_{1}, v_{2} } \in E_{Q_{n}} \iff \exists! i \in [1, n]: v_{1_{i}} \neq v_{2_{i}} \\
+\iff \Set{ (v_{1_{1}}, \dots, v_{1_{n}}, u_{1}, \dots, u_{m}), (v_{2_{1}}, \dots, v_{2_{n}}, u_{1}, \dots, u_{m}) } \in E_{Q_{n+m}} \\
+\implies E = E_{Q_{n+m}} \\
+\implies \boxed{ Q_{n} \square Q_{m} = G = Q_{n+m} } \\
+\\
+\text{Let us prove that } Q_{n} \text{ has a Hamilton cycle for all } n \geq 2 \\
+\text{Proof is by induction on } \abs{V} \\
+\text{Base case. } n = 2 \\
+\text{For simplicity, } 00 \text{ denotes } (0, 0), etc. \\
+V_{Q_{2}} = \Set{ 00, 01, 10, 11 } \\
+\Set{ \Set{ 00, 01 }, \Set{ 01, 11 }, \Set{ 11, 10 }, \Set{ 10, 00 } } \subseteq E_{Q_{2}} \\
+C = (00, 01, 11, 10, 00) \text{ is a Hamilton cycle in } Q_{2} \\
+n = 3 \\
+V = \Set{ 000, 001, 010, 011, 100, 101, 110, 111 } \\
+\begin{eqsys}
+\Set{ \Set{ 000, 001 }, \Set{ 001, 011 }, \Set{ 011, 010 }, \Set{ 010, 110 } } \subseteq E_{Q_{3}} \\ 
+\Set{ \Set{ 110, 111 }, \Set{ 111, 101 }, \Set{ 101, 100 }, \Set{ 100, 000 } } \subseteq E_{Q_{3}} \\
+\end{eqsys} \\
+C = (000, 001, 011, 010, 110, 111, 101, 100, 000) \text{ is a Hamilton cycle in } Q_{3} \\
+\\
+\text{Inductive step. } \\
+\text{Let } \forall 2 \leq n' \leq n: Q_{n'} \text{ has a Hamilton cycle} \\
+\text{Let } n \geq 4 \\
+Q_{n} = Q_{2} \square Q_{n-2} \text{ as proved above} \\
+n \geq 4 \implies n-2 \geq 2 \\
+\text{By inductive hypothesis both } Q_{2}, Q_{n-2} \text{ have a Hamilton cycle} \\
+\implies Q_{n} \text{ also has a Hamilton cycle, as proved in 5c} \\
+\implies \boxed{ \forall n \geq 2: Q_{n} \text{ has a Hamilton cycle} } \\
 }
 $$
