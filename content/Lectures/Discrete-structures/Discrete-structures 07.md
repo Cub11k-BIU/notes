@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"09/12/25, 16:05","modified":"2025-12-10T13:02:46.216+02:00","tags":["Academia","Lecture","Discrete-structures"],"cssclasses":""}
+{"publish":true,"created":"09/12/25, 16:05","modified":"2025-12-16T13:01:14.308+02:00","tags":["Academia","Lecture","Discrete-structures"],"cssclasses":""}
 ---
 
 #### Interval graphs are perfect #lemma 
@@ -138,6 +138,84 @@ G' \text{ is not a } (k+1)\text{-clique} \text{ and } v \text{ will have an avai
 \implies G \text{ can be assumed } k\text{-regular} \\
 \text{Let } v_{1} \in G \\
 G \text{ does not contain a } (k+1)\text{-clique} \implies \exists v_{0}, v_{2} \in \Gamma(v_{1}) : \Set{ v_{0}, v_{2} } \not\in E \\
-
+\text{Let } P = (v_{0},v_{1},v_{2},\dots,v_{r}) \text{ be a maximal simple path starting with } v_{0}, v_{1}, v_{2} \\
+\text{Note, } \Gamma(v_{r}) \subseteq P \\
+\text{Case 1. } r = n-1 \\
+\implies P \text{ contains all vertices of } G \\
+\text{Let } v_{j} \in \Gamma(v_{1}) \text{ and } v_{j} \not\in \Set{ v_{0}, v_{2} } \\
+\text{Let } v_{0}, v_{2} \text{ have the same color} \\
+\text{Apply PathColor}(v_{3}, v_{4}, \dots, v_{j-i}; v_{j}) \\
+\text{Apply PathColor}(v_{n-1}, v_{n-2}, \dots, v_{j}; v_{1}) \\
+\text{Finally, color } v_{1} \text{ as it has two neighbors of the same color. } G \text{ is now colored} \\
+\text{Case 2. } r < n-1 \\
+\text{Let } v_{j} \in \Gamma(v_{r}) : j \text{ is minimum} \\
+C = (v_{j}, v_{j+1}, \dots, v_{r}) \text{ is a cycle in } G \\
+\text{Let } G' = G \setminus C \\
+\text{By inductive hypothesis, color each connected component with } k \text{ colors} \\
+G \text{ is connected} \implies \exists v_{q} \in C, u \in G': \Set{ v_{q}, u } \in E_{G'} \\
+\text{Let } v_{q} \text{ be such a vertex with a maximum index} \\
+\Gamma(v_{r}) \subseteq C \implies q < r \\
+\text{Let } v_{q+1}, u \text{ have the same color} \\
+\text{Apply PathColor}(v_{q+2},\dots,v_{r},v_{j},\dots,v_{q-1}; v_{q}) \\
+\text{Finally, color } v_{q} \text{ as it has two neighbors of the same color. } G \text{ is now colored} \\
 }
 $$
+### 5-color theorem #theorem 
+$$
+\displaylines{
+\text{Every planar graph $G = (V, E)$ is } 5\text{-colorable} \\
+\\
+\text{Proof:} \\
+\text{Proof is by induction on } \abs{V} = n \\
+\text{Base case. } n \leq 5 \\
+G \text{ is trivially 5-colorable} \\
+\text{Inductive step.} \\
+\text{Let } v \in V: deg(v) = \min_{u \in V}\{deg(u)\} \\
+\text{Note that } deg(v) \leq 5 \\
+\text{Let } G' = G \setminus v \\
+G' \text{ is a planar graph with } n-1 \text{ vertices} \\
+\implies \exists \chi: V \setminus \Set{ v } \to \Set{ 1, 2, 3, 4, 5 } \\
+\text{If } deg(v) \leq 4 \text{ then there exists color } i: \forall u \in \Gamma(v): \chi(u) \neq i \\
+\implies G \text{ is 5-colorable} \\
+\text{Let } deg(v) = 5 \\
+\text{If two of the neioghbors of } v \text{ have the same color, we can again extend } \chi \\
+\text{and obtain a proper coloring} \\
+\text{Let all 5 neighbors of } v \text{ have different colors} \\
+\text{Let } a, b, c, d, e \in V \text{ be the neighbors of } v \text{ ordered in a counter clockwise order} \\
+\text{with relation to the respective edges in the planar embedding of } G \\
+\text{Let } \chi(a) = 1, \chi(b) = 2, \chi(c) = 3, \chi(d) = 4, \chi(e) = 5 & WLOG \\
+\text{Let } V_{1,3} = \chi^{-1}[\Set{ 1,3 }] \\
+\text{Consider } G'[V_{1,3}] \\
+\text{Let } C_{a}, C_{c} \text{ be the connected components of } a, c \text{ respectively} \\
+C_{a} = C_{c} \implies \exists \chi'(x) = \begin{cases}
+\chi(x) & x \not\in C_{c} \\
+3 & x \in C_{c} \text{ and } \chi(x) = 1 \\
+1 & x \in C_{c} \text{ and } \chi(x) = 3 \\
+\end{cases} \\
+\text{Clearly, } \chi' \text{ is a proper coloring of } G' \text{ and we can now extend it with } \chi'(v) = 3 \\
+\text{Let } C_{a} = C_{c} \\
+\implies \exists P_{a,c} = (a, \dots, c) \text{ with vertices of alternating colors 1, 3} \\
+\text{Let } V_{2, 3} = \chi^{-1}[\Set{ 2, 4 }] \\
+\text{Consider } G'[2, 4] \\
+\text{Similarly to } C_{a}, C_{c}, \text{we assume } C_{b} = C_{d} \\
+\implies \exists P_{b,d} = (b, \dots, d) \text{ with vertice of alternating colors 2, 4} \\
+\text{Clearly } P_{a, c} \text{ and } P_{b, d} \text{ are disjoint} \\
+b \text{ is encircled by } v \circ P_{a,c} \circ v \text{ while } d \text{ is outside this circle} - \text{Contradiction!} \\
+\implies C_{b} \neq C_{d} \implies G \text{ is 5-colorable} \\
+}
+$$
+### 4-color theorem #definition 
+$$
+\displaylines{
+\text{Every planar graph is 4-colorable} \\
+\\
+\text{Proof:} \\
+\text{Proof is by considering all possible cases of planar graphs and coloring them} \\
+\text{Currently, the best proof uses 633 cases and is verified with a computer} \\
+\text{No "proof by the book" exists to this day} \\
+\\
+\text{Students are expected to know this theorem and use it as a fact} \\
+}
+$$
+## Edge coloring
+A similar problem to vertex coloring is edge coloring.

@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"10/12/25, 10:03","modified":"2025-12-10T13:02:43.240+02:00","tags":["Academia","Lecture","Databases"],"cssclasses":""}
+{"publish":true,"created":"10/12/25, 10:03","modified":"2025-12-17T10:22:45.653+02:00","tags":["Academia","Lecture","Databases"],"cssclasses":""}
 ---
 
 # Database normalization
@@ -58,6 +58,7 @@ $$
 - ID $\to$ name, title
 - title $\to$ amount
 - amount, department $\to$ date
+
 Which FDs can be inferred?
 - `Reflexivity`: ID $\to$ name
 - `Reflexivity`: ID $\to$ title
@@ -70,9 +71,11 @@ Which FDs can be inferred?
 - `Combination`: ID, department $\to$ amount, department
 - `Transitivity`: ID, department $\to$ date
 - etc.
+
 Number of different inferred FDs grows exponentially, so it is reasonable to only leave the most "interesting" ones:
 - Minimal left-side
 - Maximal right-side
+
 For example
 - ID $\to$ name, title, amount
 - ID, department $\to$ name, title, amount, date
@@ -113,6 +116,7 @@ We will use `key` for the general case (some arbitrary key), and `minimal key`/`
 - student $\to$ address
 - room, time $\to$ course
 - student, course $\to$ room, time
+
 What would be the minimal key?
 - Clearly, student must be in any key (any attribute that only appears in the left-side must be in the key)
 - Clearly, address will not be in the minimal key (any attribute that only appears in the right-side won't be in the minimal key)
@@ -136,9 +140,11 @@ Let there be a relation
 - Redundancy - repeated data
 - Update anomalies - what if Alice moves to Tel Aviv?
 - Deletion anomalies - what if Alice drops all phone numbers?
+
 What is the solution?
 - Decompose relation without losing any information
 - Obtain a set of relations without abnormalities (a normal form)
+
 For example:
 
 | Name  | ID        | City      |
@@ -175,7 +181,9 @@ $$
 R_{1} = \Set{ A_{1}, \dots, A_{n}, B_{1}, \dots, B_{m} } \\
 R_{2} = \Set{ A_{1}, \dots, A_{n}, C_{1}, \dots, C_{k} } \\
 \\
-\text{Both } R_{1}, R_{2} \text{ are in BCNF} \\
+\text{Both } R_{1}, R_{2} \text{ might already be in BCNF or might not} \\
+\text{If not, we should repeat the decomposition for } R_{1}, R_{2} \text{ separately} \\
+\\
 \text{Clearly, a join between } R_{1} \text{ and } R_{2} \text{ on } A_{1}, \dots, A_{n} \text{ will yield exactly } R \\
 }
 $$
@@ -189,10 +197,13 @@ $$
 - Person(name, SSN, age, hairColor, phoneNumber)
 - SSN $\to$ name, age
 - age $\to$ hairColor
+
 First, find all implied FDs
 - SSN $\to$ name, age, hairColor
+
 Second, find all keys
 - $\Set{ \text{SSN, phoneNumber} }$ and its supersets
+
 Clearly, $R$ is not in BCNF, all three FDs violate it
 Let us decompose on SSN $\to$ name, age, hairColor
 - R1(SSN, name, age, hairColor) - all FDs are preserved
@@ -200,4 +211,5 @@ Let us decompose on SSN $\to$ name, age, hairColor
 		- R11(age, hairColor) = $\Set{ \text{age} }^{+}$
 		- R12(age, SSN, name) = $\Set{ \text{SSN} }^{+}$
 - R2(SSN, phoneNumber) = $\Set{ \text{SSN, phoneNumber} }^{+}$
+
 Decomposition $\Set{ R_{1_{1}}, R_{1_{2}}, R_{2} }$ is a BCNF decomposition of $R$

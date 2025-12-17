@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"27/01/25, 20:01","modified":"2025-11-21T21:10:02.162+02:00","tags":["Academia","Assignment","Discrete-math"],"cssclasses":""}
+{"publish":true,"created":"27/01/25, 20:01","modified":"2025-12-17T11:58:28.846+02:00","tags":["Academia","Assignment","Discrete-math"],"cssclasses":""}
 ---
 
 ### Discrete maths Exercise 12
@@ -512,11 +512,7 @@ graph LR;
 		1'---4'
 		2'---3'
 		2'---4'
-		%% 1'-.-2'
-		%% 1'-.-3'
-		%% 3'-.-4'
 		linkStyle 3,4,5 stroke:blue;
-		%% linkStyle 6,7,8 stroke:red,stroke-width:0.8px;
 	end
 	G---->G-complement
 ```

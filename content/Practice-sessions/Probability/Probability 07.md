@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"07/12/25, 18:04","modified":"2025-12-07T19:30:04.128+02:00","tags":["Academia","#Practice","Probability"],"cssclasses":""}
+{"publish":true,"created":"07/12/25, 18:04","modified":"2025-12-16T10:13:25.026+02:00","tags":["Academia","#Practice","Probability"],"cssclasses":""}
 ---
 
 # Random variables
@@ -85,8 +85,10 @@ $$
 \text{Determine } p_{X} \\
 \\
 \text{Solution:} \\
-p_{X}(0) = (1 - 0.3)(1 - 0.6) \\
-p_{X}(500) = \frac{0.3(1-0.6) + (1-0.3)0.6}{2} \\
-p_{X}(1000) = p_{X}(1500) = p_{X}(2000) = \frac{0.3 \cdot 0.6}{2} \\
+p_{X}(0) = (1 - 0.3)(1 - 0.6) = 0.28 \\
+p_{X}(500) = \frac{0.3(1-0.6) + (1-0.3)0.6}{2} = 0.27 \\
+p_{X}(1000) = \frac{0.3(1-0.6) + (1-0.3)0.6}{2} + \frac{0.3 \cdot 0.6}{4} = 0.315 \\
+p_{X}(1500) = \frac{0.3 \cdot 0.6}{4} \cdot 2 = 0.09 \\
+p_{X}(2000) = \frac{0.3 \cdot 0.6}{4} = 0.045 \\
 }
 $$
