@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"16/12/25, 10:13","modified":"2025-12-16T11:27:42.703+02:00","tags":["Academia","#Practice","Probability"],"cssclasses":""}
+{"publish":true,"created":"16/12/25, 10:13","modified":"2025-12-17T15:25:11.868+02:00","tags":["Academia","#Practice","Probability"],"cssclasses":""}
 ---
 
 ## Exercise
@@ -44,7 +44,7 @@ E[X] = \frac{\binom{4}{1} \cdot \binom{16}{2}}{\binom{20}{3}} + 2 \cdot \frac{\b
 }
 $$
 ## Exercise
-Suppose $X, Y$ are discrete random variables. Then $Z = X + Y$ is also a random variable.
+Suppose $X, Y$ are discrete random variables over $\Omega$. Then $Z = X + Y$ is also a random variable.
 Show $E[X+Y] = E[X] + E[Y]$
 $$
 \displaylines{

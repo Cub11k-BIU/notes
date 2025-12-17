@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"10/12/25, 13:02","modified":"2025-12-10T15:29:35.162+02:00","tags":["Academia","Lecture","Probability"],"cssclasses":""}
+{"publish":true,"created":"10/12/25, 13:02","modified":"2025-12-17T14:42:27.777+02:00","tags":["Academia","Lecture","Probability"],"cssclasses":""}
 ---
 
 ### Example
@@ -48,7 +48,7 @@ Var(aX+b) = E[(aX+b-a\mu - b)^{2}] = \\
 \implies \boxed{ Var(aX + b) = a^{2}Var(X) } \\
 }
 $$
-# Classical discrete distributions
+# Classic discrete distributions
 ## Uniform distribution #definition 
 In a uniform discrete distribution, every outcome is equally likely
 ## Bernoulli distribution #definition 
