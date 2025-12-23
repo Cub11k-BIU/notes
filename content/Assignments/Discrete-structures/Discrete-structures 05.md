@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"09/12/25, 11:02","modified":"2025-12-11T12:41:23.307+02:00","tags":["Academia","Assignment","Discrete-structures"],"cssclasses":""}
+{"publish":true,"created":"09/12/25, 11:02","modified":"2025-12-19T17:53:48.592+02:00","tags":["Academia","Assignment","Discrete-structures"],"cssclasses":""}
 ---
 
 ## 1
@@ -27,13 +27,13 @@ G' \text{ is strongly connected and has less than } m \text{ edges} \implies G' 
 G \text{ is strongly connected} \implies \forall v \in V: deg_{out}(v) \geq 1 \implies m \geq \sum_{v \in V} deg_{out}(v) \geq n \\
 \implies m \geq n \implies G \text{ has a directed cycle } C = (x_{0}, \dots, x_{q}) \\
 \text{Let } G' = G \setminus C = (V, E \setminus C) \\
-\forall v \in G': deg_{in_{G'}}(v) = deg_{out_{G'}}(v) \\
+\forall v \in G': deg_{in_{G'}}(v) = deg_{in_{G}}(v) - 1 = deg_{out_{G}}(v) - 1 = deg_{out_{G'}}(v) \\
 \text{Let } \mathcal{K}_{1}, \mathcal{K}_{2}, \dots, \mathcal{K}_{k} \text{ be connected components of } G' \\
 G \text{ is strongly connected} \implies \forall j \in [1, k]: \exists x_{i_{j}} \in C \cap \mathcal{K}_{j} \\
 \text{Let } \forall j \in [1, k]: x_{i_{j}} \in C \cap \mathcal{K}_{j} \\
 \text{Let } i_{1} \leq i_{2} \leq \dots \leq i_{k} & WLOG \\
-\forall j \in [1, k]: \mathcal{K}_{j} \text{ has an Euler cycle } C_{j} \\
-\Set{ C, C_{1}, \dots, C_{k} } \text{ is a partition of } E' \\
+\text{By inductive hypothesis } \forall j \in [1, k]: \mathcal{K}_{j} \text{ has an Euler cycle } C_{j} \\
+\Set{ C, C_{1}, \dots, C_{k} } \text{ is a partition of } E \\
 \implies C' = (x_{0}, \dots, \underbrace{ x_{i_{1}}, \dots, x_{i_{1}} }_{ C_{1} }, \dots, x_{i_{k}-1}, \underbrace{ x_{i_{k}}, \dots, x_{i_{k}} }_{ C_{k} }, \dots, x_{q}) \text{ is an Euler cycle in } G \\
 }
 $$

@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"02/12/25, 16:03","modified":"2025-12-09T16:05:49.823+02:00","tags":["Academia","Lecture","Discrete-structures"],"cssclasses":""}
+{"publish":true,"created":"02/12/25, 16:03","modified":"2025-12-22T16:03:12.675+02:00","tags":["Academia","Lecture","Discrete-structures"],"cssclasses":""}
 ---
 
 ## Corollaries of Hall's theorem
@@ -448,7 +448,7 @@ $$
 \text{Then, } m \leq 3n - 6 \\
 \\
 \text{Proof:} \\
-\text{Let } \forall \text{ face } f: t_{f} \text{ denote the numbe rof edges on the boundary of } f \\
+\text{Let } \forall \text{ face } f: t_{f} \text{ denote the number of edges on the boundary of } f \\
 \text{Each edge can be a boundary of at most two faces} \\
 \implies 2m \geq \sum_{f} t_{f} \\
 \text{Every face has at least 3 edges on its boundary (either a minimum cycle or all edges)} \\
