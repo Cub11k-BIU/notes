@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"21/07/25, 12:07","modified":"2025-11-21T21:10:14.460+02:00","tags":["Academia","Lecture","Linear-2"],"cssclasses":""}
+{"publish":true,"created":"21/07/25, 12:07","modified":"2026-01-06T16:44:32.685+02:00","tags":["Academia","Lecture","Linear-2"],"cssclasses":""}
 ---
 
 # 1
@@ -99,7 +99,7 @@ $$
 $$
 \displaylines{
 \text{Let } A, B \in \mathbb{R}^{3 \times 3} \\
-\text{Let } v_{1}, v_{2}, v_{3} \in \mathbb{R}^{3} \text{ linearly independant vectors which are all both eigenvector of } A \text{ and } B \\
+\text{Let } v_{1}, v_{2}, v_{3} \in \mathbb{R}^{3} \text{ linearly independent vectors which are all both eigenvector of } A \text{ and } B \\
 \text{Prove or disprove: } \forall P: A = PD_{A}P^{-1} \implies B = PD_{B}P^{-1} \\
 \\
 \text{Disproof:} \\

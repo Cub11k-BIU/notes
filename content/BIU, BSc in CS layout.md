@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025-12-01T09:39:55.373+02:00","modified":"2025-12-01T19:50:39.026+02:00","cssclasses":""}
+{"publish":true,"created":"2025-12-01T09:39:55.373+02:00","modified":"2026-01-08T15:01:47.129+02:00","cssclasses":""}
 ---
 
 # Summary (single major track)
@@ -101,7 +101,7 @@
 - Cryptoanalysis - `89-553`
 - Image processing - `89-560`
 - Computer vision - `89-561`
-- Research source on advanced algorithms I - `89-5993`
+- Research cource on advanced algorithms I - `89-5993`
 - Automata, game theory and formal verification - `89-602`
 - Theory behind blockchain - `89-606`
 - Information privacy - `89-607`

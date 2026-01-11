@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"09/11/25, 15:11","modified":"2025-11-21T21:10:24.784+02:00","tags":["Academia","Practice","Discrete-structures"],"cssclasses":""}
+{"publish":true,"created":"09/11/25, 15:11","modified":"2025-12-25T13:27:19.434+02:00","tags":["Academia","Practice","Discrete-structures"],"cssclasses":""}
 ---
 
 $$
@@ -51,7 +51,7 @@ $$
 ---
 $$
 \displaylines{
-\text{Prove: maximum number od edges in a bipartite graph is } \floor{\frac{n^{2}}{4}} \\
+\text{Prove: maximum number of edges in a bipartite graph is } \floor{\frac{n^{2}}{4}} \\
 \\
 \text{Proof:} \\
 \text{Let } V = L \sqcup R \\

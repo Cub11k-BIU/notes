@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"30/11/25, 15:00","modified":"2025-12-01T19:51:24.976+02:00","tags":["Academia","#Practice","Discrete-structures"],"cssclasses":""}
+{"publish":true,"created":"30/11/25, 15:00","modified":"2025-12-25T13:38:01.147+02:00","tags":["Academia","#Practice","Discrete-structures"],"cssclasses":""}
 ---
 
 ## Matchings
@@ -65,7 +65,7 @@ $$
 \\
 \text{Solution:} \\
 1. \quad \abs{R} \geq 2\abs{L} \\
-2. \forall S \subseteq L: \abs{\Gamma(S)} \geq 2\abs{S} \\
+2. \quad \forall S \subseteq L: \abs{\Gamma(S)} \geq 2\abs{S} \\
 \text{Let } G' = (L' \cup R, E') \\
 \text{Where } L' = L \cup \Set{ v' | v \in L } \\
 E' = E \cup \Set{ \Set{ v', u } | v \in L, \Set{ v, u } \in E } \\

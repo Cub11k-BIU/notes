@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"23/11/25, 13:06","modified":"2025-11-23T13:17:15.905+02:00","tags":["Academia","#Practice","Automata"],"cssclasses":""}
+{"publish":true,"created":"23/11/25, 13:06","modified":"2026-01-07T16:13:04.754+02:00","tags":["Academia","#Practice","Automata"],"cssclasses":""}
 ---
 
 ### Exercises with regular expressions
@@ -19,4 +19,3 @@ b^{*}abb^{*}ab^{*}(a|b^{*})b^{*} \\
 }
 $$
 ---
-### 

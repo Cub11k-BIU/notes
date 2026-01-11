@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"23/11/25, 15:02","modified":"2025-11-23T16:17:08.577+02:00","tags":["Academia","#Practice","Discrete-structures"],"cssclasses":""}
+{"publish":true,"created":"23/11/25, 15:02","modified":"2025-12-25T13:09:37.326+02:00","tags":["Academia","#Practice","Discrete-structures"],"cssclasses":""}
 ---
 
 $$
@@ -11,7 +11,7 @@ $$
 \\
 \text{Proof:} \\
 \text{Let } S = \Set{ C_{i} | C_{i} \text{ has no Euler cycle} } \\
-\text{Let } G' = \left( V \cup \Set{ v }, E \cup \Set{ \Set{ v, u } | \exists C_{i} \in S: u \in V_{i} \text{ and } deg(v) \text{ is odd} } \right) \\
+\text{Let } G' = \left( V \cup \Set{ v }, E \cup \Set{ \Set{ v, u } | \exists C_{i} \in S: u \in V_{i} \text{ and } deg(u) \text{ is odd} } \right) \\
 \implies \text{All vertices in } G' \text{ have even degrees} \\
 \implies \text{Each connected component has an Euler cycle} \\
 }

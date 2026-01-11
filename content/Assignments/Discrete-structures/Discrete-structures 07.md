@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"19/12/25, 19:50","modified":"2025-12-22T17:05:01.998+02:00","tags":["Academia","Assignment","Discrete-structures"],"cssclasses":""}
+{"publish":true,"created":"19/12/25, 19:50","modified":"2025-12-25T13:22:14.545+02:00","tags":["Academia","Assignment","Discrete-structures"],"cssclasses":""}
 ---
 
 ## 1
@@ -72,9 +72,12 @@ $$
 \text{Prove: } \abs{F} \leq 2\abs{V} - 4 \\
 \\
 \text{Proof:} \\
-\text{By Euler's formula } \abs{V} + \abs{F} - \abs{E} = 2 \\
-\implies \text{By 3a } \abs{E} = \abs{V} + \abs{F} - 2 \leq 3\abs{V} - 6 \\
-\implies \boxed{ \abs{F} \leq 2\abs{V} - 4 } \\
+\text{Let us add edges to } G \text{ the same way we did in } 2a \\
+G' = (V, E') \\
+\text{Number of faces did not decrease} \\
+\text{By Euler's formula } \abs{V} + \abs{F'} - \abs{E'} = 2 \\
+\implies \abs{V} + \abs{F'} = 2 + \abs{E'} \leq 3\abs{V} - 4 \implies \abs{F'} \leq 2\abs{V} - 4 \\
+\implies \boxed{ \abs{F} \leq \abs{F'} \leq 2\abs{V} - 4 } \\
 }
 $$
 ## 3a
@@ -135,11 +138,13 @@ $$
 \text{Prove: } \delta(G \cup G') \leq 11 \\
 \\
 \text{Proof:} \\
+\text{If } G \text{ has less than } 3 \text{ vertices, } \delta(G) \leq 2 \leq 11 \\
+\text{Let } G \text{ has at least } 3 \text{ vertices} \\
 \abs{E \cup E'} \leq \abs{E} + \abs{E'} \leq 6\abs{V} - 12 \\
-\text{Let by contradiction } \delta(G) \geq 12 \\
+\text{Let by contradiction } \delta(G \cup G') \geq 12 \\
 2\abs{E \cup E'} = \sum_{v \in V} deg(v) \geq 12\abs{V} \\
 \implies \abs{E \cup E'} \geq 6\abs{V} > 6\abs{V} - 12 - \text{Contradiction!} \\
-\implies \delta(G) \leq 11 \\
+\implies \delta(G \cup G') \leq 11 \\
 }
 $$
 ## 5
@@ -157,8 +162,6 @@ $$
 \text{Each edge is incident to exactly two faces} \implies 2m = \sum_{f} t_{f} \\
 \text{All cycles are of even length} \implies \text{All faces, except the infinite one have even } t_{f} \\
 \implies 2m = \sum_{f} t_{f} = t_{f_{inf}} + 2k \implies t_{f_{inf}} \text{ is also even} \\
-\text{In addition, there are no "non-cyclic" edges, as they are incident to only one face} \\
-\implies \text{Each face, including the infinite one, are formed by a cycle of even length} \\
 \text{Let } G \text{ has } q \text{ square faces} \\
 \implies 2m = \sum_{f} t_{f} = 4q + \sum_{f'} t_{f'} \geq 4q + 6(f - q) = 6f - 2q \\
 n + f - m = 2 \\

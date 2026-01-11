@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"26/10/25, 15:10","modified":"2025-11-21T21:10:02.196+02:00","tags":["Academia","Assignment","Discrete-structures"],"cssclasses":""}
+{"publish":true,"created":"26/10/25, 15:10","modified":"2025-12-24T23:59:38.824+02:00","tags":["Academia","Assignment","Discrete-structures"],"cssclasses":""}
 ---
 
 # 1a
@@ -174,8 +174,16 @@ $$
 \text{Proof:} \\
 \text{Let } G \text{ has } n-1 \text{ edges and no cycles} \\
 \implies G \text{ is connected} \implies \forall v, u \in V : \exists p(v, u) \\
-\text{Let } \exists p_{1}(v, u) \neq p_{2}(v, u) \\
-\implies \exists p(v, v) = p_{1}(v, u) + p_{2}'(u, v) - \text{ Contradiction!} \\
+\text{Let } v \neq u \in V \\
+\text{Let by contradiction } \exists p_{1}(v, u) \neq p_{2}(v, u) \\
+\text{Let } p_{1} = (v_{0} = v, v_{1}, \dots, v_{k} = u) \\
+\text{Let } p_{2} = (u_{0} = v, u_{1}, \dots, u_{q} = u) \\
+p_{1} \neq p_{2} \implies \exists i : v_{i} \neq u_{i} \\
+\text{Let } i \text{ be the first index such that } v_{i} = u_{i} \text{ and } v_{i+1} \neq u_{i+1} \\
+\text{Note that } i \neq k, i \neq q \\
+\text{Let } j \text{ be the first index such that: } j > i \text{ and } v_{j-1} \neq u_{j-1} \text{ and } v_{j} = u_{j} \\
+\text{If no such index exists, } (v_{i}, v_{i+1}, \dots, v_{k} = u_{q}, u_{q-1}, \dots, u_{i} = v_{i}) \text{ is a cycle} - \text{Contradiction!} \\
+\text{If such index exists, } (v_{i}, v_{i+1}, \dots, v_{j} = u_{j}, u_{j-1}, \dots, u_{i} = v_{i}) \text{ is a cycle} - \text{Contradiction!} \\
 \implies \forall v, u \in V : \exists! p(v, u) \\
 \\
 \text{Let } \forall v, u \in V : \exists! p(v, u) \\
