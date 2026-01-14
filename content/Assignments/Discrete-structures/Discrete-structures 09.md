@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"12/01/26, 15:31","modified":"2026-01-12T18:45:25.288+02:00","tags":["Academia","Assignment","Discrete-structures"],"cssclasses":""}
+{"publish":true,"created":"12/01/26, 15:31","modified":"2026-01-14T22:50:35.530+02:00","tags":["Academia","Assignment","Discrete-structures"],"cssclasses":""}
 ---
 
 # 1a
@@ -177,7 +177,7 @@ $$
 \text{Number of subsets of } [n] \text{ that do not have 3 consecutive numbers} \\
 \\
 \text{Solution:} \\
-\text{Let } a_{n} = \text{numebr of such subsets} \\
+\text{Let } a_{n} = \text{number of such subsets} \\
 \text{Let } A \subseteq [n] \\
 n \in A, n-1 \in A \implies n-2 \not\in A \implies a_{n-3} \\
 n \in A, n-1 \not\in A \implies a_{n-2} \\
@@ -198,19 +198,19 @@ a_{0} = 19, a_{1} = -2, a_{2} = 2 \\
 \text{Solution:} \\
 \text{A non-homogeneous solution:} \\
 a_{n} = c \\
-\implies c = 9c - 27c + 27c - 8 \implies 8c = -8 \implies c = -1 \\
+\implies c = 9c - 27c + 27c - 8 \implies 8c = 8 \implies c = 1 \\
 \text{A homogeneous solution:} \\
 a_{n} = 9a_{n-1} - 27a_{n-2} + 27a_{n-3} \\
 x^{3} - 9x^{2} + 27x - 27 = (x-3)^{3} \\
 \implies a_{n} = A_{1} \cdot 3^{n} + A_{2} \cdot n \cdot 3^{n} + A_{3} \cdot n^{2} \cdot 3^{n} \\
 \text{Final solution:} \\
-\boxed{ a_{n} = A_{1} \cdot 3^{n} + A_{2} \cdot n \cdot 3^{n} + A_{3} \cdot n^{2} \cdot 3^{n} - 1 } \\
-a_{0} = 19 \implies A_{1} - 1 = 19 \implies A_{1} = 20 \\
-a_{1} = -2 \implies 3A_{1} + 3A_{2} + 3A_{3} - 1 = -2 \implies 3(A_{2}+A_{3}) = -61 \\
-a_{2} = 2 \implies 9A_{1} + 18A_{2} + 36A_{3} - 1 = 2 \implies 18(A_{2} + A_{3}) + 18A_{3} = -177 \\
-\implies 18A_{3} = -177 + 366 = 189 \implies A_{3} = \frac{189}{18} = \frac{21}{2} \\
-\implies A_{2} = -\frac{61}{3} - \frac{21}{2} = -\frac{185}{6} \\
-\implies \boxed{ a_{n} = 20 \cdot 3^{n} - \frac{185}{6} \cdot n \cdot 3^{n} + \frac{21}{2} \cdot n^{2} \cdot 3^{n} - 1 } \\
+\boxed{ a_{n} = A_{1} \cdot 3^{n} + A_{2} \cdot n \cdot 3^{n} + A_{3} \cdot n^{2} \cdot 3^{n} + 1 } \\
+a_{0} = 19 \implies A_{1} + 1 = 19 \implies A_{1} = 18 \\
+a_{1} = -2 \implies 3A_{1} + 3A_{2} + 3A_{3} + 1 = -2 \implies 3(A_{2}+A_{3}) = -57 \\
+a_{2} = 2 \implies 9A_{1} + 18A_{2} + 36A_{3} + 1 = 2 \implies 18(A_{2} + A_{3}) + 18A_{3} = -161 \\
+\implies 18A_{3} = -161 + 342 = 181 \implies A_{3} = \frac{181}{18} \\
+\implies 18A_{2} = -161-36A_{3} = -161-362 = -523 \implies A_{2} = -\frac{523}{18} \\
+\implies a_{n} = 18 \cdot 3^{n} - \frac{523}{18} \cdot n \cdot 3^{n} + \frac{181}{18} \cdot n^{2} \cdot 3^{n} + 1 = \boxed{ (324 - 523n + 181n^{2}) \frac{3^{n-2}}{2} } \\
 }
 $$
 # 5

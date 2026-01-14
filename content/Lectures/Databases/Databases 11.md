@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"14/01/26, 09:45","modified":"2026-01-14T12:21:04.289+02:00","tags":["Academia","Lecture","Databases"],"cssclasses":""}
+{"publish":true,"created":"14/01/26, 09:45","modified":"2026-01-14T19:01:34.098+02:00","tags":["Academia","Lecture","Databases"],"cssclasses":""}
 ---
 
 # Query complier/optimizer
@@ -347,7 +347,7 @@ Assumptions:
 - The indices are in the main memory
 - Output is pipelined except for sorting output
 
-First option, both joins are hash joins
+Both joins are hash joins
 - Selection cost is $B(R_{1})$, output size is $\frac{B(R_{1})}{V(R_{1}, C)}$
 - Cost of join on $E=G$ is $3(B(R_{2})+B(R_{3}))$, output size is $\frac{B(R_{2}) \cdot T(R_{3}) + B(R_{3}) \cdot T(R_{2})}{\max\lrc{V(R_{2}, E), V(R_{3}, G)}}$
 - Cost of join on $B=E$ is 2(selection output size) + 0
@@ -356,10 +356,19 @@ First option, both joins are hash joins
 
 Total cost is $B(R_{1}) + 3(B(R_{2})+B(R_{3})) + 2\frac{B(R_{1})}{V(R_{1}, C)}$
 
-Second option, sorted clustered index on C, first join is a hash join, second join is sort merge join
+Sorted clustered index on C, first join is a hash join, second join is sort merge join
 - Selection cost is $0+\frac{B(R_{1})}{V(R_{1}, C)}$, output size is $\frac{B(R_{1})}{V(R_{1}, C)}$
 - Cost of join on $E = G$ is $3(B(R_{2}) + B(R_{3}))$, output size is $\frac{B(R_{2}) \cdot T(R_{3}) + B(R_{3}) \cdot T(R_{2})}{\max\lrc{V(R_{2}, E), V(R_{3}, G)}}$
 - Cost of join on $B = E$ is $4(\text{selection output size} + \text{join output size})$
 	- previous results are pipelined
 
 Total cost is $\frac{B(R_{1})}{V(R_{1}, C)} + 3(B(R_{2}) + B(R_{3})) + 4\lrp{\frac{B(R_{1})}{V(R_{1}, C)} + \frac{B(R_{2}) \cdot T(R_{3}) + B(R_{3}) \cdot T(R_{2})}{\max\lrc{V(R_{2}, E), V(R_{3}, G)}}}$
+
+Sorted clustered index on $E$ and on $G$, joins are sort-merge
+- Selection cost is $B(R_{1})$, output size is $\frac{B(R_{1})}{V(R_{1}, C)}$
+- Cost of join on $E = G$ is $B(R_{2}) + B(R_{3})$, output size is $\frac{B(R_{2}) \cdot T(R_{3}) + B(R_{3}) \cdot T(R_{2})}{\max\lrc{V(R_{2}, E), V(R_{3}, G)}}$
+- Cost of join $B = E$ is $4(\text{selection output size}) + 0$
+	- selection result is pipelined
+	- previous join is pipelined and sorted by $E$
+
+Total cost is $B(R_{1}) + B(R_{2}) + B(R_{3}) + \frac{4B(R_{1})}{V(R_{1}, C)}$
