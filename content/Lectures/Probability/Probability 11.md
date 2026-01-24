@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"14/01/26, 12:58","modified":"2026-01-14T15:30:06.690+02:00","tags":["Academia","Lecture","Probability"],"cssclasses":""}
+{"publish":true,"created":"14/01/26, 12:58","modified":"2026-01-21T13:47:08.543+02:00","tags":["Academia","Lecture","Probability"],"cssclasses":""}
 ---
 
 ## Normal distribution aka Gaussian #definition 
@@ -107,7 +107,7 @@ X \sim \mathcal{N}(\mu, \sigma^{2}) \implies E[X] = \mu, Var(X) = \sigma^{2} \\
 }
 $$
 ---
-## Joint distribution
+## Joint distribution #definition 
 $$
 \displaylines{
 \text{Let } X, Y \text{ be random variables} \\
@@ -145,7 +145,7 @@ $$
 }
 $$
 ---
-## Marginal distribution
+## Marginal distribution #definition 
 $$
 \displaylines{
 \text{Let } (X, Y) \text{ be a joint distribution} \\
@@ -178,7 +178,7 @@ f_{Y}(y) = \int_{0}^{\infty} e^{-x-y} \, dx = e^{-y} \int_{0}^{\infty} e^{-x} \,
 }
 $$
 ---
-## Independence of joint distribution
+## Independence of joint distribution #definition 
 $$
 \displaylines{
 \text{Let } (X, Y) \text{ be a joint distribution} \\
@@ -193,7 +193,7 @@ P(X \in A, Y \in B) = P(X \in A) \cdot P(Y \in B) \\
 }
 $$
 ---
-## Linearity of expectation
+## Linearity of expectation #theorem 
 $$
 \displaylines{
 \text{Let } X, Y: \Omega \to \mathbb{R} \\
@@ -215,7 +215,7 @@ E[X+Y] = \iint_{\mathbb{R}^{2}} (x+y)f_{X,Y}(x, y) \, dxdy = \\
 }
 $$
 ---
-## Covariance
+## Covariance #definition 
 $$
 \displaylines{
 \text{Let } X, Y: \Omega \to \mathbb{R} \\
@@ -226,7 +226,7 @@ Cov(X, Y) = E[(X - E[X])(Y - E[Y])] = E[XY] - E[X]E[Y] \\
 \text{In some sense, covariance is a measure of degree of dependence} \\
 }
 $$
-## Linearity of variance for independent variables
+## Linearity of variance for independent variables #theorem 
 $$
 \displaylines{
 \text{Let } X, Y: \Omega \to \mathbb{R} \text{ be independent} \\

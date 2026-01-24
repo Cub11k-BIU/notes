@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"14/12/25, 09:49","modified":"2025-12-14T13:18:11.604+02:00","tags":["Academia","Lecture","Automata"],"cssclasses":""}
+{"publish":true,"created":"14/12/25, 09:49","modified":"2026-01-17T21:03:03.696+02:00","tags":["Academia","Lecture","Automata"],"cssclasses":""}
 ---
 
 # Turing machine
