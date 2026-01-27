@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"24/01/26, 14:09","modified":"2026-01-24T16:26:35.642+02:00","tags":["Academia","Lecture","Automata"],"cssclasses":""}
+{"publish":true,"created":"24/01/26, 14:09","modified":"2026-01-26T17:32:02.855+02:00","tags":["Academia","Lecture","Automata"],"cssclasses":""}
 ---
 
 # Non-decidability
@@ -347,7 +347,7 @@ Q \in NOT\text{-}REG \iff P(w) \neq 1 \iff (P, w) \in \overline{ATM} \iff \overl
 \text{No} & \text{No} & EQ \\
 \text{No} & \text{No} & \overline{EQ} \\
 \text{No} & \text{No} & NOT\text{-}REG \\
-? & \text{No} & REG \\
+\text{No} & \text{No} & REG \\
 \end{array} \\
 }
 $$
