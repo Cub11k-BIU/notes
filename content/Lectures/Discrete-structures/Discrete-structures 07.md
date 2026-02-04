@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"09/12/25, 16:05","modified":"2025-12-16T13:01:14.308+02:00","tags":["Academia","Lecture","Discrete-structures"],"cssclasses":""}
+{"publish":true,"created":"09/12/25, 16:05","modified":"2026-02-04T13:16:49.224+02:00","tags":["Academia","Lecture","Discrete-structures"],"cssclasses":""}
 ---
 
 #### Interval graphs are perfect #lemma 
@@ -114,7 +114,7 @@ $$
 \text{Consider the case } k = 2 \\
 \implies G \text{ is either a path or a cycle (proof is left as an exercise)} \\
 \text{If } G \text{ is a path or an even cycle, it is bipartite and we're done} \\
-\text{If} G \text{ is an odd cycle, we're done} \\
+\text{If } G \text{ is an odd cycle, we're done} \\
 \\
 \text{Let } k \geq 3 \\
 \text{We will make use of the following obvious observation.} \\
@@ -122,7 +122,7 @@ $$
 \text{Suppose that $G$ is partially colored using at most $k$ colors.} \\
 \text{Let $P = (v_{0}, v_{1}, \dots, v_{j})$ be a path in $G$, and assume that the vertices of $P$ are uncolored.} \\
 \text{Then we may color all vertices from $v_{1}$ up to $v_{j-1}$ consecutively along $P$,} \\
-\text{since at the moment of coloring the vertex $v_{1}$ its neighbor $v_{i+1}$ is yet uncolored.} \\
+\text{since at the moment of coloring the vertex $v_{i}$ its neighbor $v_{i+1}$ is yet uncolored.} \\
 \text{We denote this sequential coloring procedure by PathColor$(v_{0}, v_{1}, \dots, v_{j-1}; v_{j} )$.} \\
 \text{Note that after its execution, the last vertex $v_{j}$ of the path P remains uncolored,} \\
 \text{in particular PathColor does nothing if $j = 0$.} \\
@@ -178,7 +178,7 @@ G' \text{ is a planar graph with } n-1 \text{ vertices} \\
 \text{If } deg(v) \leq 4 \text{ then there exists color } i: \forall u \in \Gamma(v): \chi(u) \neq i \\
 \implies G \text{ is 5-colorable} \\
 \text{Let } deg(v) = 5 \\
-\text{If two of the neioghbors of } v \text{ have the same color, we can again extend } \chi \\
+\text{If two of the neighbors of } v \text{ have the same color, we can again extend } \chi \\
 \text{and obtain a proper coloring} \\
 \text{Let all 5 neighbors of } v \text{ have different colors} \\
 \text{Let } a, b, c, d, e \in V \text{ be the neighbors of } v \text{ ordered in a counter clockwise order} \\
@@ -187,7 +187,7 @@ G' \text{ is a planar graph with } n-1 \text{ vertices} \\
 \text{Let } V_{1,3} = \chi^{-1}[\Set{ 1,3 }] \\
 \text{Consider } G'[V_{1,3}] \\
 \text{Let } C_{a}, C_{c} \text{ be the connected components of } a, c \text{ respectively} \\
-C_{a} = C_{c} \implies \exists \chi'(x) = \begin{cases}
+C_{a} \neq C_{c} \implies \exists \chi'(x) = \begin{cases}
 \chi(x) & x \not\in C_{c} \\
 3 & x \in C_{c} \text{ and } \chi(x) = 1 \\
 1 & x \in C_{c} \text{ and } \chi(x) = 3 \\
@@ -196,7 +196,7 @@ C_{a} = C_{c} \implies \exists \chi'(x) = \begin{cases}
 \text{Let } C_{a} = C_{c} \\
 \implies \exists P_{a,c} = (a, \dots, c) \text{ with vertices of alternating colors 1, 3} \\
 \text{Let } V_{2, 3} = \chi^{-1}[\Set{ 2, 4 }] \\
-\text{Consider } G'[2, 4] \\
+\text{Consider } G'[V_{2,4}] \\
 \text{Similarly to } C_{a}, C_{c}, \text{we assume } C_{b} = C_{d} \\
 \implies \exists P_{b,d} = (b, \dots, d) \text{ with vertice of alternating colors 2, 4} \\
 \text{Clearly } P_{a, c} \text{ and } P_{b, d} \text{ are disjoint} \\

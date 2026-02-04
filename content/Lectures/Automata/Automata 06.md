@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"30/11/25, 13:38","modified":"2025-12-07T10:26:02.457+02:00","tags":["Academia","Lecture","Automata"],"cssclasses":""}
+{"publish":true,"created":"30/11/25, 13:38","modified":"2026-01-29T17:07:58.427+02:00","tags":["Academia","Lecture","Automata"],"cssclasses":""}
 ---
 
 ## Context-free grammars (CFG)
@@ -57,7 +57,7 @@ $$
 V - \text{ a set of non-terminal symbols, or variables} \\
 \Sigma - \text{an alphabet of terminal characters} \\
 \text{It is important, that } V \cap \Sigma = \emptyset \\
-R - \text{a collection of production rules } A \to z \text{ where } A \in V, z \in (V \cup Z)^{*} \\
+R - \text{a collection of production rules } A \to z \text{ where } A \in V, z \in (V \cup \Sigma)^{*} \\
 S - \text{a start/sentence symbol, the root} \\
 }
 $$

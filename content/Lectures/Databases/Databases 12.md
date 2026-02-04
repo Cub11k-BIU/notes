@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"21/01/26, 11:01","modified":"2026-01-21T12:18:26.879+02:00","tags":["Academia","Lecture","Databases"],"cssclasses":""}
+{"publish":true,"created":"21/01/26, 11:01","modified":"2026-01-28T11:03:37.049+02:00","tags":["Academia","Lecture","Databases"],"cssclasses":""}
 ---
 
 # NoSQL
@@ -107,3 +107,70 @@ Operations/constraints on values are not supported
 	- Not affected by skewedness of data
 	- Variance in value sizes and frequently updated keys can affect load balancing
 	- Expensive to add/remove servers
+
+How can we improve hashing to make adding/removing servers less expensive?
+- Consistent hashing
+	- Assume current number of servers to be $n$
+	- Choose a large number $N \gg n$
+	- Choice of server by key is computed as $\ceil{\frac{(hash(k) \% N) \cdot n}{N}} \% n$
+	- Adding/removing a server only moves the existing servers relatively little, affecting only the assignment of the values in $hash(k) \% N$
+---
+## Document storage
+Document storage is a subclass of a key-value storage, where values are documents
+Documents are usually a semi-structured data, with nested tree-like structure like JSON
+```json
+{
+	"user_id": "user_001",
+	"login_time": "2025-01-12T14:34:13",
+	"preferences": {
+		"theme": "dark",
+		"language": "he",
+		"currency": "NIS"
+	}
+}
+```
+- Data format is more flexible than relational data model
+- It is less flexible than generic key-value storage, this is done to allow some querying of the documents themselves, not just the keys
+- Sharding is very similar to key-value storage
+
+An example of such a storage is Apache AsterixDB. It uses a query language `SQL++`, which is compatible in syntax with SQL, supports queries like joins, nested queries and aggregation, and has extensions to support JSON (for instance nested data)
+### Indexes
+- Indexes are also distributed - they are maintained per machine
+- Finding the key (primary index) is done, for example, using a hash index per machine(!), its hash function must be different from the partition hash(!)
+- Querying the values (secondary index) is done by searching in parallel over multiple machines and supports flexible structure, e.g. missing fields
+
+What are the disadvantages of document storage?
+- Complex queries are sometimes not supported, or simple perform much worse than a relational DB
+- Updates can be more time consuming, or lead to temporary inconsistency
+- Less support for constraints like FKs
+- Storage can be less compact for uniform data schema
+## Wide-column DBs
+Similar to relational DBs, but each column can be a column family, that is, a set of columns that are related to one another.
+This allows to store values that are commonly used together "close" to each other, making sharding and caching more efficient
+Sharding then can be done not only by keys, but by column families
+
+---
+## Consistency - Transactions
+### ACID properties
+- Atomicity - all updates succeed or fail as an atomic unit
+- Consistency - if the transaction input is consistent, so is the output
+- Isolation - transactions do not interfere with each other
+- Durability - in other words, persistency
+### Strong consistency - ACID in NoSQL
+- Consistency includes all replicas
+	- Implemented by synchronizing all servers using lock mechanisms
+- Supported by some NoSQL servers like MongoDB and AsterixDB
+- Overhead can be very significant
+### Eventual consistency - BASE properties
+BASE is the opposite of ACID
+- Basically Available - queries and updates are available but may return stale data or may be overridden
+- Soft-State - after an update, state may be inconsistent for a short time
+- Eventually consistent - servers coordinate offline to restore consistency (typically takes milliseconds)
+#### Conflict resolution
+- Updates are accumulated
+- A deterministic mechanism exists to choose the final state
+	- This algorithm must be the same for all servers
+	- Examples of such algorithm is "last writer", "writes over deletes"
+### Quorum-based consistency
+Data is consistent if it appears in the majority of servers (quorum)
+It can be combined with eventual consistency

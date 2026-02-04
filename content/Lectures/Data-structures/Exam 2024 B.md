@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"09/07/25, 18:07","modified":"2025-11-21T21:10:13.966+02:00","tags":["Academia","Lecture","Data-structures"],"cssclasses":""}
+{"publish":true,"created":"09/07/25, 18:07","modified":"2026-02-01T15:52:25.817+02:00","tags":["Academia","Lecture","Data-structures"],"cssclasses":""}
 ---
 
 ## Bonus
@@ -44,11 +44,10 @@ $$
 # 2
 $$
 \displaylines{
-\text{Hate it} \\
 \text{Probably two heaps, max heap for smaller half, min heap for largest half} \\
 \text{will get amortized } O(\log n) \text{ for all} \\
 \text{Maybe array, amortized } O(1) \text{ for insert, } O(n) \text{ for delete} \\
-\text{Trees...? Eh, shitty question tbh} \\
+\text{Trees...? Eh, not a nice question tbh} \\
 }
 $$
 # 3a

@@ -1,11 +1,11 @@
 ---
-{"publish":true,"created":"08/07/25, 17:07","modified":"2025-11-21T21:10:13.977+02:00","tags":["Academia","Lecture","Data-structures"],"cssclasses":""}
+{"publish":true,"created":"08/07/25, 17:07","modified":"2026-02-01T15:56:34.159+02:00","tags":["Academia","Lecture","Data-structures"],"cssclasses":""}
 ---
 
 ## Bonus
 $$
 \displaylines{
-\text{Doos ther exist a heap of height } h \text{ with } 2^{h} \text{ nodes?} \\
+\text{Doos there exist a heap of height } h \text{ with } 2^{h} \text{ nodes?} \\
 \\
 \text{Solution:} \\
 \text{Yes} \\
@@ -26,7 +26,7 @@ $$
 $$
 $$
 \displaylines{
-\text{Given that the element are inserted in ascending order, we can store the max node} \\
+\text{Given that the elements are inserted in ascending order, we can store the max node} \\
 \text{and always insert an element as its right child, which would be } O(1) \text{ time} \\
 \text{Note, to maintain } O(\log n) \text{ lookup time, we'll have to make sure the tree stays balanced} \\
 \text{Let us do the following:} \\
@@ -48,7 +48,7 @@ $$
 \implies \boxed{ \text{Insert(x) is amortized } O(1) } \\
 \\
 \text{Find(x) is performed as follows:} \\
-x \text{ is firt looked up in } N_{B} \text{ in } O(\log N_{B}) = O\left( \log \frac{n}{2} \right) \\
+x \text{ is first looked up in } N_{B} \text{ in } O(\log N_{B}) = O\left( \log \frac{n}{2} \right) \\
 \text{Then, if not found, } x \text{ is looked up in } N_{A} \text{ with binary search in } O(\log N_{A}) = O\left( \log \frac{n}{2} \right) \\
 \implies \boxed{ \text{Find(x) is } O\left( \log \frac{n}{2} \right) + O\left( \log \frac{n}{2} \right) = O(\log n) } \\
 }

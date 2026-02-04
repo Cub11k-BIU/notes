@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"02/12/25, 16:03","modified":"2025-12-22T16:03:12.675+02:00","tags":["Academia","Lecture","Discrete-structures"],"cssclasses":""}
+{"publish":true,"created":"02/12/25, 16:03","modified":"2026-02-04T12:11:16.871+02:00","tags":["Academia","Lecture","Discrete-structures"],"cssclasses":""}
 ---
 
 ## Corollaries of Hall's theorem
@@ -52,7 +52,7 @@ $$
 \text{Let } A \text{ be the minimum vertex cover in } G \\
 \forall \Set{ v, u } \in M: u \in A \text{ or } v \in A \\
 \implies \abs{A} \geq \abs{M} \implies MM(G) \leq VC(G) \\
-\text{Note that this is true for any graph, we did not use }
+\text{Note that this is true for any graph, we did not use the fact that } G \text{ is bipartite} \\
 \\
 \text{Let } L_{A} = L \cap A, R_{A} = R \cap A \\
 \text{Let } H_{L} = G[L_{A} \cup (R \setminus R_{A})], H_{R} = G[R_{A} \cup (L \setminus L_{A})] \\

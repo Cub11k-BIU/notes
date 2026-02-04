@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"14/01/26, 09:45","modified":"2026-01-14T19:01:34.098+02:00","tags":["Academia","Lecture","Databases"],"cssclasses":""}
+{"publish":true,"created":"14/01/26, 09:45","modified":"2026-02-02T19:25:00.117+02:00","tags":["Academia","Lecture","Databases"],"cssclasses":""}
 ---
 
 # Query complier/optimizer
@@ -309,7 +309,7 @@ We saved 1 write + read of selection result and 1 write + read of join result!
 - Output tuple size: $\frac{B(R)}{T(R)} + \frac{B(S)}{T(S)}$
 - Output number of pages: $B(R)T(S) + B(S)T(R)$
 #### Reduction factor
-- $\frac{1}{V(R, A)}$ - when selection one value out of $V(R, A)$ values in column $R(A)$
+- $\frac{1}{V(R, A)}$ - when selecting one value out of $V(R, A)$ values in column $R(A)$
 	- this is correct under the assumption of a uniform distribution
 - $\frac{x-y}{A_{\max}-A_{\min}}$ - when selecting a range between $y$ and $x$ when the values in the column range from $A_{\min}$ to $A_{\max}$
 	- this is correct under the assumption of uniform distribution of values between $A_{\min}$ and $A_{\max}$
