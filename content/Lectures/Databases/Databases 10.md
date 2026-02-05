@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"31/12/25, 10:08","modified":"2026-01-07T12:32:00.705+02:00","tags":["Academia","Lecture","Databases"],"cssclasses":""}
+{"publish":true,"created":"31/12/25, 10:08","modified":"2026-02-05T11:02:01.900+02:00","tags":["Academia","Lecture","Databases"],"cssclasses":""}
 ---
 
 #### Delete from B+ tree
@@ -215,8 +215,11 @@ Here, in order to be able to do this in one pass, meaning that each page is read
 Then, for each partition $R_{i}$, for each page in $S_{i}$ write matching pairs. This step assumes $\forall i: B(R_{i}) < M-2$. If this is not fulfilled, partition larger partitions again!
 The cost of a hash join (assuming one partition step) is just $3(B(R) + B(S))$
 
-The only limitation is that $B(R), B(S) \leq (M-1)(M-2)$, which is usually the case, as just 1MB of memory (256 4KB pages) is enough to hash 256GB of data
-
+The only limitation is that $B(R), B(S) \leq (M-1)(M-2)$, which is usually the case
+- 1MB memory - up to 256MB data
+- 2MB memory - up to 1GB data
+- 4MB memory - up to 4GB data
+- 32MB memory - up to 256GB data
 
 | Algorithm              | Assumptions                                    | Advantages                                                                                     |
 | ---------------------- | ---------------------------------------------- | ---------------------------------------------------------------------------------------------- |
