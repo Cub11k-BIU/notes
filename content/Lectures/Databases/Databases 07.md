@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"10/12/25, 10:03","modified":"2025-12-17T10:22:45.653+02:00","tags":["Academia","Lecture","Databases"],"cssclasses":""}
+{"publish":true,"created":"10/12/25, 10:03","modified":"2026-02-05T15:36:17.248+02:00","tags":["Academia","Lecture","Databases"],"cssclasses":""}
 ---
 
 # Database normalization
@@ -98,7 +98,7 @@ $$
 \end{align} \\
 }
 $$
-Returning to the previous exercice:
+Returning to the previous exercise:
 - $\Set{ \text{name, title} }^{+} = \Set{ \text{name, title, amount} }$
 - $\Set{ \text{ID, department} }^{+} = \Set{ \text{ID, department, name, title, amount, date} }$
 ## Defining a key based on FDs #lemma 

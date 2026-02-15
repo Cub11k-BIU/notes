@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"27/01/26, 13:07","modified":"2026-01-27T17:34:18.510+02:00","tags":["Academia","Lecture","Algorithms-1"],"cssclasses":""}
+{"publish":true,"created":"27/01/26, 13:07","modified":"2026-02-12T13:51:50.563+02:00","tags":["Academia","Lecture","Algorithms-1"],"cssclasses":""}
 ---
 
 # MST - continuation
@@ -21,7 +21,7 @@ e \in E \text{ is the heaviest edge in a loop} \implies \exists MST: e \not\in M
 }
 $$
 ---
-## Boruvka / Sollin algorithm
+## Boruvka / Sollen algorithm
 $$
 \displaylines{
 \text{We begin with an the empty graph} \\
@@ -67,7 +67,7 @@ O\left( \abs{E}\log \log \abs{V'} + \abs{V'}\log \abs{V'} \right) \\
 }
 $$
 ---
-## KKT algorithm
+## KKT (Karger-Klein-Tarjan) algorithm
 $$
 \displaylines{
 \text{First, let us note the following lemma:} \\
@@ -79,29 +79,35 @@ A \cup \Set{ e } \text{ is acylic} \\
 \end{cases} \\
 e \text{ is then called $A$-light} \\
 MST(G) \text{ is then contained in } \Set{ e \mid e \text{ is $A$-light} } \\
-\text{Furthermore, } MST(G) = A \iff \not\exists e \in E: e \text{ is $A$-light and } e \not\in A \\
+\text{Furthermore, } MST(G) = G[A] \iff \not\exists e \in E: e \text{ is $A$-light and } e \not\in A \\
 \\
 \text{Another important theorem is:} \\
 \text{Let } A \subseteq E \text{ be acyclic} \\
-\text{Then it is possible to compute all $A$-light edges in } O(\abs{E} + \abs{V}) \text{ time deterministically} \\
+\text{Then it is possible to compute all $A$-light edges in } O(\abs{V} + \abs{E}) \text{ time deterministically} \\
 \\
-\text{Now, let } F \text{ be the set of edges contracted during Boruvka's algorithm} \\
-\text{The algorithm is then as follows:} \\
-\text{Run Boruvka's algorithm with three iterations} \\
-\text{Let } G_{1} = (V_{1}, E_{1}) \text{ be the resulting graph} \\
-\text{Let } F_{1} \text{ be the set of contracted edges} \\
-\text{Note that } \abs{V_{1}} \leq \frac{\abs{V}}{8} \text{ and } F_{1} \text{ is clearly acyclic} \\
-\text{Let } R \subseteq E_{1}: \abs{R} = \frac{\abs{E_{1}}}{2} \text{ be uniformly random} \\
+\begin{align}
+ & MST-KKT(G = (V, E)): \\
+1. & \quad \text{if } \abs{V}, \abs{E} \in O(1): \\
+2. & \qquad \text{return Brute force MST} \\
+3. & \quad G_{1}(V_{1}, E_{1}) \leftarrow \text{Three iterations of Boruvka} \\
+4. & \quad C \leftarrow \text{edges contracted in Boruvka iterations} \\
+5. & \quad G_{2}(V_{1}, E_{2}) \leftarrow \text{Sample randomly and uniformly at most } 2\abs{V_{1}} \text{ edges from } G_{1} \\
+6. & \quad F_{2} \leftarrow MST-KKT(G_{2}) \\
+7. & \quad G_{3}(V_{1}, E_{3}) \leftarrow \text{remove all } F_{2}\text{-heavy edges from } G_{1} \\
+8. & \quad F \leftarrow MST-KKT(G_{3}) \\
+9. & \text{return } C \cup F \\
+\end{align} \\
 \\
-\text{Compute MST recursively for } G' = (V_{1}, R) \\
-\text{Let } F_{2} \text{ be the result, it is clearly acylic} \\
-\text{We use theorem above to compute all } F_{2}\text{-light edges in } G_{1}, \text{ denote this as } L \\
-\text{Now, we compute MST for } G'' = (V_{1}, L) \\
-\text{Let } F_{3} \text{ be the result, it is clearly acylic} \\
-\text{Finally, we return } F_{1} \cup F_{3} \\
+\text{Correctness of this algorithm follows from correctness of Boruvka} \\
+\text{and the fact that no } F\text{-heavy edges are in } MST(G) \\
 \\
-\text{Correctness of the algorithm follows immediately from} \\
-\text{correctness of Boruvka's algorithm and lemma above} \\
+P(e \text{ is } F_{2}\text{-light}) <p P(e \in MST(G[E_{2} \cup \Set{ e }]) \mid \text{fixed } E_{2} \cup \Set{ e }) \leq \frac{\abs{V}-1}{\abs{E_{2} \cup \Set{ e }}} \leq \frac{\abs{V_{1}}}{\abs{E_{2}}} \\
+\implies E[\# \text{ of } F_{2}\text{-light edges in } E_{2}] = \sum_{e \in \abs{E_{1}}} P(e \text{ is } F_{2}\text{-light}) \leq \frac{\abs{V_{1}}\abs{E_{1}}}{\abs{E_{2}}} = \frac{\abs{E_{1}}}{2} \leq \frac{\abs{E}}{2} \\
+\implies \abs{E_{3}} \leq \frac{\abs{E}}{2} \\
+\\
+\text{Steps } 2, 3, 5 \text{ and } 7 \text{ all take } O(\abs{V} + \abs{E}) \text{ time} \\
+\text{Let } T(n, m) \text{ be the expected runtime of } KKT \\
+\text{Then } T(n,m) = T\left( \frac{n}{8}, \frac{n}{4} \right) + T\left( \frac{n}{8}, \frac{m}{2} \right) + O(n+m) = \dots = O(n + m) \\
 }
 $$
-TO BE CONTINUED
+---

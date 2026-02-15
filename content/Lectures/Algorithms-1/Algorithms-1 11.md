@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"20/01/26, 14:04","modified":"2026-01-21T16:22:01.452+02:00","tags":["Academia","Lecture","Algorithms-1"],"cssclasses":""}
+{"publish":true,"created":"20/01/26, 14:04","modified":"2026-02-12T13:08:57.497+02:00","tags":["Academia","Lecture","Algorithms-1"],"cssclasses":""}
 ---
 
 # Concentration bounds
@@ -89,8 +89,12 @@ E[e^{tX_{i}}] = pe^{t} + (1-p) = 1 + p(e^{t}-1) \leq e^{p(e^{t}-1)} \\
 P(X \geq a) \leq \frac{E[e^{tX}]}{e^{ta}} = \frac{\prod_{i=1}^{n} E[e^{tX_{i}}]}{e^{ta}} \leq \frac{e^{np(e^{t}-1)}}{e^{ta}} \\
 \\
 \text{Let } a = (1+\delta)np = (1+\delta)E[X] \\
-\text{Let } t = \ln(1+\delta) \\
+\text{Let } t = \ln(1+\delta) \text{ where } \delta > 0 \\
 \implies P(X \geq (1+\delta)np) \leq \frac{e^{\delta np}}{e^{\ln(1+\delta)(1+\delta)np}} = \lrp{\frac{e^{\delta}}{(1+\delta)^{1+\delta}}}^{np} \\
-\text{Similar bounds can be derived for other random variables} \\
+\\
+\text{Let } \delta \in (0, 1) \\
+\delta - (1+\delta)\ln(1+\delta) \leq -\frac{\delta^{2}}{3} \\
+\implies \boxed{ P(X \geq (1+\delta)np) \leq e^{\frac{-\delta^{2}np}{3}} } \\
+\text{Similarly, } \boxed{ P(X \leq (1-\delta)np) \leq e^{\frac{-\delta^{2}np}{2}} } \\
 }
 $$

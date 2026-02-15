@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"31/12/25, 10:08","modified":"2026-02-05T11:02:01.900+02:00","tags":["Academia","Lecture","Databases"],"cssclasses":""}
+{"publish":true,"created":"31/12/25, 10:08","modified":"2026-02-05T12:55:44.956+02:00","tags":["Academia","Lecture","Databases"],"cssclasses":""}
 ---
 
 #### Delete from B+ tree
@@ -137,7 +137,7 @@ Without an index, cost of selection is clearly $B(R)$
 The cost of searching the index is
 - 0 if index is in memory
 - 1 for a hash index
-- 2-4 read for a B+ tree index
+- 2-4 reads for a B+ tree index
 
 If the index is clustered, all relevant records are adjacent, we can read them in $B(O)$
 If the index is not clustered, it usually is a B+ tree, data entries are sorted, so we can read the relevant records in up to $T(O)$ if each output tuple is in a different page, the improvement is to not read the same page twice, which gives us $\min\{B(R), T(O)\}$

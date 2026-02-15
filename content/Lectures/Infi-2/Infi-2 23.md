@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"30/06/25, 16:06","modified":"2025-11-21T21:10:14.436+02:00","tags":["Academia","Lecture","Infi-2"],"cssclasses":""}
+{"publish":true,"created":"30/06/25, 16:06","modified":"2026-02-15T23:51:44.107+02:00","tags":["Academia","Lecture","Infi-2"],"cssclasses":""}
 ---
 
 ## Extremums
@@ -57,12 +57,14 @@ M_{3} = H_{g} \\
 \forall i \in [1, n]: \lambda_{i} > 0 \implies \text{Point is a local minimum} \\
 \forall i \in [1, n]: \lambda_{i} < 0 \implies \text{Points is a local maximum} \\
 }
-$$$$
+$$
+$$
 \displaylines{
 \text{Note: further reading - Sylvester's criterion} \\ 
 }
 $$
 ---
+
 $$
 \displaylines{
 f(x, y) = 3(x^{2} + y^{2}) + x^{3} + 4y \\
@@ -103,7 +105,9 @@ H_{f}\left( -2, -\frac{2}{3} \right) = \begin{pmatrix}
 \end{pmatrix} \implies \boxed{ \left( -2, -\frac{2}{3} \right) \text{ is a saddle} } \\
 }
 $$
+
 ---
+
 $$
 \displaylines{
 1. & \text{Saddle is a point where in some paths it is a local maximum and in some a minimum} \\
@@ -113,7 +117,9 @@ $$
 & \text{For functions of multiple variable there aren't} \\
 }
 $$
+
 ---
+
 $$
 \displaylines{
 f(x, y, z) = x^{2} + y^{2} + z^{2} - xy + yz - xz - 4x + 6y + 2z \\
@@ -158,7 +164,9 @@ f_{zx} & f_{zy} & f_{zz} \\
 \det(M_{3}) = 4 > 0 \\
 }
 $$
+
 ---
+
 $$
 \displaylines{
 f(x, y, z) = x^{3} + y^{3} + z^{3} - 3xz - 3yz - 3xy \\

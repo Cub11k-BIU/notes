@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"24/11/25, 13:00","modified":"2025-11-26T12:20:25.524+02:00","tags":["Academia","#Practice","Algorithms-1"],"cssclasses":""}
+{"publish":true,"created":"24/11/25, 13:00","modified":"2026-02-10T16:39:22.592+02:00","tags":["Academia","#Practice","Algorithms-1"],"cssclasses":""}
 ---
 
 # APSP - All Pairs Shortest Paths and SSSP - Single Source Shortest Paths
@@ -38,6 +38,12 @@ D \text{ distances matrix} \\
 \Pi \text{ paths matrix} \\
 }
 $$
+## Naive solutions
+Running SSSP from each vertex is a naive solution that leads to the following runtimes:
+- Bellman-Ford - okay with negative edges, but no negative cycles
+	- $O(\abs{V}^{2}\abs{E})$ which in worst cases is $O(\abs{V}^{4})$
+- Dijkstra - no negative edges
+	- $O(\abs{V}\abs{E} + \abs{V}^{2}\log \abs{V})$ which in worst cases is $O(\abs{V}^{3})$
 ## Floyd-Warshall
 Let us enumerate all vertices from $1 \text{ to } n$. Consider a function $d(i, j, k)$ that returns the distance from $i$ to $j$ using only from the set $\Set{ 1, 2, \dots, k }$
 Clearly, $d(i, j, k) \leq d(i, j, k-1)$ as we either use the same path using only vertices from $[k-1]$ or find a shorter path via vertex $k$
@@ -58,8 +64,14 @@ $$
 \forall i, j \in [n]: \exists (z, j) \in E: D[i][j] = D[z][j] + \omega(z, j) \\
 }
 $$
+Runtime is $O(\abs{V}^{3})$
+### Transitive closure
+It is possible to use Floyd-Warshall algorithm to find transitive closure of a graph, by replacing $\min, +$ with $\lor, \land$
 ## Johnson-Dijkstra
 1. First, a new node $q$ is added to the graph, connected by zero-weight edges to each of the other nodes
 2. Second, the Bellman–Ford algorithm is used, starting from the new vertex $q$, to find for each vertex $v$ the minimum weight $h(v)$ of a path from $q$ to $v$. If this step detects a negative cycle, the algorithm is terminated
 3. Next the edges of the original graph are reweighted using the values computed by the Bellman–Ford algorithm: an edge from $u$ to $v$, having weight ⁠$\omega(u, v)$, is given the new weight $w(u, v) + h(u) - h(v)$
 4. Finally, $q$ is removed, and Dijkstra's algorithm is used to find the shortest paths from each node $s$ to every other vertex in the reweighted graph. The distance in the original graph is then computed for each distance $D(u, v)$, by adding $h(v) - h(u)$ to the distance returned by Dijkstra's algorithm.
+
+Essentially, Johnson's algorithm solves APSP via SSSP while allowing negative edges by combining Bellman-Ford and Dijkstra
+The runtime is $O(\abs{V}\abs{E} + \abs{V}^{2}\log \abs{V})$
