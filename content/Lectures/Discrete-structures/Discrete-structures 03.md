@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"11/11/25, 16:11","modified":"2025-11-25T12:12:18.413+02:00","tags":["Academia","Lecture","Discrete-structures"],"cssclasses":""}
+{"publish":true,"created":"11/11/25, 16:11","modified":"2026-03-24T15:00:28.449+02:00","tags":["Academia","Lecture","Discrete-structures"],"cssclasses":""}
 ---
 
 ## Cantor's theorem #theorem 

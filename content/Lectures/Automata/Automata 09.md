@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"11/01/26, 11:56","modified":"2026-01-11T14:27:09.079+02:00","tags":["Academia","Lecture","Automata"],"cssclasses":""}
+{"publish":true,"created":"11/01/26, 11:56","modified":"2026-03-24T15:00:00.890+02:00","tags":["Academia","Lecture","Automata"],"cssclasses":""}
 ---
 
 # Turing machine variations

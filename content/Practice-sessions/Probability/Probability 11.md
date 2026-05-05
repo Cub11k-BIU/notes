@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"11/01/26, 18:06","modified":"2026-01-11T19:19:46.855+02:00","tags":["Academia","#Practice","Probability"],"cssclasses":""}
+{"publish":true,"created":"11/01/26, 18:06","modified":"2026-03-24T14:59:39.176+02:00","tags":["Academia","#Practice","Probability"],"cssclasses":""}
 ---
 
 ## Convergence of Geometric distribution to the Exponential one

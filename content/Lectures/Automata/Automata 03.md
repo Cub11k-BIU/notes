@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"02/11/25, 10:11","modified":"2025-12-07T09:19:31.437+02:00","tags":["Academia","Lecture","Automata"],"cssclasses":""}
+{"publish":true,"created":"02/11/25, 10:11","modified":"2026-03-24T15:00:00.816+02:00","tags":["Academia","Lecture","Automata"],"cssclasses":""}
 ---
 
 # Deterministic finite automaton (DFA) #definition 

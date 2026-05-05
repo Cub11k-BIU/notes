@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"03/04/25, 09:04","modified":"2025-11-21T21:10:13.960+02:00","tags":["Academia","Lecture","Data-structures"],"cssclasses":""}
+{"publish":true,"created":"03/04/25, 09:04","modified":"2026-03-24T15:00:07.193+02:00","tags":["Academia","Lecture","Data-structures"],"cssclasses":""}
 ---
 
 ## BST (Binary Search Tree) #definition 

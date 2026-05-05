@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"19/11/25, 12:58","modified":"2025-11-21T21:10:14.636+02:00","tags":["Academia","Lecture","Probability"],"cssclasses":""}
+{"publish":true,"created":"19/11/25, 12:58","modified":"2026-03-24T15:01:00.101+02:00","tags":["Academia","Lecture","Probability"],"cssclasses":""}
 ---
 
 # Bayes formula and law of total probability

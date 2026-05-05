@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"01/02/26, 12:30","modified":"2026-02-02T16:05:49.958+02:00","tags":["Academia","Lecture","Discrete-structures"],"cssclasses":""}
+{"publish":true,"created":"01/02/26, 12:30","modified":"2026-03-24T15:00:28.555+02:00","tags":["Academia","Lecture","Discrete-structures"],"cssclasses":""}
 ---
 
 # Part A

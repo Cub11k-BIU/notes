@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"23/12/25, 13:09","modified":"2025-12-23T15:23:29.142+02:00","tags":["Academia","Lecture","Algorithms-1"],"cssclasses":""}
+{"publish":true,"created":"23/12/25, 13:09","modified":"2026-03-24T14:59:54.902+02:00","tags":["Academia","Lecture","Algorithms-1"],"cssclasses":""}
 ---
 
 # Boolean Matrix Multiplication (BMM) and Triangle Detection

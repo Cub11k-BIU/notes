@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"29/10/25, 10:10","modified":"2025-11-21T21:10:24.598+02:00","tags":["Academia","Practice","Databases"],"cssclasses":""}
+{"publish":true,"created":"29/10/25, 10:10","modified":"2026-03-24T14:58:50.268+02:00","tags":["Academia","Practice","Databases"],"cssclasses":""}
 ---
 
 ## Installation stuff, etc.

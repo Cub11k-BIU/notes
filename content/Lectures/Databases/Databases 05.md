@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"26/11/25, 10:04","modified":"2025-11-26T12:19:33.314+02:00","tags":["Academia","Lecture","Databases"],"cssclasses":""}
+{"publish":true,"created":"26/11/25, 10:04","modified":"2026-03-24T15:00:16.995+02:00","tags":["Academia","Lecture","Databases"],"cssclasses":""}
 ---
 
 ## DML - Data Manipulation Language

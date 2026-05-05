@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"31/12/25, 10:08","modified":"2026-02-05T12:55:44.956+02:00","tags":["Academia","Lecture","Databases"],"cssclasses":""}
+{"publish":true,"created":"31/12/25, 10:08","modified":"2026-03-24T15:00:17.012+02:00","tags":["Academia","Lecture","Databases"],"cssclasses":""}
 ---
 
 #### Delete from B+ tree

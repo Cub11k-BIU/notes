@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"09/07/25, 20:07","modified":"2025-11-21T21:10:13.969+02:00","tags":["Academia","Lecture","Data-structures"],"cssclasses":""}
+{"publish":true,"created":"09/07/25, 20:07","modified":"2026-03-24T15:00:07.236+02:00","tags":["Academia","Lecture","Data-structures"],"cssclasses":""}
 ---
 
 ## Bonus

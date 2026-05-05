@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"04/11/25, 16:11","modified":"2025-11-25T12:21:34.692+02:00","tags":["Academia","Lecture","Discrete-structures"],"cssclasses":""}
+{"publish":true,"created":"04/11/25, 16:11","modified":"2026-03-24T15:00:28.437+02:00","tags":["Academia","Lecture","Discrete-structures"],"cssclasses":""}
 ---
 
 ## Proof that $\aleph_{0} < \aleph$

@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"11/02/26, 17:04","modified":"2026-02-11T18:26:15.968+02:00","tags":["Academia","#Practice","Algorithms-1"],"cssclasses":""}
+{"publish":true,"created":"11/02/26, 17:04","modified":"2026-03-24T14:58:08.278+02:00","tags":["Academia","#Practice","Algorithms-1"],"cssclasses":""}
 ---
 
 ## Coupon collector problem

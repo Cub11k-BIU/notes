@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"19/11/25, 10:15","modified":"2025-11-21T21:10:13.996+02:00","tags":["Academia","Lecture","Databases"],"cssclasses":""}
+{"publish":true,"created":"19/11/25, 10:15","modified":"2026-03-24T15:00:16.992+02:00","tags":["Academia","Lecture","Databases"],"cssclasses":""}
 ---
 
 ## Some window functions

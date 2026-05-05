@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"24/01/26, 14:09","modified":"2026-01-26T17:32:02.855+02:00","tags":["Academia","Lecture","Automata"],"cssclasses":""}
+{"publish":true,"created":"24/01/26, 14:09","modified":"2026-03-24T15:00:00.915+02:00","tags":["Academia","Lecture","Automata"],"cssclasses":""}
 ---
 
 # Non-decidability

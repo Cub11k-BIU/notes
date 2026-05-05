@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"03/12/25, 13:02","modified":"2025-12-03T15:33:08.027+02:00","tags":["Academia","Lecture","Probability"],"cssclasses":""}
+{"publish":true,"created":"03/12/25, 13:02","modified":"2026-03-24T15:01:00.122+02:00","tags":["Academia","Lecture","Probability"],"cssclasses":""}
 ---
 
 # Random variables

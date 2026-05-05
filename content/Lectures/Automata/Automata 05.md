@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"23/11/25, 10:21","modified":"2025-12-07T09:23:55.965+02:00","tags":["Academia","Lecture","Automata"],"cssclasses":""}
+{"publish":true,"created":"23/11/25, 10:21","modified":"2026-03-24T15:00:00.847+02:00","tags":["Academia","Lecture","Automata"],"cssclasses":""}
 ---
 
 # Regular languages

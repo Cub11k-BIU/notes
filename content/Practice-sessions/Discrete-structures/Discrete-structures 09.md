@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"28/12/25, 15:04","modified":"2025-12-28T18:03:24.878+02:00","tags":["Academia","#Practice","Discrete-structures"],"cssclasses":""}
+{"publish":true,"created":"28/12/25, 15:04","modified":"2026-03-24T14:59:04.530+02:00","tags":["Academia","#Practice","Discrete-structures"],"cssclasses":""}
 ---
 
 # Recursive formulas

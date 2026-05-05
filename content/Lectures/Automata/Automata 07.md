@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"07/12/25, 09:07","modified":"2025-12-07T18:04:50.182+02:00","tags":["Academia","Lecture","Automata"],"cssclasses":""}
+{"publish":true,"created":"07/12/25, 09:07","modified":"2026-03-24T15:00:00.868+02:00","tags":["Academia","Lecture","Automata"],"cssclasses":""}
 ---
 
 # Pushdown automaton (PDA)

@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"23/12/25, 16:05","modified":"2025-12-23T18:06:00.776+02:00","tags":["Academia","Lecture","Discrete-structures"],"cssclasses":""}
+{"publish":true,"created":"23/12/25, 16:05","modified":"2026-03-24T15:00:28.525+02:00","tags":["Academia","Lecture","Discrete-structures"],"cssclasses":""}
 ---
 
 # Edge coloring and line graph

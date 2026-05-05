@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"21/01/26, 11:01","modified":"2026-01-28T11:03:37.049+02:00","tags":["Academia","Lecture","Databases"],"cssclasses":""}
+{"publish":true,"created":"21/01/26, 11:01","modified":"2026-03-24T15:00:17.018+02:00","tags":["Academia","Lecture","Databases"],"cssclasses":""}
 ---
 
 # NoSQL

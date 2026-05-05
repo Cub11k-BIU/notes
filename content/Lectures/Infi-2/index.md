@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Infi-2","created":"18/11/25, 17:48","modified":"2025-12-10T22:12:41.858+02:00","tags":["Academia","Lecture","Infi-2"],"cssclasses":""}
+{"publish":true,"title":"Infi-2","created":"18/11/25, 17:48","modified":"2026-03-24T15:00:40.122+02:00","tags":["Academia","Lecture","Infi-2"],"cssclasses":""}
 ---
 
 - [[Lectures/Infi-2/Exam 2022 (A)\|Exam 2022 (A)]]

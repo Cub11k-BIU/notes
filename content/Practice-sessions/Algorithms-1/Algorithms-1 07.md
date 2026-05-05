@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"11/02/26, 11:31","modified":"2026-02-12T14:10:24.471+02:00","tags":["Academia","#Practice","Algorithms-1"],"cssclasses":""}
+{"publish":true,"created":"11/02/26, 11:31","modified":"2026-03-24T14:58:08.246+02:00","tags":["Academia","#Practice","Algorithms-1"],"cssclasses":""}
 ---
 
 ## Finding min-cut in a flow network

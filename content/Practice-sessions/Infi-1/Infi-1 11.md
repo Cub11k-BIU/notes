@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"15/01/25, 17:01","modified":"2025-11-21T21:10:25.031+02:00","tags":["Academia","Practice","Infi-1"],"cssclasses":""}
+{"publish":true,"created":"15/01/25, 17:01","modified":"2026-03-24T14:59:15.055+02:00","tags":["Academia","Practice","Infi-1"],"cssclasses":""}
 ---
 
 # Infi-1 11

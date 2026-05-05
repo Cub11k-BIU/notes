@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"17/12/25, 10:07","modified":"2025-12-17T12:31:00.262+02:00","tags":["Academia","Lecture","Databases"],"cssclasses":""}
+{"publish":true,"created":"17/12/25, 10:07","modified":"2026-03-24T15:00:17.004+02:00","tags":["Academia","Lecture","Databases"],"cssclasses":""}
 ---
 
 # BCNF and 3NF

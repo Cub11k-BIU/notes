@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"12/11/25, 12:11","modified":"2026-01-06T16:44:38.815+02:00","tags":["Academia","Lecture","Probability"],"cssclasses":""}
+{"publish":true,"created":"12/11/25, 12:11","modified":"2026-03-24T15:01:00.090+02:00","tags":["Academia","Lecture","Probability"],"cssclasses":""}
 ---
 
 ## Matching problem

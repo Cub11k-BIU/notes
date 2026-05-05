@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"09/11/25, 13:11","modified":"2025-11-21T21:10:24.505+02:00","tags":["Academia","Practice","Automata"],"cssclasses":""}
+{"publish":true,"created":"09/11/25, 13:11","modified":"2026-03-24T14:58:28.766+02:00","tags":["Academia","Practice","Automata"],"cssclasses":""}
 ---
 
 $$

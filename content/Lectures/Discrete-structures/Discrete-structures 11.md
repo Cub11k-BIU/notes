@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"21/01/26, 16:31","modified":"2026-01-24T22:53:17.730+02:00","tags":["Academia","Lecture","Discrete-structures"],"cssclasses":""}
+{"publish":true,"created":"21/01/26, 16:31","modified":"2026-03-24T15:00:28.545+02:00","tags":["Academia","Lecture","Discrete-structures"],"cssclasses":""}
 ---
 
 ## Bounding Ramsey numbers

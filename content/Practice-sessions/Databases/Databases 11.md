@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"14/01/26, 19:02","modified":"2026-01-14T19:30:37.866+02:00","tags":["Academia","#Practice","Databases"],"cssclasses":""}
+{"publish":true,"created":"14/01/26, 19:02","modified":"2026-03-24T14:58:50.283+02:00","tags":["Academia","#Practice","Databases"],"cssclasses":""}
 ---
 
 ## Cost of the query

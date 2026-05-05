@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"12/11/25, 09:11","modified":"2025-11-21T21:10:13.989+02:00","tags":["Academia","Lecture","Databases"],"cssclasses":""}
+{"publish":true,"created":"12/11/25, 09:11","modified":"2026-03-24T15:00:16.982+02:00","tags":["Academia","Lecture","Databases"],"cssclasses":""}
 ---
 
 ## Aggregation -- Grouping

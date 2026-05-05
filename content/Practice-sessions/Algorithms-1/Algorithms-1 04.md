@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"17/11/25, 18:02","modified":"2025-11-21T21:10:24.472+02:00","tags":["Academia","Practice","Algorithms-1"],"cssclasses":""}
+{"publish":true,"created":"17/11/25, 18:02","modified":"2026-03-24T14:58:08.215+02:00","tags":["Academia","Practice","Algorithms-1"],"cssclasses":""}
 ---
 
 ## Topological sorting problem

@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"18/01/26, 18:08","modified":"2026-01-26T08:26:45.905+02:00","tags":["Academia","#Practice","Probability"],"cssclasses":""}
+{"publish":true,"created":"18/01/26, 18:08","modified":"2026-03-24T14:59:39.186+02:00","tags":["Academia","#Practice","Probability"],"cssclasses":""}
 ---
 
 ## Generalized random variable

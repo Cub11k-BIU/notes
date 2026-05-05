@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"18/11/25, 13:02","modified":"2025-11-21T21:10:13.909+02:00","tags":["Academia","Lecture","Algorithms-1"],"cssclasses":""}
+{"publish":true,"created":"18/11/25, 13:02","modified":"2026-03-24T14:59:54.859+02:00","tags":["Academia","Lecture","Algorithms-1"],"cssclasses":""}
 ---
 
 # Shortest paths in a weighted graph

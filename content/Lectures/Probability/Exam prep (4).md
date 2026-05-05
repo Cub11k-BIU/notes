@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"19/02/26, 18:43","modified":"2026-02-19T20:34:42.713+02:00","tags":["Academia","Lecture","Probability"],"cssclasses":""}
+{"publish":true,"created":"19/02/26, 18:43","modified":"2026-03-24T15:01:00.039+02:00","tags":["Academia","Lecture","Probability"],"cssclasses":""}
 ---
 
 ## 2

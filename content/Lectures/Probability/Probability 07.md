@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"10/12/25, 13:02","modified":"2025-12-17T14:42:27.777+02:00","tags":["Academia","Lecture","Probability"],"cssclasses":""}
+{"publish":true,"created":"10/12/25, 13:02","modified":"2026-03-24T15:01:00.134+02:00","tags":["Academia","Lecture","Probability"],"cssclasses":""}
 ---
 
 ### Example

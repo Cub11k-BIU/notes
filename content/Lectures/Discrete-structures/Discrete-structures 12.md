@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"27/01/26, 16:30","modified":"2026-01-27T18:05:42.617+02:00","tags":["Academia","Lecture","Discrete-structures"],"cssclasses":""}
+{"publish":true,"created":"27/01/26, 16:30","modified":"2026-03-24T15:00:28.566+02:00","tags":["Academia","Lecture","Discrete-structures"],"cssclasses":""}
 ---
 
 ## Chain and antichain #definition 

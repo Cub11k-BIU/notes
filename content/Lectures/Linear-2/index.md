@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Linear-2","created":"18/11/25, 17:48","modified":"2025-12-10T22:12:39.180+02:00","tags":["Academia","Lecture","Linear-2"],"cssclasses":""}
+{"publish":true,"title":"Linear-2","created":"18/11/25, 17:48","modified":"2026-03-24T15:00:54.222+02:00","tags":["Academia","Lecture","Linear-2"],"cssclasses":""}
 ---
 
 - [[Lectures/Linear-2/Exam 2022 (A)\|Exam 2022 (A)]]

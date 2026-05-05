@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"03/04/25, 12:04","modified":"2025-11-21T21:10:24.576+02:00","tags":["Academia","Practice","Data-structures"],"cssclasses":""}
+{"publish":true,"created":"03/04/25, 12:04","modified":"2026-03-24T14:58:43.042+02:00","tags":["Academia","Practice","Data-structures"],"cssclasses":""}
 ---
 
 ## Dynamic array

@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"20/01/26, 16:23","modified":"2026-01-24T14:28:45.049+02:00","tags":["Academia","Lecture","Automata"],"cssclasses":""}
+{"publish":true,"created":"20/01/26, 16:23","modified":"2026-03-24T15:00:00.904+02:00","tags":["Academia","Lecture","Automata"],"cssclasses":""}
 ---
 
 ## Closures

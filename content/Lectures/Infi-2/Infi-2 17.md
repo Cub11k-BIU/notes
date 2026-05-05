@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"19/05/25, 12:05","modified":"2025-11-21T21:10:14.416+02:00","tags":["Academia","Lecture","Infi-2"],"cssclasses":""}
+{"publish":true,"created":"19/05/25, 12:05","modified":"2026-03-24T15:00:40.282+02:00","tags":["Academia","Lecture","Infi-2"],"cssclasses":""}
 ---
 
 ## Uniform convergence of power series #lemma 

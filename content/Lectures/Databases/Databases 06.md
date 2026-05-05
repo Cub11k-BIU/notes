@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"03/12/25, 10:15","modified":"2025-12-03T12:14:41.711+02:00","tags":["Academia","Lecture","Databases"],"cssclasses":""}
+{"publish":true,"created":"03/12/25, 10:15","modified":"2026-03-24T15:00:16.997+02:00","tags":["Academia","Lecture","Databases"],"cssclasses":""}
 ---
 
 # Database design

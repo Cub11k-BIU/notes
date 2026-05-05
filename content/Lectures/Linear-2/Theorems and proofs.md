@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"03/07/25, 15:07","modified":"2025-11-21T21:10:14.573+02:00","tags":["Academia","Lecture","Linear-2"],"cssclasses":""}
+{"publish":true,"created":"03/07/25, 15:07","modified":"2026-03-24T15:00:54.435+02:00","tags":["Academia","Lecture","Linear-2"],"cssclasses":""}
 ---
 
  ## Eigenvalues of linear transformation and representation matrix #lemma 

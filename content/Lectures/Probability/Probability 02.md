@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"05/11/25, 13:11","modified":"2025-11-23T09:42:00.158+02:00","tags":["Academia","Lecture","Probability"],"cssclasses":""}
+{"publish":true,"created":"05/11/25, 13:11","modified":"2026-03-24T15:01:00.078+02:00","tags":["Academia","Lecture","Probability"],"cssclasses":""}
 ---
 
 ## Variable #definition 

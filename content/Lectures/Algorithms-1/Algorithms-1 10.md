@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"13/01/26, 13:09","modified":"2026-01-14T13:02:24.750+02:00","tags":["Academia","Lecture","Algorithms-1"],"cssclasses":""}
+{"publish":true,"created":"13/01/26, 13:09","modified":"2026-03-24T14:59:54.926+02:00","tags":["Academia","Lecture","Algorithms-1"],"cssclasses":""}
 ---
 
 # Breaking symmetry

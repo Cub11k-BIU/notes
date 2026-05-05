@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"13/11/24, 13:11","modified":"2025-11-21T21:10:25.081+02:00","tags":["Academia","Practice","Linear-1"],"cssclasses":""}
+{"publish":true,"created":"13/11/24, 13:11","modified":"2026-03-24T14:59:26.998+02:00","tags":["Academia","Practice","Linear-1"],"cssclasses":""}
 ---
 
 # Linear-1 3

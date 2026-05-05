@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"05/11/25, 10:11","modified":"2025-11-21T21:10:13.985+02:00","tags":["Academia","Lecture","Databases"],"cssclasses":""}
+{"publish":true,"created":"05/11/25, 10:11","modified":"2026-03-24T15:00:16.961+02:00","tags":["Academia","Lecture","Databases"],"cssclasses":""}
 ---
 
 ## Joinable tables

@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"24/12/25, 10:04","modified":"2026-02-05T15:40:47.544+02:00","tags":["Academia","Lecture","Databases"],"cssclasses":""}
+{"publish":true,"created":"24/12/25, 10:04","modified":"2026-03-24T15:00:17.008+02:00","tags":["Academia","Lecture","Databases"],"cssclasses":""}
 ---
 
 # Index/Record manager

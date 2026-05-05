@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"28/10/25, 14:10","modified":"2025-11-21T21:10:13.899+02:00","tags":["Academia","Lecture","Algorithms-1"],"cssclasses":""}
+{"publish":true,"created":"28/10/25, 14:10","modified":"2026-03-24T14:59:54.826+02:00","tags":["Academia","Lecture","Algorithms-1"],"cssclasses":""}
 ---
 
 # Naive polynomial multiplication

@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"04/02/26, 10:08","modified":"2026-02-04T14:05:35.130+02:00","tags":["Academia","Lecture","Discrete-structures"],"cssclasses":""}
+{"publish":true,"created":"04/02/26, 10:08","modified":"2026-03-24T15:00:28.617+02:00","tags":["Academia","Lecture","Discrete-structures"],"cssclasses":""}
 ---
 
 ## Cantor

@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"09/11/25, 12:11","modified":"2025-12-07T09:21:59.470+02:00","tags":["Academia","Lecture","Automata"],"cssclasses":""}
+{"publish":true,"created":"09/11/25, 12:11","modified":"2026-03-24T15:00:00.836+02:00","tags":["Academia","Lecture","Automata"],"cssclasses":""}
 ---
 
 # Non-deterministic finite automaton (NFA) #definition 

@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"27/10/25, 17:10","modified":"2025-11-21T21:10:24.436+02:00","tags":["Academia","#Practice","Algorithms-1"],"cssclasses":""}
+{"publish":true,"created":"27/10/25, 17:10","modified":"2026-03-24T14:58:08.184+02:00","tags":["Academia","#Practice","Algorithms-1"],"cssclasses":""}
 ---
 
 # Polynomial multiplication problem

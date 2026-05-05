@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"17/12/25, 13:04","modified":"2025-12-17T15:20:31.532+02:00","tags":["Academia","Lecture","Probability"],"cssclasses":""}
+{"publish":true,"created":"17/12/25, 13:04","modified":"2026-03-24T15:01:00.144+02:00","tags":["Academia","Lecture","Probability"],"cssclasses":""}
 ---
 
 ## Poisson distribution continuation

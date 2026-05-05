@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"29/10/25, 13:10","modified":"2025-11-21T21:10:14.588+02:00","tags":["Academia","Lecture","Probability"],"cssclasses":""}
+{"publish":true,"created":"29/10/25, 13:10","modified":"2026-03-24T15:01:00.063+02:00","tags":["Academia","Lecture","Probability"],"cssclasses":""}
 ---
 
 # Sample space and events

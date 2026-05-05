@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"11/11/25, 13:11","modified":"2025-12-03T22:37:01.117+02:00","tags":["Academia","Lecture","Algorithms-1"],"cssclasses":""}
+{"publish":true,"created":"11/11/25, 13:11","modified":"2026-03-24T14:59:54.848+02:00","tags":["Academia","Lecture","Algorithms-1"],"cssclasses":""}
 ---
 
 ## Breadth First Search

@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"02/12/25, 08:51","modified":"2025-12-02T16:13:45.488+02:00","tags":["Academia","Lecture","Discrete-structures"],"cssclasses":""}
+{"publish":true,"created":"02/12/25, 08:51","modified":"2026-03-24T15:00:28.477+02:00","tags":["Academia","Lecture","Discrete-structures"],"cssclasses":""}
 ---
 
 ## Berge theorem #theorem 

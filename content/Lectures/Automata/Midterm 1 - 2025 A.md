@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"21/11/25, 22:36","modified":"2025-11-25T12:44:12.283+02:00","tags":["Academia","Lecture","Automata"],"cssclasses":""}
+{"publish":true,"created":"21/11/25, 22:36","modified":"2026-03-24T15:00:00.981+02:00","tags":["Academia","Lecture","Automata"],"cssclasses":""}
 ---
 
 ## 1

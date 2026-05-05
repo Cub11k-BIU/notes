@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"26/10/25, 14:10","modified":"2025-11-21T21:10:24.762+02:00","tags":["Academia","Practice","Discrete-structures"],"cssclasses":""}
+{"publish":true,"created":"26/10/25, 14:10","modified":"2026-03-24T14:59:04.452+02:00","tags":["Academia","Practice","Discrete-structures"],"cssclasses":""}
 ---
 
 ## Relations

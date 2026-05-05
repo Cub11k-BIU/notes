@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"16/11/25, 18:11","modified":"2025-11-21T21:10:25.360+02:00","tags":["Academia","Practice","Probability"],"cssclasses":""}
+{"publish":true,"created":"16/11/25, 18:11","modified":"2026-03-24T14:59:39.107+02:00","tags":["Academia","Practice","Probability"],"cssclasses":""}
 ---
 
 ## Conditional probability #definition 

@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"12/02/26, 19:38","modified":"2026-02-12T21:33:33.415+02:00","tags":["Academia","Lecture","Algorithms-1"],"cssclasses":""}
+{"publish":true,"created":"12/02/26, 19:38","modified":"2026-03-24T14:59:54.969+02:00","tags":["Academia","Lecture","Algorithms-1"],"cssclasses":""}
 ---
 
 ## 1a

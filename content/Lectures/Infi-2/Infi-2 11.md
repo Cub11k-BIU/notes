@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"28/04/25, 12:04","modified":"2025-11-21T21:10:14.395+02:00","tags":["Academia","Lecture","Infi-2"],"cssclasses":""}
+{"publish":true,"created":"28/04/25, 12:04","modified":"2026-03-24T15:00:40.226+02:00","tags":["Academia","Lecture","Infi-2"],"cssclasses":""}
 ---
 
 ## Convergence of integral and series (Integral convergence test) #theorem 

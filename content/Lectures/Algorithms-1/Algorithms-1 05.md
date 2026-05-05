@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"02/12/25, 16:01","modified":"2026-02-10T14:58:45.244+02:00","tags":["Academia","Lecture","Algorithms-1"],"cssclasses":""}
+{"publish":true,"created":"02/12/25, 16:01","modified":"2026-03-24T14:59:54.870+02:00","tags":["Academia","Lecture","Algorithms-1"],"cssclasses":""}
 ---
 
 ## $A^{*}$ pathfinding algorithm

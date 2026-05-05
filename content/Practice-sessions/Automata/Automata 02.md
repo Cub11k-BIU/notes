@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"02/11/25, 13:11","modified":"2025-12-07T09:18:57.446+02:00","tags":["Academia","Practice","Automata"],"cssclasses":""}
+{"publish":true,"created":"02/11/25, 13:11","modified":"2026-03-24T14:58:28.756+02:00","tags":["Academia","Practice","Automata"],"cssclasses":""}
 ---
 
 ## Deterministic finite automaton

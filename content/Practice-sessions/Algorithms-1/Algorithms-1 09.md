@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"11/02/26, 16:12","modified":"2026-02-11T17:04:22.999+02:00","tags":["Academia","#Practice","Algorithms-1"],"cssclasses":""}
+{"publish":true,"created":"11/02/26, 16:12","modified":"2026-03-24T14:58:08.268+02:00","tags":["Academia","#Practice","Algorithms-1"],"cssclasses":""}
 ---
 
 ## Reporting triangles in a graph

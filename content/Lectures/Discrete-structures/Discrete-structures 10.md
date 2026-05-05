@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"06/01/26, 16:02","modified":"2026-01-06T18:16:34.602+02:00","tags":["Academia","Lecture","Discrete-structures"],"cssclasses":""}
+{"publish":true,"created":"06/01/26, 16:02","modified":"2026-03-24T15:00:28.535+02:00","tags":["Academia","Lecture","Discrete-structures"],"cssclasses":""}
 ---
 
 ## Sum-free subset #definition 

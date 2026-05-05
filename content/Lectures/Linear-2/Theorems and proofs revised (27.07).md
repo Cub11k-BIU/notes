@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"27/07/25, 12:07","modified":"2025-11-21T21:10:14.564+02:00","tags":["Academia","Lecture","Linear-2"],"cssclasses":""}
+{"publish":true,"created":"27/07/25, 12:07","modified":"2026-03-24T15:00:54.413+02:00","tags":["Academia","Lecture","Linear-2"],"cssclasses":""}
 ---
 
 # 1

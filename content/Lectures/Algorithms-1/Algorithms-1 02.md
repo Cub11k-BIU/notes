@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"04/11/25, 13:11","modified":"2025-11-21T21:10:13.902+02:00","tags":["Academia","Lecture","Algorithms-1"],"cssclasses":""}
+{"publish":true,"created":"04/11/25, 13:11","modified":"2026-03-24T14:59:54.838+02:00","tags":["Academia","Lecture","Algorithms-1"],"cssclasses":""}
 ---
 
 #### Recap graph definitions, properties, etc.

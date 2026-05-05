@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"23/11/25, 13:06","modified":"2026-01-07T16:13:04.754+02:00","tags":["Academia","#Practice","Automata"],"cssclasses":""}
+{"publish":true,"created":"23/11/25, 13:06","modified":"2026-03-24T14:58:28.775+02:00","tags":["Academia","#Practice","Automata"],"cssclasses":""}
 ---
 
 ### Exercises with regular expressions

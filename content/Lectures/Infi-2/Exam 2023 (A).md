@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"31/07/25, 12:07","modified":"2025-11-21T21:10:14.330+02:00","tags":["Academia","Lecture","Infi-2"],"cssclasses":""}
+{"publish":true,"created":"31/07/25, 12:07","modified":"2026-03-24T15:00:40.049+02:00","tags":["Academia","Lecture","Infi-2"],"cssclasses":""}
 ---
 
 # 1a

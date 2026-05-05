@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"02/02/26, 17:54","modified":"2026-02-03T14:31:54.547+02:00","tags":["Academia","Lecture","Discrete-structures"],"cssclasses":""}
+{"publish":true,"created":"02/02/26, 17:54","modified":"2026-03-24T15:00:28.587+02:00","tags":["Academia","Lecture","Discrete-structures"],"cssclasses":""}
 ---
 
 ## 1

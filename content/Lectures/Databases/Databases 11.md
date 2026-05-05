@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"14/01/26, 09:45","modified":"2026-02-02T19:25:00.117+02:00","tags":["Academia","Lecture","Databases"],"cssclasses":""}
+{"publish":true,"created":"14/01/26, 09:45","modified":"2026-03-24T15:00:17.014+02:00","tags":["Academia","Lecture","Databases"],"cssclasses":""}
 ---
 
 # Query complier/optimizer

@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"16/12/25, 12:51","modified":"2025-12-16T15:11:14.990+02:00","tags":["Academia","Lecture","Discrete-structures"],"cssclasses":""}
+{"publish":true,"created":"16/12/25, 12:51","modified":"2026-03-24T15:00:28.514+02:00","tags":["Academia","Lecture","Discrete-structures"],"cssclasses":""}
 ---
 
 # Linear recurrence relation

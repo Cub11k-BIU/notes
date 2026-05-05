@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"21/01/26, 13:01","modified":"2026-01-21T15:28:49.213+02:00","tags":["Academia","Lecture","Probability"],"cssclasses":""}
+{"publish":true,"created":"21/01/26, 13:01","modified":"2026-03-24T15:01:00.199+02:00","tags":["Academia","Lecture","Probability"],"cssclasses":""}
 ---
 
 ## Conditional distributions

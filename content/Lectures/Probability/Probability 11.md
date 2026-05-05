@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"14/01/26, 12:58","modified":"2026-01-28T11:50:25.655+02:00","tags":["Academia","Lecture","Probability"],"cssclasses":""}
+{"publish":true,"created":"14/01/26, 12:58","modified":"2026-03-24T15:01:00.166+02:00","tags":["Academia","Lecture","Probability"],"cssclasses":""}
 ---
 
 ## Normal distribution aka Gaussian #definition 

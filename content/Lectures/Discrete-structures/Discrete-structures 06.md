@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"02/12/25, 16:03","modified":"2026-02-04T12:11:16.871+02:00","tags":["Academia","Lecture","Discrete-structures"],"cssclasses":""}
+{"publish":true,"created":"02/12/25, 16:03","modified":"2026-03-24T15:00:28.489+02:00","tags":["Academia","Lecture","Discrete-structures"],"cssclasses":""}
 ---
 
 ## Corollaries of Hall's theorem

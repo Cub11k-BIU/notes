@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"29/10/25, 09:10","modified":"2025-11-21T21:10:13.982+02:00","tags":["Academia","Lecture","Databases"],"cssclasses":""}
+{"publish":true,"created":"29/10/25, 09:10","modified":"2026-03-24T15:00:16.958+02:00","tags":["Academia","Lecture","Databases"],"cssclasses":""}
 ---
 
 
